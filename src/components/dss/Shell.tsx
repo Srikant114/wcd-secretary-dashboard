@@ -31,9 +31,19 @@ function Header() {
           </div>
         </div>
 
+        {/* Center Title (Commented out per user request) */}
+        {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center pointer-events-none">
+          <div className="px-3.5 py-1 rounded-full border border-[#f97316]/30 bg-[#f97316]/5 flex items-center gap-1.5 shadow-sm">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#f97316]" />
+            <h2 className="text-[12px] font-semibold text-gray-800 tracking-tight">
+              Executive Dashboard for Secretary
+            </h2>
+          </div>
+        </div> */}
+
         {/* Right Controls (SSO Style) */}
         <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 ml-auto">
-          <div className="hidden sm:flex items-center gap-2">
+          {/* <div className="hidden sm:flex items-center gap-2">
             {[Settings, Home, FileText, ExternalLink].map((Icon, i) => (
               <button
                 key={i}
@@ -42,7 +52,7 @@ function Header() {
                 <Icon size={16} />
               </button>
             ))}
-          </div>
+          </div> */}
 
           <div className="relative ml-1">
             <button className="flex items-center gap-2.5 p-1 rounded-xl hover:bg-white/15 active:bg-white/22 transition-colors cursor-pointer">
@@ -61,8 +71,17 @@ function Header() {
   );
 }
 
-function SubHeader() {
-  return null;
+function TopRow({ children }: { children: ReactNode }) {
+  return (
+    <div className="mb-2 px-1 flex items-center relative w-full shrink-0">
+      {children}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block pointer-events-none z-10">
+        <div className="flex items-center gap-2 text-[13px] font-bold text-black bg-white px-4 py-1.5 rounded-full shadow-sm border border-gray-100 pointer-events-auto">
+          <span>Executive Dashboard for Secretary</span>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function TopTabs() {
@@ -215,14 +234,14 @@ export function DssReviewShell({ children, onBack }: { children: ReactNode; onBa
         <Header />
         <div className="flex flex-1 items-start h-[calc(100vh-64px)] overflow-hidden bg-[#eef1f6]">
           <div className="flex-1 flex flex-col h-[calc(100vh-80px)] mt-4 mx-4 max-w-7xl mx-auto w-full overflow-hidden">
-            <div className="mb-2 px-1 flex gap-4 items-center">
+            <TopRow>
               <button
                 onClick={onBack}
                 className="text-[12px] text-[#4f46e5] font-bold hover:underline bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100"
               >
                 ← Back to District Selection
               </button>
-            </div>
+            </TopRow>
             <div className="flex-1 flex flex-col bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
               <main className="flex-1 p-5 overflow-y-auto">{children}</main>
             </div>
@@ -241,9 +260,9 @@ export function DssTabShell({ children }: { children: ReactNode }) {
         <Header />
         <div className="flex flex-1 items-start h-[calc(100vh-64px)] overflow-hidden bg-[#eef1f6]">
           <div className="flex-1 flex flex-col h-[calc(100vh-80px)] mt-4 mx-4 overflow-hidden">
-            <div className="mb-2 px-1">
+            <TopRow>
               <TopTabs />
-            </div>
+            </TopRow>
             <div className="flex-1 flex flex-col bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
               <main className="flex-1 p-6 overflow-y-auto">{children}</main>
             </div>
@@ -259,13 +278,12 @@ export function DssShell({ children }: { children: ReactNode }) {
     <DssProvider>
       <div className="min-h-screen flex flex-col bg-transparent relative h-screen overflow-hidden">
         <Header />
-        <SubHeader />
         <div className="flex flex-1 items-start h-[calc(100vh-64px)] overflow-hidden bg-[#eef1f6]">
           <Sidebar />
           <div className="flex-1 flex flex-col h-[calc(100vh-80px)] mt-4 mx-4 overflow-hidden">
-            <div className="mb-2 px-1">
+            <TopRow>
               <TopTabs />
-            </div>
+            </TopRow>
             <div className="flex-1 flex flex-col bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
               <FiltersBar />
               <main className="flex-1 p-5 overflow-y-auto">{children}</main>
