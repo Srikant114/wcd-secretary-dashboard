@@ -271,7 +271,7 @@ function Overview() {
         <AlertChip
           tone="green"
           icon={<CheckCircle2 size={14} />}
-          text="Khordha, Cuttack, Jharsuguda: measurement efficiency >95% — strong data foundation"
+          text="Khordha, Kataka, Jharsuguda: measurement efficiency >95% — strong data foundation"
           onView={() => {
             setSelectedIndicatorKey("poshan_weighed");
             navigate({ to: "/deep-dive", search: { district: undefined } });

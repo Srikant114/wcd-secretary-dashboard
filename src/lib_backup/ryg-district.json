@@ -1,5 +1,5 @@
 {
-  "Anugola": {
+  "Angul": {
     "R": 346,
     "Y": 1197,
     "G": 146,
@@ -7,27 +7,27 @@
   },
   "Balangir": {
     "R": 509,
-    "Y": 2018,
+    "Y": 2014,
     "G": 247,
-    "total": 2774
+    "total": 2770
   },
-  "Baleshwar": {
+  "Balasore": {
     "R": 1093,
-    "Y": 2770,
+    "Y": 2764,
     "G": 357,
-    "total": 4220
+    "total": 4214
   },
-  "Baragada": {
+  "Bargarh": {
     "R": 545,
-    "Y": 2182,
+    "Y": 2176,
     "G": 192,
-    "total": 2919
+    "total": 2913
   },
   "Bhadrak": {
     "R": 459,
-    "Y": 1761,
+    "Y": 1755,
     "G": 215,
-    "total": 2435
+    "total": 2429
   },
   "Boudh": {
     "R": 131,
@@ -35,13 +35,13 @@
     "G": 79,
     "total": 727
   },
-  "Kataka": {
+  "Cuttack": {
     "R": 374,
-    "Y": 2284,
+    "Y": 2274,
     "G": 685,
-    "total": 3343
+    "total": 3333
   },
-  "Debagada": {
+  "Deogarh": {
     "R": 135,
     "Y": 608,
     "G": 57,
@@ -49,29 +49,29 @@
   },
   "Dhenkanal": {
     "R": 478,
-    "Y": 1490,
+    "Y": 1488,
     "G": 255,
-    "total": 2223
+    "total": 2221
   },
   "Gajapati": {
     "R": 831,
-    "Y": 1476,
+    "Y": 1464,
     "G": 136,
-    "total": 2443
+    "total": 2431
   },
   "Ganjam": {
     "R": 1356,
-    "Y": 3274,
+    "Y": 3272,
     "G": 532,
-    "total": 5162
+    "total": 5160
   },
-  "Jagatsinghapur": {
+  "Jagatsinghpur": {
     "R": 242,
     "Y": 1325,
     "G": 248,
     "total": 1815
   },
-  "Jajpur": {
+  "Jajapur": {
     "R": 499,
     "Y": 1984,
     "G": 343,
@@ -79,9 +79,9 @@
   },
   "Jharsuguda": {
     "R": 237,
-    "Y": 655,
+    "Y": 654,
     "G": 75,
-    "total": 967
+    "total": 966
   },
   "Kalahandi": {
     "R": 687,
@@ -89,35 +89,35 @@
     "G": 166,
     "total": 2377
   },
-  "Kandhamala": {
+  "Kandhamal": {
     "R": 316,
-    "Y": 1658,
+    "Y": 1656,
     "G": 224,
-    "total": 2198
+    "total": 2196
   },
-  "Kendrapada": {
+  "Kendrapara": {
     "R": 412,
-    "Y": 1508,
+    "Y": 1505,
     "G": 227,
-    "total": 2147
+    "total": 2144
   },
-  "Kendujhar": {
+  "Keonjhar": {
     "R": 786,
-    "Y": 2411,
+    "Y": 2404,
     "G": 164,
-    "total": 3361
+    "total": 3354
   },
   "Khordha": {
     "R": 458,
-    "Y": 1793,
+    "Y": 1792,
     "G": 303,
-    "total": 2554
+    "total": 2553
   },
   "Koraput": {
     "R": 911,
-    "Y": 2339,
+    "Y": 2338,
     "G": 147,
-    "total": 3397
+    "total": 3396
   },
   "Malkangiri": {
     "R": 310,
@@ -127,9 +127,9 @@
   },
   "Mayurbhanj": {
     "R": 844,
-    "Y": 4027,
+    "Y": 4023,
     "G": 282,
-    "total": 5153
+    "total": 5149
   },
   "Nabarangpur": {
     "R": 449,
@@ -137,43 +137,43 @@
     "G": 116,
     "total": 2330
   },
-  "Nayagada": {
+  "Nayagarh": {
     "R": 274,
-    "Y": 1105,
+    "Y": 1104,
     "G": 205,
-    "total": 1584
+    "total": 1583
   },
   "Nuapada": {
     "R": 319,
-    "Y": 981,
+    "Y": 979,
     "G": 108,
-    "total": 1408
+    "total": 1406
   },
   "Puri": {
     "R": 303,
-    "Y": 1925,
+    "Y": 1924,
     "G": 371,
-    "total": 2599
+    "total": 2598
   },
   "Rayagada": {
     "R": 625,
-    "Y": 1364,
+    "Y": 1363,
     "G": 98,
-    "total": 2087
+    "total": 2086
   },
   "Sambalpur": {
     "R": 357,
-    "Y": 1369,
+    "Y": 1368,
     "G": 160,
-    "total": 1886
+    "total": 1885
   },
   "Subarnapur": {
     "R": 374,
-    "Y": 1090,
+    "Y": 1089,
     "G": 92,
-    "total": 1556
+    "total": 1555
   },
-  "Sundaragada": {
+  "Sundergarh": {
     "R": 715,
     "Y": 2964,
     "G": 240,

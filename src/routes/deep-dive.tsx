@@ -970,9 +970,9 @@ function DQBinGraph({ district }: { district: string }) {
 
 // District name mapping: dss-data convention → Excel/RYG JSON convention
 const DIST_TO_RYG: Record<string, string> = {
-  "Jajpur": "Jajapur",
-  "Kendujhar": "Keonjhar",
-  "Sundargarh": "Sundergarh",
+  "Jajpur": "Jajpur",
+  "Kendujhar": "Kendujhar",
+  "Sundaragada": "Sundaragada",
 };
 
 function getRYGForDistrict(d: string): DistrictRYG {

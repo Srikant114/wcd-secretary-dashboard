@@ -12,8 +12,29 @@ import {
 const ODISHA_TOPO_URL =
   "https://cdn.jsdelivr.net/gh/udit-001/india-maps-data@ef25ebc/topojson/states/odisha.json";
 
+const DISTRICT_NAME_MAP: Record<string, string> = {
+  "Angul": "Anugola",
+  "Balasore": "Baleshwar",
+  "Bargarh": "Baragada",
+  "Cuttack": "Kataka",
+  "Deogarh": "Debagada",
+  "Jagatsinghpur": "Jagatsinghapur",
+  "Jajapur": "Jajpur",
+  "Jajpur": "Jajpur",
+  "Kandhamal": "Kandhamala",
+  "Kendrapara": "Kendrapada",
+  "Keonjhar": "Kendujhar",
+  "Nayagarh": "Nayagada",
+  "Sundergarh": "Sundaragada",
+  "Sundargarh": "Sundaragada",
+  "Nabarangapur": "Nabarangpur",
+  "Nabarangpur": "Nabarangpur",
+  "Baudh": "Boudh",
+  "Sonapur": "Subarnapur"
+};
+
 function resolveDistrictName(props: Record<string, unknown>): string {
-  return (
+  const rawName = (
     (props.district as string) ||
     (props.NAME_2 as string) ||
     (props.dtname as string) ||
@@ -21,6 +42,7 @@ function resolveDistrictName(props: Record<string, unknown>): string {
     (props.name as string) ||
     "Unknown"
   );
+  return DISTRICT_NAME_MAP[rawName] || rawName;
 }
 
 function valueFor(district: string, kind: LayerKind, key: string): number | null {

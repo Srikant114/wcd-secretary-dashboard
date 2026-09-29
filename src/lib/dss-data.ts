@@ -134,33 +134,33 @@ export const MODULE_INDICATORS: Record<ModuleKey, Indicator[]> = {
 };
 
 export const DISTRICTS = [
-  "Angul","Balangir","Balasore","Bargarh","Bhadrak","Boudh","Cuttack","Deogarh",
-  "Dhenkanal","Gajapati","Ganjam","Jagatsinghpur","Jajpur","Jharsuguda","Kalahandi",
-  "Kandhamal","Kendrapara","Kendujhar","Khordha","Koraput","Malkangiri","Mayurbhanj",
-  "Nabarangpur","Nayagarh","Nuapada","Puri","Rayagada","Sambalpur","Subarnapur","Sundargarh",
+  "Anugola","Balangir","Baleshwar","Baragada","Bhadrak","Boudh","Kataka","Debagada",
+  "Dhenkanal","Gajapati","Ganjam","Jagatsinghapur","Jajpur","Jharsuguda","Kalahandi",
+  "Kandhamala","Kendrapada","Kendujhar","Khordha","Koraput","Malkangiri","Mayurbhanj",
+  "Nabarangpur","Nayagada","Nuapada","Puri","Rayagada","Sambalpur","Subarnapur","Sundaragada",
 ];
 
 export type DistrictOutcome = Record<OutcomeKey, number>;
 export const districtOutcomeData: Record<string, DistrictOutcome> = {
   // GREEN — wasting <13%
   Khordha:          { wasting: 9.8,  stunting: 21.3, underweight: 17.4 },
-  Cuttack:          { wasting: 10.2, stunting: 22.7, underweight: 18.9 },
+  Kataka:          { wasting: 10.2, stunting: 22.7, underweight: 18.9 },
   Jharsuguda:       { wasting: 10.9, stunting: 23.1, underweight: 19.6 },
   Puri:             { wasting: 11.4, stunting: 24.2, underweight: 20.3 },
-  Jagatsinghpur:    { wasting: 11.7, stunting: 24.8, underweight: 21.1 },
-  Kendrapara:       { wasting: 12.1, stunting: 25.4, underweight: 21.8 },
-  Balasore:         { wasting: 12.4, stunting: 26.1, underweight: 22.4 },
+  Jagatsinghapur:    { wasting: 11.7, stunting: 24.8, underweight: 21.1 },
+  Kendrapada:       { wasting: 12.1, stunting: 25.4, underweight: 21.8 },
+  Baleshwar:         { wasting: 12.4, stunting: 26.1, underweight: 22.4 },
   Bhadrak:          { wasting: 12.8, stunting: 26.7, underweight: 22.9 },
   // AMBER — wasting 13–19%
   Jajpur:           { wasting: 13.2, stunting: 27.4, underweight: 23.6 },
   Dhenkanal:        { wasting: 13.7, stunting: 28.1, underweight: 24.3 },
   Sambalpur:        { wasting: 14.1, stunting: 28.8, underweight: 25.0 },
-  Bargarh:          { wasting: 14.6, stunting: 29.5, underweight: 25.7 },
-  Angul:            { wasting: 15.1, stunting: 30.2, underweight: 26.4 },
-  Nayagarh:         { wasting: 15.4, stunting: 30.8, underweight: 26.9 },
-  Sundargarh:       { wasting: 15.8, stunting: 31.4, underweight: 27.5 },
+  Baragada:          { wasting: 14.6, stunting: 29.5, underweight: 25.7 },
+  Anugola:            { wasting: 15.1, stunting: 30.2, underweight: 26.4 },
+  Nayagada:         { wasting: 15.4, stunting: 30.8, underweight: 26.9 },
+  Sundaragada:       { wasting: 15.8, stunting: 31.4, underweight: 27.5 },
   Kendujhar:        { wasting: 16.2, stunting: 32.1, underweight: 28.2 },
-  Deogarh:          { wasting: 16.7, stunting: 32.8, underweight: 28.9 },
+  Debagada:          { wasting: 16.7, stunting: 32.8, underweight: 28.9 },
   Mayurbhanj:       { wasting: 17.1, stunting: 33.5, underweight: 29.6 },
   Subarnapur:       { wasting: 17.6, stunting: 34.2, underweight: 30.3 },
   Balangir:         { wasting: 18.2, stunting: 35.1, underweight: 31.1 },
@@ -169,7 +169,7 @@ export const districtOutcomeData: Record<string, DistrictOutcome> = {
   // RED — wasting >19%
   Gajapati:         { wasting: 19.8, stunting: 37.4, underweight: 33.3 },
   Nuapada:          { wasting: 20.4, stunting: 38.3, underweight: 34.2 },
-  Kandhamal:        { wasting: 21.1, stunting: 39.2, underweight: 35.1 },
+  Kandhamala:        { wasting: 21.1, stunting: 39.2, underweight: 35.1 },
   Kalahandi:        { wasting: 21.8, stunting: 40.1, underweight: 36.0 },
   Rayagada:         { wasting: 22.6, stunting: 41.2, underweight: 37.1 },
   Nabarangpur:      { wasting: 23.3, stunting: 42.4, underweight: 38.3 },
@@ -184,22 +184,22 @@ const RAW_PROGRAM: Record<string, {
   mamta_registered: number; mamta_inst1: number;
 }> = {
   Khordha:       { meas_efficiency: 99, snp_coverage: 91, sam_identified: 62, thr_pw: 87, awc_toilet: 94, awc_ecce: 84, subhadra_enrolled: 96, subhadra_inst1: 91, mamta_registered: 94, mamta_inst1: 88 },
-  Cuttack:       { meas_efficiency: 98, snp_coverage: 89, sam_identified: 59, thr_pw: 84, awc_toilet: 91, awc_ecce: 81, subhadra_enrolled: 93, subhadra_inst1: 87, mamta_registered: 91, mamta_inst1: 85 },
+  Kataka:       { meas_efficiency: 98, snp_coverage: 89, sam_identified: 59, thr_pw: 84, awc_toilet: 91, awc_ecce: 81, subhadra_enrolled: 93, subhadra_inst1: 87, mamta_registered: 91, mamta_inst1: 85 },
   Jharsuguda:    { meas_efficiency: 98, snp_coverage: 87, sam_identified: 57, thr_pw: 82, awc_toilet: 89, awc_ecce: 79, subhadra_enrolled: 92, subhadra_inst1: 86, mamta_registered: 90, mamta_inst1: 83 },
   Puri:          { meas_efficiency: 97, snp_coverage: 86, sam_identified: 55, thr_pw: 81, awc_toilet: 88, awc_ecce: 77, subhadra_enrolled: 91, subhadra_inst1: 85, mamta_registered: 88, mamta_inst1: 82 },
-  Jagatsinghpur: { meas_efficiency: 97, snp_coverage: 85, sam_identified: 54, thr_pw: 80, awc_toilet: 87, awc_ecce: 76, subhadra_enrolled: 90, subhadra_inst1: 84, mamta_registered: 87, mamta_inst1: 81 },
-  Kendrapara:    { meas_efficiency: 97, snp_coverage: 84, sam_identified: 52, thr_pw: 79, awc_toilet: 86, awc_ecce: 74, subhadra_enrolled: 89, subhadra_inst1: 82, mamta_registered: 86, mamta_inst1: 79 },
-  Balasore:      { meas_efficiency: 97, snp_coverage: 83, sam_identified: 51, thr_pw: 78, awc_toilet: 85, awc_ecce: 73, subhadra_enrolled: 88, subhadra_inst1: 81, mamta_registered: 85, mamta_inst1: 78 },
+  Jagatsinghapur: { meas_efficiency: 97, snp_coverage: 85, sam_identified: 54, thr_pw: 80, awc_toilet: 87, awc_ecce: 76, subhadra_enrolled: 90, subhadra_inst1: 84, mamta_registered: 87, mamta_inst1: 81 },
+  Kendrapada:    { meas_efficiency: 97, snp_coverage: 84, sam_identified: 52, thr_pw: 79, awc_toilet: 86, awc_ecce: 74, subhadra_enrolled: 89, subhadra_inst1: 82, mamta_registered: 86, mamta_inst1: 79 },
+  Baleshwar:      { meas_efficiency: 97, snp_coverage: 83, sam_identified: 51, thr_pw: 78, awc_toilet: 85, awc_ecce: 73, subhadra_enrolled: 88, subhadra_inst1: 81, mamta_registered: 85, mamta_inst1: 78 },
   Bhadrak:       { meas_efficiency: 96, snp_coverage: 82, sam_identified: 49, thr_pw: 77, awc_toilet: 84, awc_ecce: 72, subhadra_enrolled: 87, subhadra_inst1: 80, mamta_registered: 84, mamta_inst1: 77 },
   Jajpur:        { meas_efficiency: 96, snp_coverage: 80, sam_identified: 47, thr_pw: 75, awc_toilet: 82, awc_ecce: 69, subhadra_enrolled: 85, subhadra_inst1: 78, mamta_registered: 82, mamta_inst1: 74 },
   Dhenkanal:     { meas_efficiency: 96, snp_coverage: 78, sam_identified: 45, thr_pw: 73, awc_toilet: 80, awc_ecce: 67, subhadra_enrolled: 84, subhadra_inst1: 76, mamta_registered: 80, mamta_inst1: 72 },
   Sambalpur:     { meas_efficiency: 96, snp_coverage: 77, sam_identified: 44, thr_pw: 72, awc_toilet: 79, awc_ecce: 66, subhadra_enrolled: 83, subhadra_inst1: 75, mamta_registered: 79, mamta_inst1: 71 },
-  Bargarh:       { meas_efficiency: 96, snp_coverage: 76, sam_identified: 43, thr_pw: 71, awc_toilet: 78, awc_ecce: 65, subhadra_enrolled: 82, subhadra_inst1: 74, mamta_registered: 78, mamta_inst1: 70 },
-  Angul:         { meas_efficiency: 96, snp_coverage: 75, sam_identified: 42, thr_pw: 70, awc_toilet: 77, awc_ecce: 63, subhadra_enrolled: 81, subhadra_inst1: 72, mamta_registered: 77, mamta_inst1: 68 },
-  Nayagarh:      { meas_efficiency: 95, snp_coverage: 74, sam_identified: 40, thr_pw: 69, awc_toilet: 76, awc_ecce: 62, subhadra_enrolled: 80, subhadra_inst1: 71, mamta_registered: 76, mamta_inst1: 67 },
-  Sundargarh:    { meas_efficiency: 95, snp_coverage: 73, sam_identified: 39, thr_pw: 68, awc_toilet: 75, awc_ecce: 61, subhadra_enrolled: 79, subhadra_inst1: 70, mamta_registered: 75, mamta_inst1: 66 },
+  Baragada:       { meas_efficiency: 96, snp_coverage: 76, sam_identified: 43, thr_pw: 71, awc_toilet: 78, awc_ecce: 65, subhadra_enrolled: 82, subhadra_inst1: 74, mamta_registered: 78, mamta_inst1: 70 },
+  Anugola:         { meas_efficiency: 96, snp_coverage: 75, sam_identified: 42, thr_pw: 70, awc_toilet: 77, awc_ecce: 63, subhadra_enrolled: 81, subhadra_inst1: 72, mamta_registered: 77, mamta_inst1: 68 },
+  Nayagada:      { meas_efficiency: 95, snp_coverage: 74, sam_identified: 40, thr_pw: 69, awc_toilet: 76, awc_ecce: 62, subhadra_enrolled: 80, subhadra_inst1: 71, mamta_registered: 76, mamta_inst1: 67 },
+  Sundaragada:    { meas_efficiency: 95, snp_coverage: 73, sam_identified: 39, thr_pw: 68, awc_toilet: 75, awc_ecce: 61, subhadra_enrolled: 79, subhadra_inst1: 70, mamta_registered: 75, mamta_inst1: 66 },
   Kendujhar:     { meas_efficiency: 95, snp_coverage: 72, sam_identified: 38, thr_pw: 67, awc_toilet: 74, awc_ecce: 60, subhadra_enrolled: 78, subhadra_inst1: 69, mamta_registered: 74, mamta_inst1: 65 },
-  Deogarh:       { meas_efficiency: 95, snp_coverage: 71, sam_identified: 37, thr_pw: 66, awc_toilet: 73, awc_ecce: 58, subhadra_enrolled: 77, subhadra_inst1: 67, mamta_registered: 73, mamta_inst1: 63 },
+  Debagada:       { meas_efficiency: 95, snp_coverage: 71, sam_identified: 37, thr_pw: 66, awc_toilet: 73, awc_ecce: 58, subhadra_enrolled: 77, subhadra_inst1: 67, mamta_registered: 73, mamta_inst1: 63 },
   Mayurbhanj:    { meas_efficiency: 95, snp_coverage: 69, sam_identified: 35, thr_pw: 64, awc_toilet: 71, awc_ecce: 56, subhadra_enrolled: 75, subhadra_inst1: 65, mamta_registered: 71, mamta_inst1: 61 },
   Subarnapur:    { meas_efficiency: 95, snp_coverage: 68, sam_identified: 34, thr_pw: 63, awc_toilet: 70, awc_ecce: 55, subhadra_enrolled: 74, subhadra_inst1: 64, mamta_registered: 70, mamta_inst1: 60 },
   Balangir:      { meas_efficiency: 95, snp_coverage: 66, sam_identified: 32, thr_pw: 61, awc_toilet: 68, awc_ecce: 53, subhadra_enrolled: 72, subhadra_inst1: 62, mamta_registered: 68, mamta_inst1: 58 },
@@ -207,7 +207,7 @@ const RAW_PROGRAM: Record<string, {
   Boudh:         { meas_efficiency: 95, snp_coverage: 63, sam_identified: 29, thr_pw: 58, awc_toilet: 65, awc_ecce: 50, subhadra_enrolled: 69, subhadra_inst1: 58, mamta_registered: 65, mamta_inst1: 54 },
   Gajapati:      { meas_efficiency: 95, snp_coverage: 60, sam_identified: 26, thr_pw: 55, awc_toilet: 62, awc_ecce: 46, subhadra_enrolled: 66, subhadra_inst1: 54, mamta_registered: 62, mamta_inst1: 51 },
   Nuapada:       { meas_efficiency: 95, snp_coverage: 57, sam_identified: 23, thr_pw: 52, awc_toilet: 59, awc_ecce: 43, subhadra_enrolled: 63, subhadra_inst1: 51, mamta_registered: 59, mamta_inst1: 47 },
-  Kandhamal:     { meas_efficiency: 95, snp_coverage: 54, sam_identified: 21, thr_pw: 49, awc_toilet: 56, awc_ecce: 40, subhadra_enrolled: 60, subhadra_inst1: 48, mamta_registered: 56, mamta_inst1: 44 },
+  Kandhamala:     { meas_efficiency: 95, snp_coverage: 54, sam_identified: 21, thr_pw: 49, awc_toilet: 56, awc_ecce: 40, subhadra_enrolled: 60, subhadra_inst1: 48, mamta_registered: 56, mamta_inst1: 44 },
   Kalahandi:     { meas_efficiency: 95, snp_coverage: 51, sam_identified: 18, thr_pw: 46, awc_toilet: 53, awc_ecce: 37, subhadra_enrolled: 57, subhadra_inst1: 44, mamta_registered: 53, mamta_inst1: 41 },
   Rayagada:      { meas_efficiency: 95, snp_coverage: 48, sam_identified: 16, thr_pw: 43, awc_toilet: 50, awc_ecce: 34, subhadra_enrolled: 54, subhadra_inst1: 41, mamta_registered: 50, mamta_inst1: 38 },
   Nabarangpur:   { meas_efficiency: 95, snp_coverage: 45, sam_identified: 14, thr_pw: 40, awc_toilet: 47, awc_ecce: 31, subhadra_enrolled: 51, subhadra_inst1: 38, mamta_registered: 47, mamta_inst1: 35 },
@@ -429,22 +429,22 @@ export function getDistrictValue(district: string, kind: LayerKind, key: string)
 /** Real ICDS project (CDPO) names for each district */
 export const DISTRICT_PROJECTS: Record<string, string[]> = {
   Khordha:       ["Bhubaneswar Urban", "Jatni", "Balianta", "Balipatna", "Bolagarh", "Chilika", "Tangi", "Banapur"],
-  Cuttack:       ["Cuttack Urban", "Athagarh", "Badamba", "Banki", "Baramba", "Mahanga", "Niali", "Salepur", "Tigiria"],
+  Kataka:       ["Kataka Urban", "Athagarh", "Badamba", "Banki", "Baramba", "Mahanga", "Niali", "Salepur", "Tigiria"],
   Jharsuguda:    ["Jharsuguda", "Brajarajnagar", "Kolabira", "Lakhanpur", "Laikera"],
   Puri:          ["Puri", "Brahmagiri", "Delang", "Gop", "Kakatpur", "Kanas", "Nimapada", "Pipili", "Satyabadi"],
-  Jagatsinghpur: ["Jagatsinghpur", "Balikuda", "Biridi", "Erasama", "Kujang", "Raghunathpur", "Tirtol"],
-  Kendrapara:    ["Kendrapara", "Aul", "Derabish", "Garadapur", "Mahakalpada", "Marshaghai", "Patkura"],
-  Balasore:      ["Balasore", "Baliapal", "Basta", "Bhograi", "Jaleswar", "Nilagiri", "Remuna", "Simulia", "Soro"],
+  Jagatsinghapur: ["Jagatsinghapur", "Balikuda", "Biridi", "Erasama", "Kujang", "Raghunathpur", "Tirtol"],
+  Kendrapada:    ["Kendrapada", "Aul", "Derabish", "Garadapur", "Mahakalpada", "Marshaghai", "Patkura"],
+  Baleshwar:      ["Baleshwar", "Baliapal", "Basta", "Bhograi", "Jaleswar", "Nilagiri", "Remuna", "Simulia", "Soro"],
   Bhadrak:       ["Bhadrak", "Basudevpur", "Bonth", "Chandbali", "Dhamnagar", "Tihidi"],
   Jajpur:        ["Jajpur", "Barchana", "Binjharpur", "Dasarathpur", "Dharmasala", "Korei", "Sukinda"],
   Dhenkanal:     ["Dhenkanal", "Bhuban", "Gondia", "Hindol", "Kamakhyanagar", "Odapada", "Parjang"],
   Sambalpur:     ["Sambalpur", "Bamra", "Jamankira", "Jujomura", "Kuchinda", "Maneswar", "Rairakhol"],
-  Bargarh:       ["Bargarh", "Attabira", "Bhatli", "Bijepur", "Barpali", "Gaisilet", "Jharbandh", "Padampur", "Paikmal", "Sohela"],
-  Angul:         ["Angul", "Athmallik", "Banarpal", "Chhendipada", "Kaniha", "Kishorenagar", "Pallahara", "Talcher"],
-  Nayagarh:      ["Nayagarh", "Daspalla", "Gania", "Khandapada", "Nuagaon", "Odagaon", "Ranpur"],
-  Sundargarh:    ["Sundargarh", "Bargaon", "Bisra", "Biramitrapur", "Hemgir", "Koira", "Kuanrmunda", "Lahunipada", "Rajgangpur", "Tangarpali"],
-  Kendujhar:     ["Keonjhar", "Anandapur", "Banspal", "Champua", "Ghasipura", "Hatadihi", "Harichandanpur", "Joda", "Patna", "Telkoi"],
-  Deogarh:       ["Deogarh", "Barkote", "Reamal", "Tileibani"],
+  Baragada:       ["Baragada", "Attabira", "Bhatli", "Bijepur", "Barpali", "Gaisilet", "Jharbandh", "Padampur", "Paikmal", "Sohela"],
+  Anugola:         ["Anugola", "Athmallik", "Banarpal", "Chhendipada", "Kaniha", "Kishorenagar", "Pallahara", "Talcher"],
+  Nayagada:      ["Nayagada", "Daspalla", "Gania", "Khandapada", "Nuagaon", "Odagaon", "Ranpur"],
+  Sundaragada:    ["Sundaragada", "Bargaon", "Bisra", "Biramitrapur", "Hemgir", "Koira", "Kuanrmunda", "Lahunipada", "Rajgangpur", "Tangarpali"],
+  Kendujhar:     ["Kendujhar", "Anandapur", "Banspal", "Champua", "Ghasipura", "Hatadihi", "Harichandanpur", "Joda", "Patna", "Telkoi"],
+  Debagada:       ["Debagada", "Barkote", "Reamal", "Tileibani"],
   Mayurbhanj:    ["Baripada", "Badasahi", "Bangriposi", "Bisoi", "Betnoti", "Jashipur", "Karanjia", "Khunta", "Moroda", "Rairangpur", "Saraskana", "Suliapada", "Udala"],
   Subarnapur:    ["Subarnapur", "Birmaharajpur", "Dunguripali", "Tarbha", "Ullunda"],
   Balangir:      ["Balangir", "Agalpur", "Belpara", "Deogaon", "Kantabanji", "Khaprakhol", "Loisingha", "Muribahal", "Patnagarh", "Puintala", "Saintala", "Titilagarh"],
@@ -452,9 +452,9 @@ export const DISTRICT_PROJECTS: Record<string, string[]> = {
   Boudh:         ["Boudh", "Baunsuni", "Harbhanga", "Kantamal", "Manamunda"],
   Gajapati:      ["Paralakhemundi", "Gosani", "Kashinagar", "Mohana", "Nuagada", "R. Udayagiri"],
   Nuapada:       ["Nuapada", "Boden", "Comta", "Khariar", "Sinapali"],
-  Kandhamal:     ["Phulbani", "Baliguda", "G. Udayagiri", "Kotgarh", "Krishnaprasad", "Phiringia", "Raikia", "Tikabali", "Tumudibandha"],
+  Kandhamala:     ["Phulbani", "Baliguda", "G. Udayagiri", "Kotgarh", "Krishnaprasad", "Phiringia", "Raikia", "Tikabali", "Tumudibandha"],
   Kalahandi:     ["Bhawanipatna", "Dharmagarh", "Golamunda", "Jaipatna", "Junagarh", "Kalampur", "Kesinga", "Lanjigarh", "M. Rampur", "Narla", "Thuamul Rampur"],
-  Rayagada:      ["Rayagada", "Bisam Cuttack", "Gudari", "Gunupur", "Kashipur", "Kolnara", "Muniguda", "Ramanaguda"],
+  Rayagada:      ["Rayagada", "Bisam Kataka", "Gudari", "Gunupur", "Kashipur", "Kolnara", "Muniguda", "Ramanaguda"],
   Nabarangpur:   ["Nabarangpur", "Dabugam", "Jharigam", "Kosagumuda", "Nandahandi", "Papadahandi", "Raighar", "Tentulikhunti", "Umarkote"],
   Koraput:       ["Koraput", "Baipariguda", "Bandhugaon", "Dasmantpur", "Jeypore", "Kotpad", "Kundra", "Lamtaput", "Laxmipur", "Narayanpatna", "Nandapur", "Pottangi", "Semiliguda"],
   Malkangiri:    ["Malkangiri", "Chitrakonda", "Kalimela", "Khairput", "Korkunda", "Mathili", "Motu", "Podia"],
@@ -484,7 +484,7 @@ export const ptStateTrend: Record<PTMonth, PTMonthPoint> = {
 
 /** Per-district PT outcomes month by month (Feb–Jul 2026) */
 export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
-  Angul: {
+  Anugola: {
     Feb: { n:78909, wasting:2.2, sam:0.47, mam:1.73, stunting:21.12, sev_stunted:5.66, uw:7.28, sev_uw:0.91 },
     Mar: { n:78691, wasting:2.0, sam:0.41, mam:1.59, stunting:14.44, sev_stunted:3.1, uw:5.47, sev_uw:0.63 },
     Apr: { n:77696, wasting:1.99, sam:0.44, mam:1.55, stunting:14.66, sev_stunted:3.02, uw:5.93, sev_uw:0.76 },
@@ -500,7 +500,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:103026, wasting:1.6, sam:0.22, mam:1.38, stunting:14.2, sev_stunted:2.07, uw:7.08, sev_uw:0.85 },
     Jul: { n:105003, wasting:1.91, sam:0.24, mam:1.67, stunting:15.65, sev_stunted:2.33, uw:8.28, sev_uw:0.99 },
   },
-  Balasore: {
+  Baleshwar: {
     Feb: { n:138080, wasting:3.96, sam:0.88, mam:3.08, stunting:29.35, sev_stunted:12.31, uw:12.1, sev_uw:2.06 },
     Mar: { n:136952, wasting:3.91, sam:0.82, mam:3.09, stunting:22.94, sev_stunted:7.85, uw:10.08, sev_uw:1.56 },
     Apr: { n:134694, wasting:3.77, sam:0.81, mam:2.96, stunting:20.73, sev_stunted:5.97, uw:9.54, sev_uw:1.36 },
@@ -508,7 +508,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:132485, wasting:3.46, sam:0.74, mam:2.72, stunting:17.63, sev_stunted:4.68, uw:8.59, sev_uw:1.19 },
     Jul: { n:131775, wasting:4.19, sam:0.82, mam:3.37, stunting:16.59, sev_stunted:3.7, uw:10.31, sev_uw:1.47 },
   },
-  Bargarh: {
+  Baragada: {
     Feb: { n:83208, wasting:1.79, sam:0.45, mam:1.34, stunting:14.84, sev_stunted:2.64, uw:6.71, sev_uw:0.89 },
     Mar: { n:83012, wasting:1.66, sam:0.45, mam:1.21, stunting:14.47, sev_stunted:2.45, uw:6.52, sev_uw:0.86 },
     Apr: { n:81383, wasting:1.65, sam:0.44, mam:1.2, stunting:14.35, sev_stunted:2.17, uw:6.5, sev_uw:0.82 },
@@ -532,7 +532,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:29794, wasting:2.97, sam:0.29, mam:2.68, stunting:19.42, sev_stunted:2.8, uw:8.57, sev_uw:0.96 },
     Jul: { n:29761, wasting:2.58, sam:0.26, mam:2.32, stunting:19.32, sev_stunted:2.43, uw:9.98, sev_uw:1.0 },
   },
-  Cuttack: {
+  Kataka: {
     Feb: { n:122103, wasting:1.2, sam:0.22, mam:0.97, stunting:14.63, sev_stunted:2.41, uw:4.77, sev_uw:0.49 },
     Mar: { n:120969, wasting:1.19, sam:0.27, mam:0.92, stunting:14.51, sev_stunted:2.45, uw:4.49, sev_uw:0.53 },
     Apr: { n:119295, wasting:1.11, sam:0.25, mam:0.86, stunting:13.53, sev_stunted:1.66, uw:4.29, sev_uw:0.46 },
@@ -540,7 +540,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:118775, wasting:0.94, sam:0.19, mam:0.75, stunting:12.7, sev_stunted:1.57, uw:3.87, sev_uw:0.4 },
     Jul: { n:118947, wasting:0.85, sam:0.12, mam:0.72, stunting:11.69, sev_stunted:0.91, uw:4.24, sev_uw:0.34 },
   },
-  Deogarh: {
+  Debagada: {
     Feb: { n:19358, wasting:3.84, sam:0.61, mam:3.23, stunting:27.24, sev_stunted:8.11, uw:13.85, sev_uw:1.69 },
     Mar: { n:19320, wasting:3.96, sam:0.73, mam:3.23, stunting:28.42, sev_stunted:8.35, uw:14.1, sev_uw:1.69 },
     Apr: { n:19110, wasting:4.64, sam:0.83, mam:3.8, stunting:27.54, sev_stunted:7.61, uw:14.63, sev_uw:1.74 },
@@ -572,7 +572,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:212700, wasting:1.22, sam:0.28, mam:0.93, stunting:15.52, sev_stunted:5.64, uw:3.68, sev_uw:0.58 },
     Jul: { n:213357, wasting:1.29, sam:0.25, mam:1.04, stunting:10.71, sev_stunted:2.84, uw:3.12, sev_uw:0.39 },
   },
-  Jagatsinghpur: {
+  Jagatsinghapur: {
     Feb: { n:51759, wasting:1.7, sam:0.35, mam:1.35, stunting:15.45, sev_stunted:4.83, uw:5.21, sev_uw:0.89 },
     Mar: { n:51386, wasting:1.61, sam:0.38, mam:1.24, stunting:13.78, sev_stunted:3.97, uw:4.73, sev_uw:0.83 },
     Apr: { n:50809, wasting:1.79, sam:0.42, mam:1.37, stunting:13.78, sev_stunted:4.1, uw:4.91, sev_uw:0.9 },
@@ -604,7 +604,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:112937, wasting:3.54, sam:0.61, mam:2.93, stunting:22.6, sev_stunted:6.19, uw:9.56, sev_uw:1.48 },
     Jul: { n:112947, wasting:3.79, sam:0.53, mam:3.26, stunting:18.38, sev_stunted:3.98, uw:9.24, sev_uw:1.28 },
   },
-  Kandhamal: {
+  Kandhamala: {
     Feb: { n:60642, wasting:4.23, sam:0.72, mam:3.51, stunting:33.82, sev_stunted:9.06, uw:15.75, sev_uw:2.17 },
     Mar: { n:60392, wasting:4.25, sam:0.66, mam:3.59, stunting:31.17, sev_stunted:7.37, uw:14.97, sev_uw:2.08 },
     Apr: { n:59702, wasting:4.32, sam:0.71, mam:3.61, stunting:31.99, sev_stunted:7.73, uw:15.51, sev_uw:2.17 },
@@ -612,7 +612,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:58596, wasting:4.59, sam:0.67, mam:3.92, stunting:27.86, sev_stunted:5.47, uw:15.19, sev_uw:2.12 },
     Jul: { n:58623, wasting:4.85, sam:0.73, mam:4.12, stunting:27.1, sev_stunted:5.05, uw:16.32, sev_uw:2.37 },
   },
-  Kendrapara: {
+  Kendrapada: {
     Feb: { n:80103, wasting:1.99, sam:0.57, mam:1.42, stunting:10.93, sev_stunted:2.8, uw:4.54, sev_uw:0.7 },
     Mar: { n:79669, wasting:1.88, sam:0.54, mam:1.34, stunting:8.21, sev_stunted:1.95, uw:3.59, sev_uw:0.6 },
     Apr: { n:78760, wasting:1.89, sam:0.51, mam:1.38, stunting:9.48, sev_stunted:2.12, uw:4.06, sev_uw:0.7 },
@@ -668,7 +668,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:112120, wasting:4.01, sam:0.35, mam:3.66, stunting:20.1, sev_stunted:4.07, uw:14.27, sev_uw:1.99 },
     Jul: { n:112469, wasting:3.79, sam:0.32, mam:3.47, stunting:21.17, sev_stunted:3.62, uw:15.33, sev_uw:1.88 },
   },
-  Nayagarh: {
+  Nayagada: {
     Feb: { n:50898, wasting:2.1, sam:0.35, mam:1.76, stunting:27.41, sev_stunted:10.05, uw:9.23, sev_uw:1.23 },
     Mar: { n:50719, wasting:2.18, sam:0.36, mam:1.82, stunting:25.53, sev_stunted:8.66, uw:8.76, sev_uw:1.17 },
     Apr: { n:49869, wasting:2.48, sam:0.41, mam:2.07, stunting:24.55, sev_stunted:7.79, uw:8.64, sev_uw:1.18 },
@@ -716,7 +716,7 @@ export const ptDistrictTrend: Record<string, Record<PTMonth, PTMonthPoint>> = {
     Jun: { n:37201, wasting:4.62, sam:0.97, mam:3.65, stunting:22.43, sev_stunted:4.94, uw:12.44, sev_uw:1.79 },
     Jul: { n:37207, wasting:5.47, sam:1.06, mam:4.42, stunting:22.49, sev_stunted:4.56, uw:14.48, sev_uw:2.16 },
   },
-  Sundargarh: {
+  Sundaragada: {
     Feb: { n:108785, wasting:3.32, sam:0.6, mam:2.72, stunting:27.62, sev_stunted:8.28, uw:13.03, sev_uw:1.82 },
     Mar: { n:108291, wasting:3.11, sam:0.58, mam:2.53, stunting:27.27, sev_stunted:8.19, uw:12.88, sev_uw:1.73 },
     Apr: { n:107643, wasting:3.27, sam:0.57, mam:2.7, stunting:28.77, sev_stunted:8.51, uw:14.18, sev_uw:1.85 },
@@ -736,72 +736,72 @@ export type DistrictDQData = {
   copy_pct: number; mech_inc_pct: number; z_trans_pct: number; borderline_pct: number;
 };
 export const districtDQData: Record<string, DistrictDQData> = {
-  Angul:         { awcs: 1690, avg_score: 3.89, red_pct: 1.8,  green_pct: 1.2, copy_pct: 44.8, mech_inc_pct: 55.3, z_trans_pct: 30.2, borderline_pct: 85.6 },
+  Anugola:         { awcs: 1690, avg_score: 3.89, red_pct: 1.8,  green_pct: 1.2, copy_pct: 44.8, mech_inc_pct: 55.3, z_trans_pct: 30.2, borderline_pct: 85.6 },
   Balangir:      { awcs: 2771, avg_score: 4.14, red_pct: 2.9,  green_pct: 0.7, copy_pct: 45.0, mech_inc_pct: 44.3, z_trans_pct: 26.0, borderline_pct: 94.2 },
-  Balasore:      { awcs: 4215, avg_score: 3.96, red_pct: 2.9,  green_pct: 1.5, copy_pct: 46.3, mech_inc_pct: 49.6, z_trans_pct: 41.7, borderline_pct: 83.1 },
-  Bargarh:       { awcs: 2914, avg_score: 4.03, red_pct: 1.2,  green_pct: 1.5, copy_pct: 56.5, mech_inc_pct: 53.5, z_trans_pct: 21.0, borderline_pct: 84.7 },
+  Baleshwar:      { awcs: 4215, avg_score: 3.96, red_pct: 2.9,  green_pct: 1.5, copy_pct: 46.3, mech_inc_pct: 49.6, z_trans_pct: 41.7, borderline_pct: 83.1 },
+  Baragada:       { awcs: 2914, avg_score: 4.03, red_pct: 1.2,  green_pct: 1.5, copy_pct: 56.5, mech_inc_pct: 53.5, z_trans_pct: 21.0, borderline_pct: 84.7 },
   Bhadrak:       { awcs: 2430, avg_score: 3.77, red_pct: 1.9,  green_pct: 1.8, copy_pct: 49.5, mech_inc_pct: 56.6, z_trans_pct: 22.1, borderline_pct: 82.1 },
   Boudh:         { awcs: 728,  avg_score: 3.94, red_pct: 1.9,  green_pct: 1.5, copy_pct: 52.9, mech_inc_pct: 44.4, z_trans_pct: 32.1, borderline_pct: 87.4 },
-  Cuttack:       { awcs: 3334, avg_score: 3.06, red_pct: 0.7,  green_pct: 4.6, copy_pct: 33.9, mech_inc_pct: 52.6, z_trans_pct: 15.6, borderline_pct: 80.5 },
-  Deogarh:       { awcs: 801,  avg_score: 4.07, red_pct: 1.2,  green_pct: 0.5, copy_pct: 37.7, mech_inc_pct: 46.1, z_trans_pct: 31.3, borderline_pct: 95.9 },
+  Kataka:       { awcs: 3334, avg_score: 3.06, red_pct: 0.7,  green_pct: 4.6, copy_pct: 33.9, mech_inc_pct: 52.6, z_trans_pct: 15.6, borderline_pct: 80.5 },
+  Debagada:       { awcs: 801,  avg_score: 4.07, red_pct: 1.2,  green_pct: 0.5, copy_pct: 37.7, mech_inc_pct: 46.1, z_trans_pct: 31.3, borderline_pct: 95.9 },
   Dhenkanal:     { awcs: 2222, avg_score: 3.60, red_pct: 1.6,  green_pct: 2.4, copy_pct: 47.7, mech_inc_pct: 53.7, z_trans_pct: 31.7, borderline_pct: 78.5 },
   Gajapati:      { awcs: 2432, avg_score: 4.44, red_pct: 4.7,  green_pct: 0.6, copy_pct: 54.5, mech_inc_pct: 52.0, z_trans_pct: 51.9, borderline_pct: 86.7 },
   Ganjam:        { awcs: 5161, avg_score: 3.54, red_pct: 2.3,  green_pct: 4.3, copy_pct: 47.2, mech_inc_pct: 61.4, z_trans_pct: 33.6, borderline_pct: 63.0 },
-  Jagatsinghpur: { awcs: 1816, avg_score: 3.06, red_pct: 0.7,  green_pct: 5.8, copy_pct: 43.1, mech_inc_pct: 57.2, z_trans_pct: 21.0, borderline_pct: 68.9 },
+  Jagatsinghapur: { awcs: 1816, avg_score: 3.06, red_pct: 0.7,  green_pct: 5.8, copy_pct: 43.1, mech_inc_pct: 57.2, z_trans_pct: 21.0, borderline_pct: 68.9 },
   Jajpur:        { awcs: 2827, avg_score: 3.46, red_pct: 1.4,  green_pct: 3.6, copy_pct: 41.6, mech_inc_pct: 54.0, z_trans_pct: 25.3, borderline_pct: 78.1 },
   Jharsuguda:    { awcs: 967,  avg_score: 4.18, red_pct: 2.4,  green_pct: 0.3, copy_pct: 51.4, mech_inc_pct: 48.8, z_trans_pct: 35.3, borderline_pct: 92.2 },
   Kalahandi:     { awcs: 2378, avg_score: 4.29, red_pct: 3.7,  green_pct: 0.9, copy_pct: 48.9, mech_inc_pct: 58.2, z_trans_pct: 39.3, borderline_pct: 88.4 },
-  Kandhamal:     { awcs: 2197, avg_score: 3.74, red_pct: 1.7,  green_pct: 0.5, copy_pct: 41.1, mech_inc_pct: 39.7, z_trans_pct: 33.8, borderline_pct: 93.0 },
-  Kendrapara:    { awcs: 2145, avg_score: 3.58, red_pct: 2.0,  green_pct: 2.8, copy_pct: 52.5, mech_inc_pct: 51.0, z_trans_pct: 29.7, borderline_pct: 77.0 },
+  Kandhamala:     { awcs: 2197, avg_score: 3.74, red_pct: 1.7,  green_pct: 0.5, copy_pct: 41.1, mech_inc_pct: 39.7, z_trans_pct: 33.8, borderline_pct: 93.0 },
+  Kendrapada:    { awcs: 2145, avg_score: 3.58, red_pct: 2.0,  green_pct: 2.8, copy_pct: 52.5, mech_inc_pct: 51.0, z_trans_pct: 29.7, borderline_pct: 77.0 },
   Kendujhar:     { awcs: 3355, avg_score: 4.25, red_pct: 2.9,  green_pct: 0.9, copy_pct: 50.4, mech_inc_pct: 44.8, z_trans_pct: 34.7, borderline_pct: 92.0 },
   Khordha:       { awcs: 2554, avg_score: 3.50, red_pct: 1.1,  green_pct: 2.9, copy_pct: 47.1, mech_inc_pct: 54.2, z_trans_pct: 22.3, borderline_pct: 79.5 },
   Koraput:       { awcs: 3397, avg_score: 4.48, red_pct: 2.8,  green_pct: 0.3, copy_pct: 57.8, mech_inc_pct: 54.0, z_trans_pct: 28.2, borderline_pct: 94.2 },
   Malkangiri:    { awcs: 1325, avg_score: 4.27, red_pct: 3.1,  green_pct: 0.4, copy_pct: 40.4, mech_inc_pct: 45.2, z_trans_pct: 46.6, borderline_pct: 97.0 },
   Mayurbhanj:    { awcs: 5150, avg_score: 4.05, red_pct: 1.6,  green_pct: 0.3, copy_pct: 36.0, mech_inc_pct: 44.0, z_trans_pct: 25.9, borderline_pct: 97.9 },
   Nabarangpur:   { awcs: 2331, avg_score: 4.24, red_pct: 2.5,  green_pct: 0.0, copy_pct: 39.6, mech_inc_pct: 44.8, z_trans_pct: 25.2, borderline_pct: 97.6 },
-  Nayagarh:      { awcs: 1584, avg_score: 3.51, red_pct: 1.6,  green_pct: 2.0, copy_pct: 47.0, mech_inc_pct: 52.0, z_trans_pct: 31.8, borderline_pct: 82.6 },
+  Nayagada:      { awcs: 1584, avg_score: 3.51, red_pct: 1.6,  green_pct: 2.0, copy_pct: 47.0, mech_inc_pct: 52.0, z_trans_pct: 31.8, borderline_pct: 82.6 },
   Nuapada:       { awcs: 1407, avg_score: 4.32, red_pct: 2.3,  green_pct: 0.4, copy_pct: 56.4, mech_inc_pct: 52.0, z_trans_pct: 26.2, borderline_pct: 96.2 },
   Puri:          { awcs: 2599, avg_score: 3.27, red_pct: 0.7,  green_pct: 3.0, copy_pct: 43.6, mech_inc_pct: 51.7, z_trans_pct: 18.3, borderline_pct: 80.8 },
   Rayagada:      { awcs: 2087, avg_score: 4.40, red_pct: 3.3,  green_pct: 1.0, copy_pct: 54.4, mech_inc_pct: 54.8, z_trans_pct: 42.9, borderline_pct: 89.1 },
   Sambalpur:     { awcs: 1886, avg_score: 4.00, red_pct: 2.0,  green_pct: 0.7, copy_pct: 38.9, mech_inc_pct: 47.6, z_trans_pct: 30.8, borderline_pct: 93.9 },
   Subarnapur:    { awcs: 1556, avg_score: 4.26, red_pct: 2.6,  green_pct: 0.3, copy_pct: 51.4, mech_inc_pct: 51.6, z_trans_pct: 39.1, borderline_pct: 92.0 },
-  Sundargarh:    { awcs: 3920, avg_score: 4.06, red_pct: 1.5,  green_pct: 0.4, copy_pct: 46.3, mech_inc_pct: 47.7, z_trans_pct: 26.6, borderline_pct: 95.3 },
+  Sundaragada:    { awcs: 3920, avg_score: 4.06, red_pct: 1.5,  green_pct: 0.4, copy_pct: 46.3, mech_inc_pct: 47.7, z_trans_pct: 26.6, borderline_pct: 95.3 },
 };
 
 // ── AWC DQ score distribution per district ───────────────────────────────────
 // Index 0..10 = AWCs with exactly that many flags; index 11 = AWCs with ≥11 flags
 // Source: validata analysis · zero_sam_mam_uw_awcs_jul2026.xlsx Master Sheet
 export const districtDQScoreDist: Record<string, number[]> = {
-  Angul:         [21, 84, 239, 372, 394, 301, 179, 69, 23, 5, 2, 0],
+  Anugola:         [21, 84, 239, 372, 394, 301, 179, 69, 23, 5, 2, 0],
   Balangir:      [20, 63, 293, 664, 687, 486, 362, 116, 58, 16, 5, 0],
-  Balasore:      [64, 218, 586, 928, 906, 703, 460, 225, 92, 28, 3, 1],
-  Bargarh:       [44, 129, 303, 608, 712, 567, 404, 111, 30, 3, 2, 0],
+  Baleshwar:      [64, 218, 586, 928, 906, 703, 460, 225, 92, 28, 3, 1],
+  Baragada:       [44, 129, 303, 608, 712, 567, 404, 111, 30, 3, 2, 0],
   Bhadrak:       [43, 171, 361, 516, 555, 392, 260, 86, 37, 5, 3, 0],
   Boudh:         [11, 37, 92, 158, 159, 153, 71, 32, 10, 3, 1, 0],
-  Cuttack:       [154, 459, 728, 746, 596, 369, 193, 65, 18, 3, 2, 0],
-  Deogarh:       [4, 15, 87, 195, 204, 161, 86, 38, 9, 0, 1, 0],
+  Kataka:       [154, 459, 728, 746, 596, 369, 193, 65, 18, 3, 2, 0],
+  Debagada:       [4, 15, 87, 195, 204, 161, 86, 38, 9, 0, 1, 0],
   Dhenkanal:     [53, 212, 353, 486, 450, 345, 199, 88, 29, 4, 2, 0],
   Gajapati:      [14, 74, 218, 454, 541, 485, 334, 196, 77, 36, 1, 1],
   Ganjam:        [221, 548, 844, 1028, 937, 778, 468, 219, 99, 18, 0, 0],
-  Jagatsinghpur: [106, 239, 368, 416, 324, 213, 97, 39, 11, 1, 1, 0],
+  Jagatsinghapur: [106, 239, 368, 416, 324, 213, 97, 39, 11, 1, 1, 0],
   Jajpur:        [102, 227, 523, 642, 581, 410, 227, 75, 34, 5, 0, 0],
   Jharsuguda:    [3, 36, 109, 187, 240, 190, 125, 53, 18, 2, 3, 0],
   Kalahandi:     [22, 76, 247, 463, 538, 465, 316, 162, 64, 22, 2, 0],
-  Kandhamal:     [11, 87, 338, 626, 533, 321, 167, 76, 26, 9, 2, 0],
-  Kendrapara:    [61, 186, 388, 449, 404, 340, 204, 70, 31, 11, 0, 0],
+  Kandhamala:     [11, 87, 338, 626, 533, 321, 167, 76, 26, 9, 2, 0],
+  Kendrapada:    [61, 186, 388, 449, 404, 340, 204, 70, 31, 11, 0, 0],
   Kendujhar:     [30, 92, 274, 714, 863, 655, 447, 182, 76, 16, 5, 0],
   Khordha:       [74, 237, 448, 582, 495, 373, 226, 91, 20, 6, 1, 0],
   Koraput:       [10, 57, 261, 613, 802, 786, 529, 242, 79, 15, 2, 0],
   Malkangiri:    [5, 23, 110, 305, 328, 292, 153, 67, 29, 11, 0, 1],
   Mayurbhanj:    [15, 79, 465, 1520, 1284, 956, 545, 205, 65, 9, 5, 1],
   Nabarangpur:   [1, 20, 142, 654, 624, 446, 287, 98, 49, 6, 3, 0],
-  Nayagarh:      [31, 146, 301, 354, 305, 246, 125, 50, 21, 4, 0, 0],
+  Nayagada:      [31, 146, 301, 354, 305, 246, 125, 50, 21, 4, 0, 0],
   Nuapada:       [6, 34, 142, 258, 339, 293, 216, 85, 25, 7, 1, 0],
   Puri:          [79, 257, 538, 627, 532, 324, 177, 46, 18, 0, 0, 0],
   Rayagada:      [21, 53, 163, 368, 514, 458, 290, 151, 55, 11, 2, 0],
   Sambalpur:     [14, 55, 221, 489, 442, 351, 184, 91, 29, 8, 1, 0],
   Subarnapur:    [5, 32, 149, 339, 391, 308, 200, 90, 33, 7, 1, 0],
-  Sundargarh:    [14, 92, 397, 1007, 992, 763, 429, 168, 47, 8, 2, 0],
+  Sundaragada:    [14, 92, 397, 1007, 992, 763, 429, 168, 47, 8, 2, 0],
 };
 
 export function rankDistricts(kind: LayerKind, key: string, ascendingBetter = false) {
@@ -816,36 +816,36 @@ export function rankDistricts(kind: LayerKind, key: string, ascendingBetter = fa
 // Source: NFHS-6 (2023-24) district fact sheets + dq_bin_analysis_odisha_2026-09-18.xlsx
 // wasting = NFHS-6 SAM% + NFHS-6 MAM% (WHZ < -2); sam = WHZ < -3 only (no MUAC/oedema)
 export const districtNFHS6Data: Record<string, { stunting: number; wasting: number; underweight: number; sam: number }> = {
-  Angul:         { stunting: 27.0, wasting: 19.7, underweight: 28.9, sam: 6.0  },
+  Anugola:         { stunting: 27.0, wasting: 19.7, underweight: 28.9, sam: 6.0  },
   Balangir:      { stunting: 36.4, wasting: 25.3, underweight: 36.0, sam: 5.2  },
-  Balasore:      { stunting: 26.0, wasting: 23.8, underweight: 33.7, sam: 5.0  },
-  Bargarh:       { stunting: 34.6, wasting: 20.6, underweight: 37.4, sam: 5.0  },
+  Baleshwar:      { stunting: 26.0, wasting: 23.8, underweight: 33.7, sam: 5.0  },
+  Baragada:       { stunting: 34.6, wasting: 20.6, underweight: 37.4, sam: 5.0  },
   Bhadrak:       { stunting: 19.1, wasting: 23.8, underweight: 29.1, sam: 2.6  },
   Boudh:         { stunting: 32.4, wasting: 17.3, underweight: 30.9, sam: 3.7  },
-  Cuttack:       { stunting: 17.6, wasting: 21.5, underweight: 20.6, sam: 6.1  },
-  Deogarh:       { stunting: 31.8, wasting: 17.9, underweight: 32.6, sam: 3.9  },
+  Kataka:       { stunting: 17.6, wasting: 21.5, underweight: 20.6, sam: 6.1  },
+  Debagada:       { stunting: 31.8, wasting: 17.9, underweight: 32.6, sam: 3.9  },
   Dhenkanal:     { stunting: 22.8, wasting: 21.0, underweight: 30.3, sam: 3.7  },
   Gajapati:      { stunting: 35.3, wasting: 25.3, underweight: 42.5, sam: 9.1  },
   Ganjam:        { stunting: 20.2, wasting: 13.0, underweight: 16.3, sam: 3.5  },
-  Jagatsinghpur: { stunting: 14.7, wasting: 19.5, underweight: 17.3, sam: 2.5  },
+  Jagatsinghapur: { stunting: 14.7, wasting: 19.5, underweight: 17.3, sam: 2.5  },
   Jajpur:        { stunting: 20.4, wasting: 20.3, underweight: 23.4, sam: 6.3  },
   Jharsuguda:    { stunting: 24.0, wasting: 19.7, underweight: 35.0, sam: 6.1  },
   Kalahandi:     { stunting: 26.9, wasting: 25.2, underweight: 35.9, sam: 6.2  },
-  Kandhamal:     { stunting: 34.8, wasting: 15.8, underweight: 33.8, sam: 3.1  },
-  Kendrapara:    { stunting: 22.8, wasting: 16.0, underweight: 20.0, sam: 2.8  },
+  Kandhamala:     { stunting: 34.8, wasting: 15.8, underweight: 33.8, sam: 3.1  },
+  Kendrapada:    { stunting: 22.8, wasting: 16.0, underweight: 20.0, sam: 2.8  },
   Kendujhar:     { stunting: 35.2, wasting: 31.6, underweight: 45.2, sam: 10.0 },
   Khordha:       { stunting: 13.9, wasting: 18.8, underweight: 16.5, sam: 4.9  },
   Koraput:       { stunting: 38.7, wasting: 24.6, underweight: 42.7, sam: 7.0  },
   Malkangiri:    { stunting: 37.3, wasting: 30.7, underweight: 46.1, sam: 9.6  },
   Mayurbhanj:    { stunting: 26.5, wasting: 33.0, underweight: 44.3, sam: 10.8 },
   Nabarangpur:   { stunting: 32.1, wasting: 24.2, underweight: 38.9, sam: 5.6  },
-  Nayagarh:      { stunting: 16.6, wasting: 12.8, underweight: 17.4, sam: 2.9  },
+  Nayagada:      { stunting: 16.6, wasting: 12.8, underweight: 17.4, sam: 2.9  },
   Nuapada:       { stunting: 27.5, wasting: 19.2, underweight: 32.5, sam: 5.3  },
   Puri:          { stunting: 9.3,  wasting: 12.7, underweight: 15.2, sam: 3.1  },
   Rayagada:      { stunting: 47.2, wasting: 20.3, underweight: 46.8, sam: 7.5  },
   Sambalpur:     { stunting: 24.3, wasting: 23.5, underweight: 32.7, sam: 7.6  },
   Subarnapur:    { stunting: 28.5, wasting: 20.4, underweight: 30.5, sam: 4.3  },
-  Sundargarh:    { stunting: 27.6, wasting: 25.0, underweight: 32.3, sam: 6.3  },
+  Sundaragada:    { stunting: 27.6, wasting: 25.0, underweight: 32.3, sam: 6.3  },
 };
 
 /** % of AWCs per district reporting zero SAM/MAM/UW children in Jul 2026.
@@ -853,13 +853,13 @@ export const districtNFHS6Data: Record<string, { stunting: number; wasting: numb
  * Interpretation: high % in coastal/developed districts → likely reporting suppression.
  * Low % in KBK belt → genuine malnutrition burden being reported honestly. */
 export const districtZeroSAMPct: Record<string, number> = {
-  Angul: 29.8, Balangir: 26.6, Balasore: 23.7, Bargarh: 30.4, Bhadrak: 28.4,
-  Boudh: 18.0, Cuttack: 44.9, Deogarh: 17.1, Dhenkanal: 42.8, Gajapati: 20.0,
-  Ganjam: 48.0, Jagatsinghpur: 36.0, Jajpur: 33.5, Jharsuguda: 19.3,
-  Kalahandi: 14.5, Kandhamal: 11.3, Kendrapara: 44.6, Kendujhar: 14.5,
+  Anugola: 29.8, Balangir: 26.6, Baleshwar: 23.7, Baragada: 30.4, Bhadrak: 28.4,
+  Boudh: 18.0, Kataka: 44.9, Debagada: 17.1, Dhenkanal: 42.8, Gajapati: 20.0,
+  Ganjam: 48.0, Jagatsinghapur: 36.0, Jajpur: 33.5, Jharsuguda: 19.3,
+  Kalahandi: 14.5, Kandhamala: 11.3, Kendrapada: 44.6, Kendujhar: 14.5,
   Khordha: 27.3, Koraput: 14.2, Malkangiri: 4.4, Mayurbhanj: 8.7,
-  Nabarangpur: 6.7, Nayagarh: 23.5, Nuapada: 30.4, Puri: 54.0,
-  Rayagada: 9.2, Sambalpur: 17.1, Subarnapur: 18.0, Sundargarh: 15.1,
+  Nabarangpur: 6.7, Nayagada: 23.5, Nuapada: 30.4, Puri: 54.0,
+  Rayagada: 9.2, Sambalpur: 17.1, Subarnapur: 18.0, Sundaragada: 15.1,
 };
 
 // ── 14-check DQ rates per district ──────────────────────────────────────────
@@ -874,43 +874,43 @@ export type DistrictDQChecks = {
   blanket_wt: number; blanket_ht: number;
 };
 export const districtDQChecks: Record<string, DistrictDQChecks> = {
-  Angul: { bl_wasting:37.1, bl_stunting:76.4, bl_uw:67.0, copy_wt:16.2, copy_ht:41.7, copy_both:9.4, inc_ht:6.2, inc_wt:13.6, inc_both:1.3, trans_haz:11.3, trans_waz:7.0, trans_whz:28.0, blanket_wt:44.9, blanket_ht:28.4 },
+  Anugola: { bl_wasting:37.1, bl_stunting:76.4, bl_uw:67.0, copy_wt:16.2, copy_ht:41.7, copy_both:9.4, inc_ht:6.2, inc_wt:13.6, inc_both:1.3, trans_haz:11.3, trans_waz:7.0, trans_whz:28.0, blanket_wt:44.9, blanket_ht:28.4 },
   Balangir: { bl_wasting:54.8, bl_stunting:85.8, bl_uw:85.9, copy_wt:23.4, copy_ht:40.1, copy_both:12.5, inc_ht:3.8, inc_wt:8.4, inc_both:0.9, trans_haz:11.8, trans_waz:6.5, trans_whz:23.0, blanket_wt:36.0, blanket_ht:20.9 },
-  Balasore: { bl_wasting:34.1, bl_stunting:64.3, bl_uw:66.1, copy_wt:18.0, copy_ht:44.1, copy_both:11.3, inc_ht:6.8, inc_wt:10.4, inc_both:1.8, trans_haz:19.7, trans_waz:13.4, trans_whz:38.1, blanket_wt:38.5, blanket_ht:29.1 },
-  Bargarh: { bl_wasting:45.2, bl_stunting:77.1, bl_uw:72.1, copy_wt:22.8, copy_ht:53.2, copy_both:13.9, inc_ht:5.3, inc_wt:12.9, inc_both:1.1, trans_haz:5.5, trans_waz:5.5, trans_whz:19.5, blanket_wt:45.0, blanket_ht:23.7 },
+  Baleshwar: { bl_wasting:34.1, bl_stunting:64.3, bl_uw:66.1, copy_wt:18.0, copy_ht:44.1, copy_both:11.3, inc_ht:6.8, inc_wt:10.4, inc_both:1.8, trans_haz:19.7, trans_waz:13.4, trans_whz:38.1, blanket_wt:38.5, blanket_ht:29.1 },
+  Baragada: { bl_wasting:45.2, bl_stunting:77.1, bl_uw:72.1, copy_wt:22.8, copy_ht:53.2, copy_both:13.9, inc_ht:5.3, inc_wt:12.9, inc_both:1.1, trans_haz:5.5, trans_waz:5.5, trans_whz:19.5, blanket_wt:45.0, blanket_ht:23.7 },
   Bhadrak: { bl_wasting:33.1, bl_stunting:69.7, bl_uw:60.4, copy_wt:22.2, copy_ht:46.4, copy_both:13.7, inc_ht:8.4, inc_wt:11.1, inc_both:2.1, trans_haz:6.3, trans_waz:5.7, trans_whz:20.6, blanket_wt:42.2, blanket_ht:35.0 },
   Boudh: { bl_wasting:32.5, bl_stunting:78.8, bl_uw:74.0, copy_wt:21.5, copy_ht:49.5, copy_both:13.6, inc_ht:5.1, inc_wt:13.1, inc_both:1.0, trans_haz:10.6, trans_waz:7.4, trans_whz:29.6, blanket_wt:37.6, blanket_ht:19.7 },
-  Cuttack: { bl_wasting:21.5, bl_stunting:71.1, bl_uw:49.2, copy_wt:12.2, copy_ht:31.4, copy_both:6.8, inc_ht:8.4, inc_wt:13.1, inc_both:1.4, trans_haz:4.7, trans_waz:3.1, trans_whz:14.3, blanket_wt:39.9, blanket_ht:28.6 },
-  Deogarh: { bl_wasting:58.1, bl_stunting:82.1, bl_uw:89.0, copy_wt:17.4, copy_ht:34.1, copy_both:8.6, inc_ht:4.1, inc_wt:9.8, inc_both:0.6, trans_haz:7.9, trans_waz:5.0, trans_whz:30.5, blanket_wt:38.6, blanket_ht:21.5 },
+  Kataka: { bl_wasting:21.5, bl_stunting:71.1, bl_uw:49.2, copy_wt:12.2, copy_ht:31.4, copy_both:6.8, inc_ht:8.4, inc_wt:13.1, inc_both:1.4, trans_haz:4.7, trans_waz:3.1, trans_whz:14.3, blanket_wt:39.9, blanket_ht:28.6 },
+  Debagada: { bl_wasting:58.1, bl_stunting:82.1, bl_uw:89.0, copy_wt:17.4, copy_ht:34.1, copy_both:8.6, inc_ht:4.1, inc_wt:9.8, inc_both:0.6, trans_haz:7.9, trans_waz:5.0, trans_whz:30.5, blanket_wt:38.6, blanket_ht:21.5 },
   Dhenkanal: { bl_wasting:17.4, bl_stunting:64.9, bl_uw:49.8, copy_wt:21.3, copy_ht:43.8, copy_both:13.5, inc_ht:7.4, inc_wt:12.9, inc_both:1.2, trans_haz:17.2, trans_waz:10.7, trans_whz:27.9, blanket_wt:40.4, blanket_ht:31.6 },
   Gajapati: { bl_wasting:41.1, bl_stunting:71.4, bl_uw:69.5, copy_wt:20.0, copy_ht:52.1, copy_both:13.4, inc_ht:3.8, inc_wt:11.1, inc_both:1.4, trans_haz:22.4, trans_waz:22.5, trans_whz:48.3, blanket_wt:47.1, blanket_ht:20.2 },
   Ganjam: { bl_wasting:11.4, bl_stunting:50.7, bl_uw:37.4, copy_wt:16.5, copy_ht:45.5, copy_both:11.5, inc_ht:9.5, inc_wt:21.0, inc_both:3.4, trans_haz:21.4, trans_waz:11.7, trans_whz:29.0, blanket_wt:54.2, blanket_ht:30.6 },
-  Jagatsinghpur: { bl_wasting:19.1, bl_stunting:56.6, bl_uw:38.7, copy_wt:15.5, copy_ht:40.3, copy_both:9.0, inc_ht:8.7, inc_wt:11.5, inc_both:0.8, trans_haz:5.8, trans_waz:4.8, trans_whz:19.7, blanket_wt:40.9, blanket_ht:34.2 },
+  Jagatsinghapur: { bl_wasting:19.1, bl_stunting:56.6, bl_uw:38.7, copy_wt:15.5, copy_ht:40.3, copy_both:9.0, inc_ht:8.7, inc_wt:11.5, inc_both:0.8, trans_haz:5.8, trans_waz:4.8, trans_whz:19.7, blanket_wt:40.9, blanket_ht:34.2 },
   Jajpur: { bl_wasting:25.1, bl_stunting:65.6, bl_uw:51.7, copy_wt:16.9, copy_ht:39.1, copy_both:10.5, inc_ht:8.0, inc_wt:15.7, inc_both:2.0, trans_haz:9.8, trans_waz:6.7, trans_whz:22.6, blanket_wt:44.0, blanket_ht:28.3 },
   Jharsuguda: { bl_wasting:46.1, bl_stunting:73.2, bl_uw:81.4, copy_wt:20.7, copy_ht:48.1, copy_both:11.5, inc_ht:5.8, inc_wt:11.1, inc_both:0.9, trans_haz:14.5, trans_waz:9.2, trans_whz:32.7, blanket_wt:41.0, blanket_ht:21.8 },
   Kalahandi: { bl_wasting:34.0, bl_stunting:70.4, bl_uw:74.3, copy_wt:17.9, copy_ht:47.0, copy_both:11.6, inc_ht:8.7, inc_wt:17.8, inc_both:2.4, trans_haz:20.2, trans_waz:11.9, trans_whz:36.4, blanket_wt:49.0, blanket_ht:27.4 },
-  Kandhamal: { bl_wasting:46.1, bl_stunting:76.7, bl_uw:83.2, copy_wt:14.2, copy_ht:38.6, copy_both:7.2, inc_ht:3.4, inc_wt:6.5, inc_both:1.0, trans_haz:10.0, trans_waz:5.0, trans_whz:32.4, blanket_wt:32.8, blanket_ht:17.2 },
-  Kendrapara: { bl_wasting:27.9, bl_stunting:67.6, bl_uw:47.9, copy_wt:21.2, copy_ht:49.6, copy_both:12.7, inc_ht:7.4, inc_wt:12.1, inc_both:1.5, trans_haz:7.9, trans_waz:7.9, trans_whz:27.4, blanket_wt:38.0, blanket_ht:29.2 },
+  Kandhamala: { bl_wasting:46.1, bl_stunting:76.7, bl_uw:83.2, copy_wt:14.2, copy_ht:38.6, copy_both:7.2, inc_ht:3.4, inc_wt:6.5, inc_both:1.0, trans_haz:10.0, trans_waz:5.0, trans_whz:32.4, blanket_wt:32.8, blanket_ht:17.2 },
+  Kendrapada: { bl_wasting:27.9, bl_stunting:67.6, bl_uw:47.9, copy_wt:21.2, copy_ht:49.6, copy_both:12.7, inc_ht:7.4, inc_wt:12.1, inc_both:1.5, trans_haz:7.9, trans_waz:7.9, trans_whz:27.4, blanket_wt:38.0, blanket_ht:29.2 },
   Kendujhar: { bl_wasting:59.3, bl_stunting:76.1, bl_uw:80.4, copy_wt:22.5, copy_ht:47.2, copy_both:12.9, inc_ht:5.0, inc_wt:8.5, inc_both:0.9, trans_haz:14.2, trans_waz:8.1, trans_whz:32.3, blanket_wt:34.8, blanket_ht:23.1 },
   Khordha: { bl_wasting:25.9, bl_stunting:66.0, bl_uw:54.4, copy_wt:16.4, copy_ht:45.2, copy_both:10.5, inc_ht:10.3, inc_wt:15.3, inc_both:1.7, trans_haz:6.4, trans_waz:4.9, trans_whz:21.0, blanket_wt:38.3, blanket_ht:34.0 },
   Koraput: { bl_wasting:55.0, bl_stunting:70.4, bl_uw:86.1, copy_wt:27.0, copy_ht:54.5, copy_both:17.6, inc_ht:5.7, inc_wt:14.4, inc_both:1.3, trans_haz:11.2, trans_waz:7.0, trans_whz:25.3, blanket_wt:46.0, blanket_ht:26.3 },
   Malkangiri: { bl_wasting:62.8, bl_stunting:77.4, bl_uw:90.7, copy_wt:11.6, copy_ht:39.0, copy_both:5.7, inc_ht:2.9, inc_wt:9.2, inc_both:0.8, trans_haz:13.4, trans_waz:10.6, trans_whz:45.2, blanket_wt:38.2, blanket_ht:19.8 },
   Mayurbhanj: { bl_wasting:69.9, bl_stunting:82.4, bl_uw:92.4, copy_wt:13.8, copy_ht:33.7, copy_both:6.6, inc_ht:4.8, inc_wt:7.0, inc_both:0.8, trans_haz:6.7, trans_waz:4.1, trans_whz:24.8, blanket_wt:34.7, blanket_ht:23.3 },
   Nabarangpur: { bl_wasting:71.7, bl_stunting:86.0, bl_uw:92.7, copy_wt:17.4, copy_ht:36.3, copy_both:8.7, inc_ht:4.9, inc_wt:8.3, inc_both:0.9, trans_haz:9.6, trans_waz:5.2, trans_whz:23.2, blanket_wt:36.8, blanket_ht:22.2 },
-  Nayagarh: { bl_wasting:18.9, bl_stunting:65.4, bl_uw:61.3, copy_wt:14.9, copy_ht:44.8, copy_both:9.0, inc_ht:8.0, inc_wt:11.1, inc_both:1.1, trans_haz:11.9, trans_waz:6.2, trans_whz:30.6, blanket_wt:37.7, blanket_ht:30.8 },
+  Nayagada: { bl_wasting:18.9, bl_stunting:65.4, bl_uw:61.3, copy_wt:14.9, copy_ht:44.8, copy_both:9.0, inc_ht:8.0, inc_wt:11.1, inc_both:1.1, trans_haz:11.9, trans_waz:6.2, trans_whz:30.6, blanket_wt:37.7, blanket_ht:30.8 },
   Nuapada: { bl_wasting:47.9, bl_stunting:81.7, bl_uw:88.3, copy_wt:20.8, copy_ht:54.2, copy_both:14.1, inc_ht:4.6, inc_wt:12.4, inc_both:0.9, trans_haz:12.1, trans_waz:4.3, trans_whz:24.2, blanket_wt:42.6, blanket_ht:24.2 },
   Puri: { bl_wasting:22.6, bl_stunting:74.6, bl_uw:48.6, copy_wt:18.0, copy_ht:39.8, copy_both:9.8, inc_ht:7.9, inc_wt:11.3, inc_both:1.3, trans_haz:4.8, trans_waz:3.7, trans_whz:16.9, blanket_wt:39.7, blanket_ht:27.8 },
   Rayagada: { bl_wasting:44.5, bl_stunting:71.2, bl_uw:77.6, copy_wt:21.1, copy_ht:51.3, copy_both:13.2, inc_ht:4.7, inc_wt:10.2, inc_both:1.1, trans_haz:15.4, trans_waz:17.4, trans_whz:39.5, blanket_wt:48.6, blanket_ht:24.4 },
   Sambalpur: { bl_wasting:51.9, bl_stunting:79.6, bl_uw:85.4, copy_wt:15.3, copy_ht:35.5, copy_both:7.7, inc_ht:4.6, inc_wt:9.8, inc_both:0.7, trans_haz:14.2, trans_waz:5.5, trans_whz:29.3, blanket_wt:37.7, blanket_ht:22.8 },
   Subarnapur: { bl_wasting:44.9, bl_stunting:77.2, bl_uw:83.8, copy_wt:16.1, copy_ht:49.4, copy_both:9.0, inc_ht:3.9, inc_wt:8.4, inc_both:0.6, trans_haz:17.7, trans_waz:10.5, trans_whz:36.8, blanket_wt:40.6, blanket_ht:26.6 },
-  Sundargarh: { bl_wasting:55.2, bl_stunting:76.4, bl_uw:86.6, copy_wt:19.2, copy_ht:41.4, copy_both:9.5, inc_ht:5.8, inc_wt:11.0, inc_both:1.1, trans_haz:7.4, trans_waz:4.1, trans_whz:25.6, blanket_wt:36.9, blanket_ht:25.6 },
+  Sundaragada: { bl_wasting:55.2, bl_stunting:76.4, bl_uw:86.6, copy_wt:19.2, copy_ht:41.4, copy_both:9.5, inc_ht:5.8, inc_wt:11.0, inc_both:1.1, trans_haz:7.4, trans_waz:4.1, trans_whz:25.6, blanket_wt:36.9, blanket_ht:25.6 },
 };
 
 // ── Project-level PT outcomes (Feb–Jul 2026) ────────────────────────────────
 // Source: OD POSHAN CSVs · 2,028 files · computed per project per month
 export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth, { n: number; wasting: number; stunting: number; uw: number; sam: number }>>>> = {
-  'Angul': {
-    'Angul': { Feb: { n:13030, wasting:2.4, stunting:18.08, uw:8.34, sam:0.5 }, Mar: { n:12937, wasting:2.2, stunting:12.89, uw:6.66, sam:0.4 }, Apr: { n:12759, wasting:2.7, stunting:14.84, uw:8.17, sam:0.6 }, May: { n:12616, wasting:2.6, stunting:13.86, uw:7.49, sam:0.6 }, Jun: { n:12008, wasting:2.4, stunting:13.2, uw:7.57, sam:0.6 }, Jul: { n:11039, wasting:2.7, stunting:10.21, uw:8.76, sam:0.4 } },
+  'Anugola': {
+    'Anugola': { Feb: { n:13030, wasting:2.4, stunting:18.08, uw:8.34, sam:0.5 }, Mar: { n:12937, wasting:2.2, stunting:12.89, uw:6.66, sam:0.4 }, Apr: { n:12759, wasting:2.7, stunting:14.84, uw:8.17, sam:0.6 }, May: { n:12616, wasting:2.6, stunting:13.86, uw:7.49, sam:0.6 }, Jun: { n:12008, wasting:2.4, stunting:13.2, uw:7.57, sam:0.6 }, Jul: { n:11039, wasting:2.7, stunting:10.21, uw:8.76, sam:0.4 } },
     'Athamallik': { Feb: { n:8574, wasting:2.8, stunting:38.59, uw:11.38, sam:0.7 }, Mar: { n:8606, wasting:2.9, stunting:30.51, uw:9.64, sam:0.7 }, Apr: { n:8457, wasting:2.5, stunting:31.48, uw:10.12, sam:0.7 }, May: { n:8426, wasting:3.0, stunting:24.0, uw:7.33, sam:0.8 }, Jun: { n:8373, wasting:3.0, stunting:18.5, uw:6.2, sam:0.8 }, Jul: { n:8177, wasting:1.5, stunting:12.44, uw:5.09, sam:0.3 } },
     'Banarapal': { Feb: { n:12971, wasting:1.8, stunting:17.15, uw:5.22, sam:0.4 }, Mar: { n:12903, wasting:1.7, stunting:13.11, uw:4.08, sam:0.3 }, Apr: { n:12775, wasting:1.7, stunting:9.04, uw:3.58, sam:0.4 }, May: { n:12619, wasting:1.5, stunting:8.19, uw:3.22, sam:0.4 }, Jun: { n:12192, wasting:1.2, stunting:8.37, uw:3.46, sam:0.3 }, Jul: { n:11823, wasting:0.7, stunting:7.5, uw:4.69, sam:0.2 } },
     'Chhendipada': { Feb: { n:10471, wasting:3.0, stunting:20.1, uw:7.12, sam:0.8 }, Mar: { n:10425, wasting:2.4, stunting:9.83, uw:4.02, sam:0.5 }, Apr: { n:10289, wasting:2.2, stunting:10.41, uw:4.41, sam:0.5 }, May: { n:10228, wasting:1.5, stunting:8.79, uw:3.51, sam:0.4 }, Jun: { n:9906, wasting:1.1, stunting:10.03, uw:3.42, sam:0.3 }, Jul: { n:9572, wasting:1.1, stunting:8.13, uw:3.53, sam:0.2 } },
@@ -935,7 +935,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Titilagarh': { Feb: { n:9069, wasting:1.1, stunting:24.3, uw:9.2, sam:0.1 }, Mar: { n:8968, wasting:0.7, stunting:6.31, uw:3.82, sam:0.2 }, Apr: { n:8939, wasting:0.5, stunting:4.92, uw:2.3, sam:0.0 }, May: { n:8814, wasting:0.5, stunting:7.26, uw:2.6, sam:0.0 }, Jun: { n:8317, wasting:0.6, stunting:10.47, uw:3.97, sam:0.1 }, Jul: { n:8703, wasting:2.2, stunting:14.0, uw:6.97, sam:0.4 } },
     'Turekela': { Feb: { n:9236, wasting:1.4, stunting:23.04, uw:10.15, sam:0.1 }, Mar: { n:9148, wasting:1.2, stunting:19.24, uw:8.62, sam:0.1 }, Apr: { n:9044, wasting:1.4, stunting:15.47, uw:8.61, sam:0.1 }, May: { n:9002, wasting:1.4, stunting:7.18, uw:4.77, sam:0.1 }, Jun: { n:9134, wasting:1.4, stunting:9.91, uw:4.82, sam:0.1 }, Jul: { n:9362, wasting:1.5, stunting:11.49, uw:5.93, sam:0.1 } },
   },
-  'Balasore': {
+  'Baleshwar': {
     'Bahanaga': { Feb: { n:7588, wasting:3.6, stunting:30.15, uw:11.86, sam:0.6 }, Mar: { n:7559, wasting:3.7, stunting:25.15, uw:10.27, sam:0.7 }, Apr: { n:7388, wasting:3.3, stunting:22.77, uw:9.37, sam:0.6 }, May: { n:7368, wasting:3.2, stunting:23.36, uw:9.76, sam:0.6 }, Jun: { n:7340, wasting:3.9, stunting:18.5, uw:9.05, sam:0.8 }, Jul: { n:7327, wasting:3.8, stunting:16.83, uw:9.51, sam:0.9 } },
     'Balasore_Municipality': { Feb: { n:6421, wasting:2.5, stunting:20.57, uw:6.95, sam:0.5 }, Mar: { n:6369, wasting:2.6, stunting:15.78, uw:5.32, sam:0.5 }, Apr: { n:6353, wasting:2.6, stunting:14.25, uw:5.51, sam:0.5 }, May: { n:6201, wasting:1.6, stunting:13.51, uw:4.71, sam:0.3 }, Jun: { n:5771, wasting:3.1, stunting:10.95, uw:5.87, sam:0.6 }, Jul: { n:5564, wasting:1.1, stunting:10.69, uw:6.04, sam:0.2 } },
     'Balasore_Sadar_I': { Feb: { n:8317, wasting:4.3, stunting:39.92, uw:15.22, sam:1.0 }, Mar: { n:8364, wasting:4.9, stunting:33.52, uw:13.86, sam:1.0 }, Apr: { n:8247, wasting:4.9, stunting:24.42, uw:11.62, sam:0.9 }, May: { n:8045, wasting:2.5, stunting:16.07, uw:7.33, sam:0.6 }, Jun: { n:8079, wasting:2.0, stunting:7.8, uw:4.36, sam:0.5 }, Jul: { n:8078, wasting:2.4, stunting:10.37, uw:6.66, sam:0.5 } },
@@ -952,7 +952,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Simulia': { Feb: { n:7251, wasting:2.4, stunting:17.93, uw:6.81, sam:0.6 }, Mar: { n:7171, wasting:2.3, stunting:8.73, uw:4.53, sam:0.7 }, Apr: { n:6906, wasting:2.0, stunting:9.67, uw:4.16, sam:0.6 }, May: { n:6880, wasting:1.7, stunting:10.13, uw:4.2, sam:0.5 }, Jun: { n:6883, wasting:2.3, stunting:10.61, uw:5.23, sam:0.7 }, Jul: { n:6817, wasting:2.2, stunting:11.57, uw:7.1, sam:0.5 } },
     'Soro': { Feb: { n:9754, wasting:2.2, stunting:23.99, uw:7.6, sam:0.6 }, Mar: { n:9448, wasting:1.9, stunting:19.45, uw:6.04, sam:0.4 }, Apr: { n:9203, wasting:0.5, stunting:17.29, uw:4.77, sam:0.3 }, May: { n:9101, wasting:0.9, stunting:18.04, uw:5.01, sam:0.3 }, Jun: { n:9300, wasting:1.4, stunting:16.85, uw:5.04, sam:0.5 }, Jul: { n:9411, wasting:1.0, stunting:7.23, uw:3.37, sam:0.4 } },
   },
-  'Bargarh': {
+  'Baragada': {
     'AMBABHONA': { Feb: { n:3232, wasting:3.0, stunting:13.74, uw:7.43, sam:0.8 }, Mar: { n:3218, wasting:2.9, stunting:16.53, uw:8.39, sam:0.8 }, Apr: { n:3206, wasting:2.9, stunting:18.93, uw:8.61, sam:0.7 }, May: { n:3175, wasting:2.6, stunting:20.22, uw:9.32, sam:0.6 }, Jun: { n:3151, wasting:2.2, stunting:19.01, uw:8.09, sam:0.4 }, Jul: { n:3166, wasting:7.5, stunting:22.2, uw:16.84, sam:1.6 } },
     'ATTABIRA': { Feb: { n:7718, wasting:2.2, stunting:15.21, uw:8.19, sam:0.5 }, Mar: { n:7691, wasting:1.7, stunting:12.48, uw:7.02, sam:0.5 }, Apr: { n:7550, wasting:2.0, stunting:13.75, uw:7.77, sam:0.5 }, May: { n:7661, wasting:1.2, stunting:11.3, uw:6.33, sam:0.3 }, Jun: { n:7614, wasting:1.7, stunting:13.87, uw:7.53, sam:0.5 }, Jul: { n:7637, wasting:1.4, stunting:17.49, uw:11.86, sam:0.5 } },
     'BARGARH_RURAL': { Feb: { n:8082, wasting:2.9, stunting:18.93, uw:8.55, sam:0.6 }, Mar: { n:8073, wasting:2.4, stunting:20.74, uw:9.45, sam:0.5 }, Apr: { n:8022, wasting:2.4, stunting:22.39, uw:9.81, sam:0.6 }, May: { n:8098, wasting:2.1, stunting:21.02, uw:8.34, sam:0.6 }, Jun: { n:8027, wasting:1.8, stunting:20.12, uw:8.31, sam:0.4 }, Jul: { n:8019, wasting:2.0, stunting:19.2, uw:8.22, sam:0.4 } },
@@ -982,7 +982,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Harbhanga': { Feb: { n:8579, wasting:2.6, stunting:21.04, uw:9.9, sam:0.4 }, Mar: { n:8570, wasting:2.4, stunting:19.57, uw:8.72, sam:0.2 }, Apr: { n:8521, wasting:2.5, stunting:19.52, uw:9.02, sam:0.3 }, May: { n:8552, wasting:2.4, stunting:18.1, uw:8.91, sam:0.3 }, Jun: { n:8547, wasting:3.1, stunting:18.29, uw:10.21, sam:0.4 }, Jul: { n:8543, wasting:3.4, stunting:18.32, uw:12.81, sam:0.4 } },
     'Kantamal': { Feb: { n:10233, wasting:3.4, stunting:28.02, uw:10.91, sam:0.4 }, Mar: { n:10174, wasting:3.7, stunting:22.43, uw:9.8, sam:0.4 }, Apr: { n:10135, wasting:3.6, stunting:23.62, uw:10.22, sam:0.3 }, May: { n:10123, wasting:3.6, stunting:22.36, uw:9.63, sam:0.3 }, Jun: { n:10151, wasting:3.4, stunting:20.84, uw:8.92, sam:0.2 }, Jul: { n:10114, wasting:2.1, stunting:20.36, uw:9.31, sam:0.2 } },
   },
-  'Cuttack': {
+  'Kataka': {
     'Athagada': { Jun: { n:8576, wasting:0.9, stunting:14.35, uw:5.05, sam:0.2 }, Jul: { n:8475, wasting:1.1, stunting:15.73, uw:7.5, sam:0.2 } },
     'Athagarh': { Feb: { n:8777, wasting:1.0, stunting:17.31, uw:6.94, sam:0.2 }, Mar: { n:8446, wasting:0.8, stunting:15.26, uw:5.78, sam:0.1 }, Apr: { n:8358, wasting:0.5, stunting:15.95, uw:5.42, sam:0.2 }, May: { n:8346, wasting:0.6, stunting:15.07, uw:5.2, sam:0.2 } },
     'Badamba': { Feb: { n:7787, wasting:1.3, stunting:12.25, uw:3.75, sam:0.3 }, Mar: { n:7646, wasting:1.3, stunting:12.65, uw:3.68, sam:0.4 }, Apr: { n:7667, wasting:1.3, stunting:13.88, uw:3.99, sam:0.4 }, May: { n:7621, wasting:0.9, stunting:12.29, uw:3.37, sam:0.3 }, Jun: { n:7510, wasting:0.9, stunting:12.45, uw:3.42, sam:0.3 }, Jul: { n:7589, wasting:0.7, stunting:10.69, uw:3.56, sam:0.1 } },
@@ -1004,7 +1004,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Tangi-Choudwar': { Feb: { n:10811, wasting:1.2, stunting:15.25, uw:5.88, sam:0.2 }, Mar: { n:10730, wasting:1.3, stunting:16.23, uw:5.66, sam:0.3 }, Apr: { n:10490, wasting:0.6, stunting:16.25, uw:5.18, sam:0.2 }, May: { n:10118, wasting:0.8, stunting:14.23, uw:4.84, sam:0.2 }, Jun: { n:10306, wasting:0.5, stunting:15.05, uw:4.64, sam:0.0 }, Jul: { n:10389, wasting:0.5, stunting:15.21, uw:5.31, sam:0.1 } },
     'Tigiria': { Feb: { n:4151, wasting:0.7, stunting:12.79, uw:3.93, sam:0.1 }, Mar: { n:4178, wasting:0.8, stunting:12.54, uw:3.95, sam:0.2 }, Apr: { n:4086, wasting:0.2, stunting:14.73, uw:4.01, sam:0.0 }, May: { n:4093, wasting:0.4, stunting:13.78, uw:3.81, sam:0.0 }, Jun: { n:4091, wasting:0.3, stunting:13.54, uw:3.67, sam:0.0 }, Jul: { n:4055, wasting:0.3, stunting:8.48, uw:2.44, sam:0.0 } },
   },
-  'Deogarh': {
+  'Debagada': {
     'Barkote': { Feb: { n:6349, wasting:5.8, stunting:28.1, uw:15.78, sam:1.1 }, Mar: { n:6339, wasting:6.3, stunting:29.53, uw:16.61, sam:1.5 }, Apr: { n:6257, wasting:6.6, stunting:27.12, uw:15.58, sam:1.2 }, May: { n:6197, wasting:5.2, stunting:24.8, uw:14.83, sam:0.9 }, Jun: { n:6207, wasting:5.4, stunting:20.83, uw:13.19, sam:1.1 }, Jul: { n:6179, wasting:3.8, stunting:19.29, uw:13.22, sam:0.5 } },
     'Reamal': { Feb: { n:6926, wasting:3.5, stunting:26.26, uw:14.12, sam:0.4 }, Mar: { n:6927, wasting:3.3, stunting:27.0, uw:13.73, sam:0.5 }, Apr: { n:6875, wasting:3.9, stunting:26.53, uw:14.53, sam:0.6 }, May: { n:6827, wasting:3.1, stunting:24.12, uw:12.86, sam:0.4 }, Jun: { n:6750, wasting:2.7, stunting:20.37, uw:11.32, sam:0.3 }, Jul: { n:6679, wasting:2.5, stunting:20.96, uw:12.76, sam:0.2 } },
     'Tileibani': { Feb: { n:6083, wasting:2.2, stunting:27.45, uw:11.52, sam:0.3 }, Mar: { n:6054, wasting:2.2, stunting:28.89, uw:11.91, sam:0.2 }, Apr: { n:5978, wasting:3.4, stunting:29.12, uw:13.73, sam:0.7 }, May: { n:5841, wasting:3.1, stunting:26.98, uw:13.27, sam:0.4 }, Jun: { n:5816, wasting:4.2, stunting:26.5, uw:14.86, sam:0.6 }, Jul: { n:5724, wasting:6.3, stunting:26.08, uw:18.33, sam:0.9 } },
@@ -1054,11 +1054,11 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Sanakhemundi': { Feb: { n:12998, wasting:1.0, stunting:17.45, uw:4.34, sam:0.2 }, Mar: { n:12915, wasting:0.8, stunting:15.44, uw:3.59, sam:0.2 }, Apr: { n:12830, wasting:0.9, stunting:13.29, uw:3.41, sam:0.3 }, May: { n:12547, wasting:0.7, stunting:13.36, uw:2.99, sam:0.2 }, Jun: { n:12440, wasting:0.6, stunting:7.81, uw:1.9, sam:0.2 }, Jul: { n:12424, wasting:0.4, stunting:1.42, uw:0.64, sam:0.1 } },
     'Sheragada': { Feb: { n:8355, wasting:1.6, stunting:12.08, uw:3.4, sam:0.6 }, Mar: { n:8072, wasting:1.6, stunting:13.21, uw:3.75, sam:0.4 }, Apr: { n:7952, wasting:1.5, stunting:12.66, uw:3.48, sam:0.3 }, May: { n:7877, wasting:1.1, stunting:11.73, uw:2.97, sam:0.3 }, Jun: { n:7812, wasting:1.0, stunting:9.81, uw:2.34, sam:0.1 }, Jul: { n:7715, wasting:2.0, stunting:8.58, uw:3.27, sam:0.2 } },
   },
-  'Jagatsinghpur': {
+  'Jagatsinghapur': {
     'Balikuda': { Feb: { n:7217, wasting:1.4, stunting:15.62, uw:4.0, sam:0.3 }, Mar: { n:7128, wasting:1.2, stunting:14.8, uw:3.48, sam:0.3 }, Apr: { n:7075, wasting:1.4, stunting:15.34, uw:4.16, sam:0.5 }, May: { n:6902, wasting:1.3, stunting:15.18, uw:3.82, sam:0.4 }, Jun: { n:6831, wasting:1.3, stunting:15.87, uw:4.19, sam:0.3 }, Jul: { n:6842, wasting:2.3, stunting:13.88, uw:4.5, sam:0.4 } },
     'Biridi': { Feb: { n:3775, wasting:1.8, stunting:19.95, uw:7.81, sam:0.2 }, Mar: { n:3749, wasting:1.8, stunting:16.51, uw:7.12, sam:0.5 }, Apr: { n:3710, wasting:2.2, stunting:15.44, uw:7.09, sam:0.5 }, May: { n:3711, wasting:2.0, stunting:16.06, uw:6.98, sam:0.4 }, Jun: { n:3696, wasting:2.1, stunting:15.72, uw:7.12, sam:0.5 }, Jul: { n:3704, wasting:2.2, stunting:14.61, uw:8.26, sam:0.4 } },
     'Erasama': { Feb: { n:7047, wasting:2.0, stunting:15.51, uw:6.27, sam:0.6 }, Mar: { n:7047, wasting:2.1, stunting:12.97, uw:5.34, sam:0.6 }, Apr: { n:6985, wasting:2.1, stunting:13.16, uw:5.5, sam:0.6 }, May: { n:6945, wasting:1.7, stunting:13.22, uw:5.47, sam:0.3 }, Jun: { n:6822, wasting:1.7, stunting:13.76, uw:5.45, sam:0.4 }, Jul: { n:6759, wasting:3.5, stunting:10.8, uw:6.64, sam:0.7 } },
-    'Jagatsinghpur': { Feb: { n:8241, wasting:2.0, stunting:18.34, uw:6.18, sam:0.4 }, Mar: { n:8190, wasting:1.7, stunting:18.12, uw:5.71, sam:0.3 }, Apr: { n:8142, wasting:1.7, stunting:18.69, uw:5.86, sam:0.4 }, May: { n:8106, wasting:1.6, stunting:18.97, uw:5.44, sam:0.4 }, Jun: { n:8057, wasting:1.8, stunting:19.76, uw:5.92, sam:0.4 }, Jul: { n:8013, wasting:2.5, stunting:17.76, uw:6.58, sam:0.5 } },
+    'Jagatsinghapur': { Feb: { n:8241, wasting:2.0, stunting:18.34, uw:6.18, sam:0.4 }, Mar: { n:8190, wasting:1.7, stunting:18.12, uw:5.71, sam:0.3 }, Apr: { n:8142, wasting:1.7, stunting:18.69, uw:5.86, sam:0.4 }, May: { n:8106, wasting:1.6, stunting:18.97, uw:5.44, sam:0.4 }, Jun: { n:8057, wasting:1.8, stunting:19.76, uw:5.92, sam:0.4 }, Jul: { n:8013, wasting:2.5, stunting:17.76, uw:6.58, sam:0.5 } },
     'Kujang': { Feb: { n:10666, wasting:2.0, stunting:15.54, uw:5.25, sam:0.4 }, Mar: { n:10566, wasting:1.9, stunting:13.87, uw:4.93, sam:0.4 }, Apr: { n:10424, wasting:2.1, stunting:13.69, uw:5.02, sam:0.6 }, May: { n:10341, wasting:2.1, stunting:13.73, uw:4.69, sam:0.4 }, Jun: { n:10351, wasting:2.0, stunting:14.76, uw:4.93, sam:0.4 }, Jul: { n:10352, wasting:2.0, stunting:13.98, uw:5.24, sam:0.3 } },
     'Naugaon': { Feb: { n:3322, wasting:1.3, stunting:10.26, uw:3.7, sam:0.3 }, Mar: { n:3328, wasting:1.2, stunting:9.31, uw:3.64, sam:0.3 }, Apr: { n:3277, wasting:1.3, stunting:9.25, uw:3.66, sam:0.2 }, May: { n:3227, wasting:1.1, stunting:9.33, uw:3.28, sam:0.2 }, Jun: { n:3204, wasting:1.0, stunting:8.65, uw:3.93, sam:0.1 }, Jul: { n:3222, wasting:1.7, stunting:8.04, uw:4.07, sam:0.3 } },
     'Raghunathpur': { Feb: { n:3654, wasting:1.6, stunting:15.24, uw:4.73, sam:0.3 }, Mar: { n:3588, wasting:1.5, stunting:14.83, uw:4.79, sam:0.4 }, Apr: { n:3519, wasting:2.0, stunting:13.78, uw:4.72, sam:0.4 }, May: { n:3492, wasting:2.0, stunting:14.06, uw:4.93, sam:0.4 }, Jun: { n:3438, wasting:2.2, stunting:15.85, uw:5.44, sam:0.4 }, Jul: { n:3401, wasting:2.9, stunting:12.94, uw:6.41, sam:0.7 } },
@@ -1102,7 +1102,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Th.Rampur': { Feb: { n:8627, wasting:5.7, stunting:44.59, uw:17.49, sam:1.0 }, Mar: { n:8452, wasting:6.1, stunting:39.01, uw:14.94, sam:1.1 }, Apr: { n:8339, wasting:6.0, stunting:36.31, uw:14.58, sam:1.3 }, May: { n:8237, wasting:6.2, stunting:35.34, uw:13.57, sam:0.9 }, Jun: { n:8173, wasting:5.9, stunting:33.4, uw:12.77, sam:0.8 }, Jul: { n:8111, wasting:6.8, stunting:29.79, uw:13.88, sam:0.9 } },
     'jaipatna': { Feb: { n:9657, wasting:3.1, stunting:31.73, uw:12.55, sam:0.4 }, Mar: { n:9593, wasting:3.4, stunting:28.02, uw:11.37, sam:0.4 }, Apr: { n:9510, wasting:3.2, stunting:24.68, uw:10.52, sam:0.6 }, May: { n:9470, wasting:3.3, stunting:23.0, uw:9.01, sam:0.7 }, Jun: { n:9498, wasting:3.1, stunting:23.15, uw:9.73, sam:0.5 }, Jul: { n:9522, wasting:3.1, stunting:18.36, uw:7.59, sam:0.4 } },
   },
-  'Kandhamal': {
+  'Kandhamala': {
     'Baliguda': { Feb: { n:7449, wasting:3.8, stunting:27.05, uw:9.38, sam:0.8 }, Mar: { n:7379, wasting:3.4, stunting:28.54, uw:9.66, sam:0.8 }, Apr: { n:7328, wasting:3.8, stunting:28.81, uw:9.91, sam:0.9 }, May: { n:7275, wasting:4.0, stunting:28.99, uw:10.38, sam:0.9 }, Jun: { n:7253, wasting:4.8, stunting:24.67, uw:10.78, sam:1.0 }, Jul: { n:7243, wasting:5.7, stunting:25.5, uw:11.9, sam:1.3 } },
     'CHAKAPAD': { Feb: { n:2961, wasting:3.0, stunting:38.94, uw:19.42, sam:0.3 }, Mar: { n:2989, wasting:4.0, stunting:34.06, uw:19.44, sam:0.4 }, Apr: { n:2916, wasting:3.4, stunting:31.41, uw:17.9, sam:0.3 }, May: { n:2883, wasting:3.8, stunting:31.04, uw:18.56, sam:0.4 }, Jun: { n:2821, wasting:4.4, stunting:30.24, uw:19.39, sam:0.5 }, Jul: { n:2858, wasting:5.4, stunting:28.03, uw:20.01, sam:0.9 } },
     'DARINGBADI': { Feb: { n:10567, wasting:4.7, stunting:31.31, uw:15.96, sam:0.9 }, Mar: { n:10513, wasting:4.7, stunting:25.17, uw:14.77, sam:0.9 }, Apr: { n:10277, wasting:4.3, stunting:26.22, uw:14.26, sam:0.8 }, May: { n:10161, wasting:4.5, stunting:24.58, uw:13.29, sam:1.0 }, Jun: { n:10076, wasting:4.8, stunting:23.09, uw:12.79, sam:0.8 }, Jul: { n:10080, wasting:6.1, stunting:22.09, uw:14.83, sam:1.0 } },
@@ -1116,7 +1116,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'TIKABALI': { Feb: { n:2731, wasting:3.6, stunting:34.64, uw:19.19, sam:0.3 }, Mar: { n:2690, wasting:3.5, stunting:34.35, uw:19.0, sam:0.3 }, Apr: { n:2654, wasting:4.0, stunting:36.7, uw:20.76, sam:0.3 }, May: { n:2627, wasting:3.8, stunting:35.97, uw:21.24, sam:0.6 }, Jun: { n:2643, wasting:3.8, stunting:35.19, uw:21.91, sam:0.4 }, Jul: { n:2657, wasting:3.2, stunting:33.38, uw:21.94, sam:0.3 } },
     'TUMUDIBANDHA': { Feb: { n:5174, wasting:5.3, stunting:40.03, uw:16.85, sam:0.8 }, Mar: { n:5151, wasting:4.5, stunting:37.41, uw:15.36, sam:0.7 }, Apr: { n:5091, wasting:4.3, stunting:38.64, uw:15.67, sam:0.6 }, May: { n:5066, wasting:4.3, stunting:35.47, uw:14.45, sam:0.6 }, Jun: { n:5022, wasting:4.6, stunting:35.3, uw:14.12, sam:0.8 }, Jul: { n:5011, wasting:4.8, stunting:33.59, uw:14.93, sam:0.5 } },
   },
-  'Kendrapara': {
+  'Kendrapada': {
     'AUL': { Feb: { n:8158, wasting:1.7, stunting:9.55, uw:3.24, sam:0.5 }, Mar: { n:8158, wasting:1.8, stunting:8.09, uw:2.84, sam:0.4 }, Apr: { n:8057, wasting:1.9, stunting:8.43, uw:2.92, sam:0.3 }, May: { n:7947, wasting:1.7, stunting:8.86, uw:2.99, sam:0.3 }, Jun: { n:7932, wasting:1.8, stunting:9.25, uw:3.01, sam:0.3 }, Jul: { n:7826, wasting:1.7, stunting:8.6, uw:3.55, sam:0.2 } },
     'DERABISH': { Feb: { n:7072, wasting:2.3, stunting:9.8, uw:4.64, sam:0.8 }, Mar: { n:7017, wasting:2.1, stunting:8.15, uw:3.96, sam:0.6 }, Apr: { n:6917, wasting:1.8, stunting:8.37, uw:3.93, sam:0.5 }, May: { n:6930, wasting:1.5, stunting:8.14, uw:3.9, sam:0.3 }, Jun: { n:6900, wasting:1.7, stunting:10.1, uw:4.19, sam:0.5 }, Jul: { n:6787, wasting:2.5, stunting:11.4, uw:6.75, sam:0.4 } },
     'GARADAPUR': { Feb: { n:5214, wasting:2.0, stunting:9.63, uw:3.72, sam:0.6 }, Mar: { n:5149, wasting:2.0, stunting:10.02, uw:4.0, sam:0.8 }, Apr: { n:5075, wasting:2.4, stunting:10.94, uw:4.22, sam:0.6 }, May: { n:5055, wasting:2.7, stunting:8.66, uw:3.96, sam:0.6 }, Jun: { n:5047, wasting:2.4, stunting:8.06, uw:4.0, sam:0.6 }, Jul: { n:4959, wasting:1.2, stunting:6.98, uw:3.87, sam:0.1 } },
@@ -1138,7 +1138,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'Jhumpura': { Feb: { n:8931, wasting:1.9, stunting:32.86, uw:11.1, sam:0.2 }, Mar: { n:8810, wasting:1.9, stunting:16.87, uw:7.6, sam:0.1 }, Apr: { n:8801, wasting:1.8, stunting:15.68, uw:6.78, sam:0.1 }, May: { n:8747, wasting:1.9, stunting:13.71, uw:6.17, sam:0.2 }, Jun: { n:8709, wasting:2.0, stunting:13.29, uw:6.74, sam:0.2 }, Jul: { n:8698, wasting:1.8, stunting:15.04, uw:7.44, sam:0.3 } },
     'Joda(T)': { Feb: { n:14659, wasting:1.9, stunting:27.32, uw:12.83, sam:0.3 }, Mar: { n:14525, wasting:1.7, stunting:8.31, uw:5.84, sam:0.3 }, Apr: { n:14209, wasting:1.6, stunting:5.63, uw:4.95, sam:0.3 }, May: { n:13925, wasting:1.4, stunting:5.61, uw:4.42, sam:0.2 }, Jun: { n:13810, wasting:1.9, stunting:8.31, uw:5.94, sam:0.4 }, Jul: { n:13639, wasting:3.2, stunting:12.09, uw:10.21, sam:0.7 } },
     'Joda(U)': { Feb: { n:2922, wasting:1.9, stunting:28.82, uw:9.65, sam:0.4 }, Mar: { n:2883, wasting:2.2, stunting:24.94, uw:9.5, sam:0.4 }, Apr: { n:2817, wasting:2.3, stunting:19.67, uw:8.84, sam:0.2 }, May: { n:2843, wasting:2.2, stunting:19.28, uw:8.05, sam:0.5 }, Jun: { n:2799, wasting:2.2, stunting:25.76, uw:10.04, sam:0.4 }, Jul: { n:2787, wasting:5.3, stunting:22.43, uw:13.67, sam:0.5 } },
-    'Keonjhar': { Feb: { n:12960, wasting:5.1, stunting:42.02, uw:21.94, sam:0.9 }, Mar: { n:12734, wasting:6.3, stunting:25.49, uw:17.71, sam:1.0 }, Apr: { n:12440, wasting:6.7, stunting:23.93, uw:16.64, sam:1.2 }, May: { n:12382, wasting:6.4, stunting:24.67, uw:15.9, sam:1.1 }, Jun: { n:12327, wasting:6.3, stunting:27.57, uw:16.68, sam:1.1 }, Jul: { n:12326, wasting:6.7, stunting:29.98, uw:18.16, sam:1.0 } },
+    'Kendujhar': { Feb: { n:12960, wasting:5.1, stunting:42.02, uw:21.94, sam:0.9 }, Mar: { n:12734, wasting:6.3, stunting:25.49, uw:17.71, sam:1.0 }, Apr: { n:12440, wasting:6.7, stunting:23.93, uw:16.64, sam:1.2 }, May: { n:12382, wasting:6.4, stunting:24.67, uw:15.9, sam:1.1 }, Jun: { n:12327, wasting:6.3, stunting:27.57, uw:16.68, sam:1.1 }, Jul: { n:12326, wasting:6.7, stunting:29.98, uw:18.16, sam:1.0 } },
     'Patna': { Feb: { n:6808, wasting:3.9, stunting:39.39, uw:21.72, sam:0.7 }, Mar: { n:6750, wasting:5.4, stunting:28.31, uw:19.27, sam:0.8 }, Apr: { n:6617, wasting:7.3, stunting:21.99, uw:19.65, sam:1.1 }, May: { n:6598, wasting:6.5, stunting:21.22, uw:18.6, sam:1.0 }, Jun: { n:6573, wasting:6.4, stunting:22.71, uw:18.8, sam:1.3 }, Jul: { n:6508, wasting:6.1, stunting:24.08, uw:19.84, sam:0.4 } },
     'Saharpada': { Feb: { n:6286, wasting:6.9, stunting:41.01, uw:25.29, sam:1.3 }, Mar: { n:6274, wasting:7.9, stunting:25.33, uw:19.72, sam:1.7 }, Apr: { n:6205, wasting:8.3, stunting:24.3, uw:19.05, sam:1.7 }, May: { n:6215, wasting:7.8, stunting:24.39, uw:19.03, sam:1.8 }, Jun: { n:6133, wasting:7.9, stunting:25.94, uw:19.71, sam:1.6 }, Jul: { n:6155, wasting:8.1, stunting:27.16, uw:21.33, sam:1.5 } },
     'Telkoi': { Feb: { n:7477, wasting:4.0, stunting:36.78, uw:19.09, sam:0.3 }, Mar: { n:7398, wasting:4.1, stunting:26.71, uw:15.42, sam:0.3 }, Apr: { n:7242, wasting:4.0, stunting:26.51, uw:15.51, sam:0.3 }, May: { n:7201, wasting:3.7, stunting:25.98, uw:14.66, sam:0.2 }, Jun: { n:7170, wasting:4.1, stunting:27.98, uw:16.14, sam:0.2 }, Jul: { n:7147, wasting:5.3, stunting:28.96, uw:17.84, sam:0.3 } },
@@ -1224,7 +1224,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'TENTULIKHUNTI': { Feb: { n:7467, wasting:2.3, stunting:28.79, uw:13.16, sam:0.3 }, Mar: { n:7447, wasting:2.0, stunting:22.32, uw:9.91, sam:0.2 }, Apr: { n:7402, wasting:2.5, stunting:25.86, uw:11.98, sam:0.4 }, May: { n:7351, wasting:2.3, stunting:20.79, uw:10.3, sam:0.2 }, Jun: { n:7418, wasting:2.3, stunting:19.76, uw:9.95, sam:0.2 }, Jul: { n:7404, wasting:2.6, stunting:22.06, uw:12.25, sam:0.3 } },
     'UMERKOTE': { Feb: { n:18224, wasting:2.4, stunting:27.27, uw:16.67, sam:0.2 }, Mar: { n:18136, wasting:2.2, stunting:19.86, uw:13.13, sam:0.2 }, Apr: { n:18112, wasting:3.0, stunting:21.81, uw:14.38, sam:0.4 }, May: { n:18173, wasting:2.9, stunting:18.54, uw:12.96, sam:0.3 }, Jun: { n:18103, wasting:2.9, stunting:17.14, uw:12.29, sam:0.2 }, Jul: { n:18092, wasting:3.8, stunting:20.74, uw:15.55, sam:0.3 } },
   },
-  'Nayagarh': {
+  'Nayagada': {
     'BHAPUR': { Feb: { n:5435, wasting:2.1, stunting:26.09, uw:8.3, sam:0.2 }, Mar: { n:5432, wasting:2.2, stunting:25.77, uw:8.63, sam:0.3 }, Apr: { n:5371, wasting:2.3, stunting:27.43, uw:9.07, sam:0.4 }, May: { n:5333, wasting:2.4, stunting:26.93, uw:8.44, sam:0.4 }, Jun: { n:5322, wasting:2.5, stunting:27.87, uw:8.87, sam:0.4 }, Jul: { n:5282, wasting:3.4, stunting:17.99, uw:8.52, sam:0.7 } },
     'DASPALLA': { Feb: { n:6064, wasting:0.8, stunting:36.21, uw:12.85, sam:0.1 }, Mar: { n:6033, wasting:0.3, stunting:35.06, uw:11.17, sam:0.0 }, Apr: { n:5845, wasting:1.2, stunting:35.95, uw:11.14, sam:0.3 }, May: { n:5858, wasting:0.4, stunting:34.94, uw:10.79, sam:0.1 }, Jun: { n:5848, wasting:1.1, stunting:36.44, uw:11.34, sam:0.2 }, Jul: { n:5867, wasting:0.6, stunting:31.06, uw:9.9, sam:0.1 } },
     'GANIA': { Feb: { n:2054, wasting:2.5, stunting:28.43, uw:10.13, sam:0.6 }, Mar: { n:2026, wasting:2.8, stunting:25.77, uw:9.58, sam:0.6 }, Apr: { n:2009, wasting:2.5, stunting:28.32, uw:10.05, sam:0.4 }, May: { n:2014, wasting:3.2, stunting:25.17, uw:9.83, sam:0.5 }, Jun: { n:1992, wasting:3.5, stunting:22.54, uw:8.99, sam:0.6 }, Jul: { n:1979, wasting:4.6, stunting:18.34, uw:10.61, sam:0.9 } },
@@ -1288,7 +1288,7 @@ export const ptProjectData: Record<string, Record<string, Partial<Record<PTMonth
     'TARBHA': { Feb: { n:5459, wasting:3.0, stunting:36.76, uw:15.88, sam:0.9 }, Mar: { n:5428, wasting:3.0, stunting:29.96, uw:12.66, sam:0.9 }, Apr: { n:5398, wasting:3.0, stunting:21.04, uw:9.73, sam:0.7 }, May: { n:5401, wasting:2.8, stunting:20.83, uw:8.52, sam:0.8 }, Jun: { n:5361, wasting:2.9, stunting:19.38, uw:8.04, sam:0.7 }, Jul: { n:5382, wasting:3.7, stunting:17.48, uw:8.99, sam:1.1 } },
     'ULLUNDA': { Feb: { n:5873, wasting:2.9, stunting:25.61, uw:10.68, sam:0.6 }, Mar: { n:5876, wasting:3.0, stunting:17.72, uw:8.63, sam:0.6 }, Apr: { n:5786, wasting:4.8, stunting:18.23, uw:11.61, sam:1.0 }, May: { n:5766, wasting:4.3, stunting:16.49, uw:10.8, sam:0.9 }, Jun: { n:5748, wasting:4.4, stunting:18.2, uw:11.69, sam:1.0 }, Jul: { n:5722, wasting:4.6, stunting:19.45, uw:13.05, sam:0.9 } },
   },
-  'Sundargarh': {
+  'Sundaragada': {
     'BALISANKARA': { Feb: { n:4678, wasting:2.5, stunting:26.46, uw:11.71, sam:0.6 }, Mar: { n:4655, wasting:3.0, stunting:18.86, uw:11.41, sam:0.6 }, Apr: { n:4634, wasting:4.9, stunting:22.31, uw:14.83, sam:0.9 }, May: { n:4607, wasting:5.5, stunting:22.6, uw:15.48, sam:0.8 }, Jun: { n:4489, wasting:7.0, stunting:25.64, uw:18.82, sam:1.2 }, Jul: { n:4444, wasting:8.7, stunting:25.47, uw:23.02, sam:1.6 } },
     'BARGAON': { Feb: { n:3464, wasting:4.1, stunting:32.77, uw:15.99, sam:0.9 }, Mar: { n:3434, wasting:3.6, stunting:32.29, uw:15.32, sam:0.8 }, Apr: { n:3419, wasting:3.2, stunting:33.69, uw:16.44, sam:0.7 }, May: { n:3419, wasting:3.5, stunting:29.8, uw:15.82, sam:0.7 }, Jun: { n:3404, wasting:3.2, stunting:30.35, uw:15.16, sam:0.6 }, Jul: { n:3383, wasting:3.0, stunting:25.3, uw:14.31, sam:0.3 } },
     'BIRMITRAPUR': { Feb: { n:1681, wasting:4.6, stunting:29.33, uw:13.21, sam:0.6 }, Mar: { n:1693, wasting:4.0, stunting:28.65, uw:12.52, sam:0.9 }, Apr: { n:1691, wasting:4.8, stunting:23.83, uw:12.83, sam:0.8 }, May: { n:1691, wasting:4.4, stunting:19.4, uw:11.83, sam:0.7 }, Jun: { n:1666, wasting:4.1, stunting:21.31, uw:12.55, sam:0.7 }, Jul: { n:1663, wasting:4.8, stunting:21.35, uw:14.37, sam:0.4 } },

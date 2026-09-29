@@ -21,7 +21,7 @@ function Header() {
             <div className="inline-block border-b border-black pb-0.5 max-w-full">
               <h1 className="text-[12px] sm:text-[14px] lg:text-[15.5px] font-extrabold text-black tracking-wide leading-tight truncate sm:whitespace-nowrap drop-shadow-xs">
                 {/* GOVERNMENT OF ODISHA —  */}
-                Women &amp; Child Department
+                Women and Child Development Department
               </h1>
             </div>
             <p className="text-[11px] sm:text-[12.5px] lg:text-[13.5px] font-bold text-primary leading-tight pt-0.5 tracking-tight truncate sm:whitespace-nowrap">
@@ -31,18 +31,30 @@ function Header() {
           </div>
         </div>
 
-        {/* Center Marquee */}
-        <div className="hidden md:flex flex-1 overflow-hidden mx-4 items-center">
-          <div className="whitespace-nowrap animate-marquee flex items-baseline gap-3 text-[#d61256] drop-shadow-sm">
-            <span className="text-[16px] md:text-[18px] font-black uppercase tracking-wide">
-              War Room-Decision Support System
-            </span>
-            <span className="text-[12px] md:text-[13px] font-medium text-gray-800">
-              &bull; Every Beneficiary Verified &nbsp;|&nbsp; Every Child Measured Correctly &nbsp;|&nbsp; Every Data Point Reviewed &nbsp;|&nbsp; Every High-Risk Child Followed Up &nbsp;|&nbsp; Every AWC Accountable. &bull; Towards a Suposhit Odisha and a Suposhit Bharat
-            </span>
-            <span className="text-[14px] md:text-[15px] font-bold">
+        {/* Sleek Center Marquee */}
+        <div className="hidden md:flex flex-1 overflow-hidden mx-6 items-center bg-[#d61256]/5 border border-[#d61256]/15 rounded-full px-3 py-1.5 shadow-sm">
+          <div className="flex-1 overflow-hidden relative flex items-center mask-image-[linear-gradient(to_right,transparent,black_20px,black_calc(100%-20px),transparent)]" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent)' }}>
+            <div className="whitespace-nowrap animate-marquee flex items-center text-[13px] text-black">
+              
+              <span className="font-extrabold text-[#d61256] text-[14px] uppercase tracking-wider pr-4">
+                War Room-Decision Support System
+              </span>
+              
+              <span className="font-medium">Every Beneficiary Verified</span>
+              <span className="text-gray-300 font-light text-[15px] mx-2.5">|</span>
+              <span className="font-medium">Every Child Measured Correctly</span>
+              <span className="text-gray-300 font-light text-[15px] mx-2.5">|</span>
+              <span className="font-medium">Every Data Point Reviewed</span>
+              <span className="text-gray-300 font-light text-[15px] mx-2.5">|</span>
+              <span className="font-medium">Every High-Risk Child Followed Up</span>
+              <span className="text-gray-300 font-light text-[15px] mx-2.5">|</span>
+              <span className="font-medium pr-6">Every AWC Accountable.</span>
+              
+              <span className="font-bold tracking-wide uppercase text-gray-800">
+                Towards a Suposhit Odisha and a Suposhit Bharat
+              </span>
 
-            </span>
+            </div>
           </div>
         </div>
 

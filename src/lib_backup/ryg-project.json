@@ -1,0 +1,2428 @@
+{
+  "Angul": [
+    {
+      "project": "angul",
+      "R": 30,
+      "Y": 208,
+      "G": 26,
+      "total": 264
+    },
+    {
+      "project": "talcher",
+      "R": 27,
+      "Y": 177,
+      "G": 33,
+      "total": 237
+    },
+    {
+      "project": "athamallik",
+      "R": 71,
+      "Y": 143,
+      "G": 22,
+      "total": 236
+    },
+    {
+      "project": "banarapal",
+      "R": 51,
+      "Y": 153,
+      "G": 20,
+      "total": 224
+    },
+    {
+      "project": "pallahara",
+      "R": 57,
+      "Y": 133,
+      "G": 13,
+      "total": 203
+    },
+    {
+      "project": "chhendipada",
+      "R": 41,
+      "Y": 142,
+      "G": 8,
+      "total": 191
+    },
+    {
+      "project": "kaniha",
+      "R": 38,
+      "Y": 122,
+      "G": 16,
+      "total": 176
+    },
+    {
+      "project": "kishorenagar",
+      "R": 31,
+      "Y": 119,
+      "G": 8,
+      "total": 158
+    }
+  ],
+  "Balangir": [
+    {
+      "project": "patnagarh",
+      "R": 66,
+      "Y": 193,
+      "G": 19,
+      "total": 278
+    },
+    {
+      "project": "bolangir",
+      "R": 29,
+      "Y": 180,
+      "G": 23,
+      "total": 232
+    },
+    {
+      "project": "titilagarh",
+      "R": 42,
+      "Y": 174,
+      "G": 14,
+      "total": 230
+    },
+    {
+      "project": "muribahal",
+      "R": 65,
+      "Y": 137,
+      "G": 11,
+      "total": 213
+    },
+    {
+      "project": "deogaon",
+      "R": 42,
+      "Y": 146,
+      "G": 17,
+      "total": 205
+    },
+    {
+      "project": "bangomunda",
+      "R": 19,
+      "Y": 156,
+      "G": 23,
+      "total": 198
+    },
+    {
+      "project": "puintala",
+      "R": 21,
+      "Y": 145,
+      "G": 31,
+      "total": 197
+    },
+    {
+      "project": "belpara",
+      "R": 49,
+      "Y": 134,
+      "G": 9,
+      "total": 192
+    },
+    {
+      "project": "loisingha",
+      "R": 41,
+      "Y": 139,
+      "G": 8,
+      "total": 188
+    },
+    {
+      "project": "khaprakhol",
+      "R": 35,
+      "Y": 132,
+      "G": 16,
+      "total": 183
+    },
+    {
+      "project": "agalpur",
+      "R": 30,
+      "Y": 136,
+      "G": 16,
+      "total": 182
+    },
+    {
+      "project": "saintala",
+      "R": 38,
+      "Y": 121,
+      "G": 20,
+      "total": 179
+    },
+    {
+      "project": "turekela",
+      "R": 9,
+      "Y": 140,
+      "G": 24,
+      "total": 173
+    },
+    {
+      "project": "gudvela",
+      "R": 23,
+      "Y": 81,
+      "G": 16,
+      "total": 120
+    }
+  ],
+  "Balasore": [
+    {
+      "project": "nilagiri",
+      "R": 143,
+      "Y": 233,
+      "G": 13,
+      "total": 389
+    },
+    {
+      "project": "baliapal",
+      "R": 62,
+      "Y": 258,
+      "G": 67,
+      "total": 387
+    },
+    {
+      "project": "jaleswar",
+      "R": 75,
+      "Y": 273,
+      "G": 32,
+      "total": 380
+    },
+    {
+      "project": "bhograi",
+      "R": 46,
+      "Y": 259,
+      "G": 60,
+      "total": 365
+    },
+    {
+      "project": "remuna",
+      "R": 88,
+      "Y": 235,
+      "G": 36,
+      "total": 359
+    },
+    {
+      "project": "khaira",
+      "R": 119,
+      "Y": 213,
+      "G": 16,
+      "total": 348
+    },
+    {
+      "project": "basta",
+      "R": 102,
+      "Y": 216,
+      "G": 11,
+      "total": 329
+    },
+    {
+      "project": "soro",
+      "R": 136,
+      "Y": 181,
+      "G": 12,
+      "total": 329
+    },
+    {
+      "project": "bahanaga",
+      "R": 56,
+      "Y": 169,
+      "G": 24,
+      "total": 249
+    },
+    {
+      "project": "simulia",
+      "R": 58,
+      "Y": 150,
+      "G": 10,
+      "total": 218
+    },
+    {
+      "project": "balasore sadar i",
+      "R": 63,
+      "Y": 129,
+      "G": 10,
+      "total": 202
+    },
+    {
+      "project": "balasore sadar ii",
+      "R": 52,
+      "Y": 128,
+      "G": 20,
+      "total": 200
+    },
+    {
+      "project": "oupada",
+      "R": 49,
+      "Y": 113,
+      "G": 10,
+      "total": 172
+    },
+    {
+      "project": "bhograi ii",
+      "R": 26,
+      "Y": 127,
+      "G": 18,
+      "total": 171
+    },
+    {
+      "project": "balasore municipality",
+      "R": 18,
+      "Y": 80,
+      "G": 18,
+      "total": 116
+    }
+  ],
+  "Bargarh": [
+    {
+      "project": "attabira",
+      "R": 42,
+      "Y": 262,
+      "G": 27,
+      "total": 331
+    },
+    {
+      "project": "sohela",
+      "R": 58,
+      "Y": 251,
+      "G": 18,
+      "total": 327
+    },
+    {
+      "project": "bargarh rural",
+      "R": 47,
+      "Y": 244,
+      "G": 17,
+      "total": 308
+    },
+    {
+      "project": "bheden",
+      "R": 43,
+      "Y": 201,
+      "G": 21,
+      "total": 265
+    },
+    {
+      "project": "bijepur",
+      "R": 61,
+      "Y": 141,
+      "G": 17,
+      "total": 219
+    },
+    {
+      "project": "paikmal",
+      "R": 37,
+      "Y": 163,
+      "G": 11,
+      "total": 211
+    },
+    {
+      "project": "barpali",
+      "R": 50,
+      "Y": 152,
+      "G": 6,
+      "total": 208
+    },
+    {
+      "project": "jharbandh",
+      "R": 28,
+      "Y": 150,
+      "G": 21,
+      "total": 199
+    },
+    {
+      "project": "padampur",
+      "R": 54,
+      "Y": 132,
+      "G": 11,
+      "total": 197
+    },
+    {
+      "project": "gaisilet",
+      "R": 56,
+      "Y": 123,
+      "G": 3,
+      "total": 182
+    },
+    {
+      "project": "bhatli",
+      "R": 23,
+      "Y": 141,
+      "G": 10,
+      "total": 174
+    },
+    {
+      "project": "ambabhona",
+      "R": 34,
+      "Y": 113,
+      "G": 8,
+      "total": 155
+    },
+    {
+      "project": "bargarh urban",
+      "R": 12,
+      "Y": 103,
+      "G": 22,
+      "total": 137
+    }
+  ],
+  "Bhadrak": [
+    {
+      "project": "bhadrak",
+      "R": 83,
+      "Y": 326,
+      "G": 38,
+      "total": 447
+    },
+    {
+      "project": "basudevpur",
+      "R": 67,
+      "Y": 304,
+      "G": 48,
+      "total": 419
+    },
+    {
+      "project": "dhamnagar",
+      "R": 76,
+      "Y": 244,
+      "G": 33,
+      "total": 353
+    },
+    {
+      "project": "tihidi",
+      "R": 51,
+      "Y": 232,
+      "G": 21,
+      "total": 304
+    },
+    {
+      "project": "bhandaripokhari",
+      "R": 57,
+      "Y": 162,
+      "G": 21,
+      "total": 240
+    },
+    {
+      "project": "bonth",
+      "R": 46,
+      "Y": 175,
+      "G": 17,
+      "total": 238
+    },
+    {
+      "project": "chandbali-i",
+      "R": 44,
+      "Y": 154,
+      "G": 22,
+      "total": 220
+    },
+    {
+      "project": "chandbali-ii(r)",
+      "R": 35,
+      "Y": 158,
+      "G": 15,
+      "total": 208
+    }
+  ],
+  "Boudh": [
+    {
+      "project": "kantamal",
+      "R": 50,
+      "Y": 175,
+      "G": 30,
+      "total": 255
+    },
+    {
+      "project": "boudh",
+      "R": 46,
+      "Y": 176,
+      "G": 31,
+      "total": 253
+    },
+    {
+      "project": "harbhanga",
+      "R": 35,
+      "Y": 166,
+      "G": 18,
+      "total": 219
+    }
+  ],
+  "Cuttack": [
+    {
+      "project": "tangi-choudwar",
+      "R": 44,
+      "Y": 209,
+      "G": 45,
+      "total": 298
+    },
+    {
+      "project": "mahanga",
+      "R": 45,
+      "Y": 209,
+      "G": 29,
+      "total": 283
+    },
+    {
+      "project": "nischintakoili",
+      "R": 40,
+      "Y": 186,
+      "G": 57,
+      "total": 283
+    },
+    {
+      "project": "salepur",
+      "R": 29,
+      "Y": 182,
+      "G": 52,
+      "total": 263
+    },
+    {
+      "project": "narasinghpur",
+      "R": 33,
+      "Y": 176,
+      "G": 51,
+      "total": 260
+    },
+    {
+      "project": "cuttack sadar",
+      "R": 9,
+      "Y": 149,
+      "G": 82,
+      "total": 240
+    },
+    {
+      "project": "athagada",
+      "R": 33,
+      "Y": 175,
+      "G": 27,
+      "total": 235
+    },
+    {
+      "project": "niali",
+      "R": 32,
+      "Y": 158,
+      "G": 40,
+      "total": 230
+    },
+    {
+      "project": "badamba",
+      "R": 25,
+      "Y": 143,
+      "G": 38,
+      "total": 206
+    },
+    {
+      "project": "banki",
+      "R": 9,
+      "Y": 115,
+      "G": 58,
+      "total": 182
+    },
+    {
+      "project": "dampada",
+      "R": 29,
+      "Y": 117,
+      "G": 24,
+      "total": 170
+    },
+    {
+      "project": "cuttack city - i",
+      "R": 5,
+      "Y": 91,
+      "G": 63,
+      "total": 159
+    },
+    {
+      "project": "kantapada",
+      "R": 14,
+      "Y": 105,
+      "G": 37,
+      "total": 156
+    },
+    {
+      "project": "baranga",
+      "R": 12,
+      "Y": 98,
+      "G": 26,
+      "total": 136
+    },
+    {
+      "project": "cuttack city - ii",
+      "R": 3,
+      "Y": 90,
+      "G": 38,
+      "total": 131
+    },
+    {
+      "project": "tigiria",
+      "R": 12,
+      "Y": 71,
+      "G": 18,
+      "total": 101
+    }
+  ],
+  "Deogarh": [
+    {
+      "project": "tileibani",
+      "R": 61,
+      "Y": 216,
+      "G": 12,
+      "total": 289
+    },
+    {
+      "project": "barkote",
+      "R": 43,
+      "Y": 199,
+      "G": 14,
+      "total": 256
+    },
+    {
+      "project": "reamal",
+      "R": 31,
+      "Y": 193,
+      "G": 31,
+      "total": 255
+    }
+  ],
+  "Dhenkanal": [
+    {
+      "project": "hindol",
+      "R": 110,
+      "Y": 275,
+      "G": 37,
+      "total": 422
+    },
+    {
+      "project": "odapada",
+      "R": 55,
+      "Y": 204,
+      "G": 39,
+      "total": 298
+    },
+    {
+      "project": "dhenkanal",
+      "R": 59,
+      "Y": 176,
+      "G": 46,
+      "total": 281
+    },
+    {
+      "project": "gondia",
+      "R": 64,
+      "Y": 186,
+      "G": 20,
+      "total": 270
+    },
+    {
+      "project": "bhubana",
+      "R": 57,
+      "Y": 180,
+      "G": 32,
+      "total": 269
+    },
+    {
+      "project": "kamakshyanagar",
+      "R": 57,
+      "Y": 155,
+      "G": 36,
+      "total": 248
+    },
+    {
+      "project": "kankadahad",
+      "R": 32,
+      "Y": 167,
+      "G": 22,
+      "total": 221
+    },
+    {
+      "project": "parjang",
+      "R": 44,
+      "Y": 145,
+      "G": 23,
+      "total": 212
+    }
+  ],
+  "Gajapati": [
+    {
+      "project": "mohana",
+      "R": 320,
+      "Y": 307,
+      "G": 15,
+      "total": 642
+    },
+    {
+      "project": "gumma",
+      "R": 132,
+      "Y": 206,
+      "G": 12,
+      "total": 350
+    },
+    {
+      "project": "paralakhemundi",
+      "R": 72,
+      "Y": 209,
+      "G": 35,
+      "total": 316
+    },
+    {
+      "project": "rayagada",
+      "R": 46,
+      "Y": 249,
+      "G": 16,
+      "total": 311
+    },
+    {
+      "project": "kashinagar",
+      "R": 36,
+      "Y": 204,
+      "G": 40,
+      "total": 280
+    },
+    {
+      "project": "nuagada",
+      "R": 105,
+      "Y": 152,
+      "G": 12,
+      "total": 269
+    },
+    {
+      "project": "r.udayagiri",
+      "R": 120,
+      "Y": 137,
+      "G": 6,
+      "total": 263
+    }
+  ],
+  "Ganjam": [
+    {
+      "project": "khallikote",
+      "R": 88,
+      "Y": 165,
+      "G": 28,
+      "total": 281
+    },
+    {
+      "project": "digapahandi",
+      "R": 44,
+      "Y": 190,
+      "G": 33,
+      "total": 267
+    },
+    {
+      "project": "sorada",
+      "R": 107,
+      "Y": 145,
+      "G": 14,
+      "total": 266
+    },
+    {
+      "project": "bhanjanagar",
+      "R": 82,
+      "Y": 161,
+      "G": 15,
+      "total": 258
+    },
+    {
+      "project": "purushottampur",
+      "R": 36,
+      "Y": 145,
+      "G": 72,
+      "total": 253
+    },
+    {
+      "project": "aska",
+      "R": 73,
+      "Y": 154,
+      "G": 24,
+      "total": 251
+    },
+    {
+      "project": "patrapur",
+      "R": 84,
+      "Y": 153,
+      "G": 12,
+      "total": 249
+    },
+    {
+      "project": "sanakhemundi",
+      "R": 66,
+      "Y": 148,
+      "G": 33,
+      "total": 247
+    },
+    {
+      "project": "chatrapur",
+      "R": 73,
+      "Y": 141,
+      "G": 25,
+      "total": 239
+    },
+    {
+      "project": "jaganathprasad",
+      "R": 78,
+      "Y": 148,
+      "G": 9,
+      "total": 235
+    },
+    {
+      "project": "rangeilunda",
+      "R": 71,
+      "Y": 136,
+      "G": 26,
+      "total": 233
+    },
+    {
+      "project": "buguda",
+      "R": 33,
+      "Y": 167,
+      "G": 31,
+      "total": 231
+    },
+    {
+      "project": "polasara",
+      "R": 51,
+      "Y": 141,
+      "G": 22,
+      "total": 214
+    },
+    {
+      "project": "beguniapada",
+      "R": 66,
+      "Y": 132,
+      "G": 15,
+      "total": 213
+    },
+    {
+      "project": "hinjilicut",
+      "R": 46,
+      "Y": 138,
+      "G": 29,
+      "total": 213
+    },
+    {
+      "project": "chikiti",
+      "R": 76,
+      "Y": 106,
+      "G": 17,
+      "total": 199
+    },
+    {
+      "project": "sheragada",
+      "R": 23,
+      "Y": 141,
+      "G": 31,
+      "total": 195
+    },
+    {
+      "project": "dharakote",
+      "R": 59,
+      "Y": 126,
+      "G": 9,
+      "total": 194
+    },
+    {
+      "project": "belaguntha",
+      "R": 49,
+      "Y": 129,
+      "G": 14,
+      "total": 192
+    },
+    {
+      "project": "kukudakhandi",
+      "R": 45,
+      "Y": 130,
+      "G": 16,
+      "total": 191
+    },
+    {
+      "project": "kavisuryanagar",
+      "R": 15,
+      "Y": 152,
+      "G": 23,
+      "total": 190
+    },
+    {
+      "project": "ganjam",
+      "R": 50,
+      "Y": 94,
+      "G": 9,
+      "total": 153
+    },
+    {
+      "project": "bam city-i",
+      "R": 19,
+      "Y": 78,
+      "G": 9,
+      "total": 106
+    },
+    {
+      "project": "berhampur (u) - ii",
+      "R": 22,
+      "Y": 52,
+      "G": 16,
+      "total": 90
+    }
+  ],
+  "Jagatsinghpur": [
+    {
+      "project": "kujang",
+      "R": 66,
+      "Y": 248,
+      "G": 21,
+      "total": 335
+    },
+    {
+      "project": "tirtol",
+      "R": 31,
+      "Y": 213,
+      "G": 50,
+      "total": 294
+    },
+    {
+      "project": "jagatsinghpur",
+      "R": 31,
+      "Y": 198,
+      "G": 57,
+      "total": 286
+    },
+    {
+      "project": "balikuda",
+      "R": 40,
+      "Y": 178,
+      "G": 34,
+      "total": 252
+    },
+    {
+      "project": "erasama",
+      "R": 25,
+      "Y": 199,
+      "G": 15,
+      "total": 239
+    },
+    {
+      "project": "biridi",
+      "R": 22,
+      "Y": 114,
+      "G": 34,
+      "total": 170
+    },
+    {
+      "project": "raghunathpur",
+      "R": 12,
+      "Y": 86,
+      "G": 22,
+      "total": 120
+    },
+    {
+      "project": "naugaon",
+      "R": 15,
+      "Y": 89,
+      "G": 15,
+      "total": 119
+    }
+  ],
+  "Jajapur": [
+    {
+      "project": "jajpur",
+      "R": 53,
+      "Y": 212,
+      "G": 59,
+      "total": 324
+    },
+    {
+      "project": "dharmasala",
+      "R": 73,
+      "Y": 213,
+      "G": 35,
+      "total": 321
+    },
+    {
+      "project": "dasarathipur",
+      "R": 56,
+      "Y": 221,
+      "G": 34,
+      "total": 311
+    },
+    {
+      "project": "binjharpur",
+      "R": 52,
+      "Y": 217,
+      "G": 26,
+      "total": 295
+    },
+    {
+      "project": "sukinda",
+      "R": 50,
+      "Y": 201,
+      "G": 34,
+      "total": 285
+    },
+    {
+      "project": "rasulpur",
+      "R": 52,
+      "Y": 192,
+      "G": 22,
+      "total": 266
+    },
+    {
+      "project": "bari",
+      "R": 49,
+      "Y": 177,
+      "G": 25,
+      "total": 251
+    },
+    {
+      "project": "korei",
+      "R": 48,
+      "Y": 171,
+      "G": 27,
+      "total": 246
+    },
+    {
+      "project": "danagadi",
+      "R": 20,
+      "Y": 144,
+      "G": 37,
+      "total": 201
+    },
+    {
+      "project": "badachana",
+      "R": 30,
+      "Y": 127,
+      "G": 20,
+      "total": 177
+    },
+    {
+      "project": "badachana-ii",
+      "R": 16,
+      "Y": 109,
+      "G": 24,
+      "total": 149
+    }
+  ],
+  "Jharsuguda": [
+    {
+      "project": "lakhanpur",
+      "R": 104,
+      "Y": 181,
+      "G": 16,
+      "total": 301
+    },
+    {
+      "project": "jharsuguda rural",
+      "R": 34,
+      "Y": 111,
+      "G": 12,
+      "total": 157
+    },
+    {
+      "project": "kolabira",
+      "R": 19,
+      "Y": 86,
+      "G": 10,
+      "total": 115
+    },
+    {
+      "project": "laikera",
+      "R": 30,
+      "Y": 72,
+      "G": 6,
+      "total": 108
+    },
+    {
+      "project": "jharsuguda urban",
+      "R": 24,
+      "Y": 66,
+      "G": 7,
+      "total": 97
+    },
+    {
+      "project": "brajrajnagar urban",
+      "R": 18,
+      "Y": 71,
+      "G": 6,
+      "total": 95
+    },
+    {
+      "project": "kirmira",
+      "R": 8,
+      "Y": 67,
+      "G": 18,
+      "total": 93
+    }
+  ],
+  "Kalahandi": [
+    {
+      "project": "bhawanipatna(rural)",
+      "R": 59,
+      "Y": 184,
+      "G": 13,
+      "total": 256
+    },
+    {
+      "project": "junagarh",
+      "R": 76,
+      "Y": 148,
+      "G": 24,
+      "total": 248
+    },
+    {
+      "project": "lanjigarh",
+      "R": 71,
+      "Y": 151,
+      "G": 18,
+      "total": 240
+    },
+    {
+      "project": "kesinga",
+      "R": 45,
+      "Y": 138,
+      "G": 12,
+      "total": 195
+    },
+    {
+      "project": "dharamgarh",
+      "R": 61,
+      "Y": 119,
+      "G": 14,
+      "total": 194
+    },
+    {
+      "project": "golamunda",
+      "R": 49,
+      "Y": 117,
+      "G": 18,
+      "total": 184
+    },
+    {
+      "project": "th.rampur",
+      "R": 76,
+      "Y": 101,
+      "G": 7,
+      "total": 184
+    },
+    {
+      "project": "jaipatna",
+      "R": 58,
+      "Y": 104,
+      "G": 10,
+      "total": 172
+    },
+    {
+      "project": "koksara",
+      "R": 46,
+      "Y": 112,
+      "G": 10,
+      "total": 168
+    },
+    {
+      "project": "narla",
+      "R": 61,
+      "Y": 93,
+      "G": 2,
+      "total": 156
+    },
+    {
+      "project": "m.rampur",
+      "R": 36,
+      "Y": 108,
+      "G": 9,
+      "total": 153
+    },
+    {
+      "project": "kalampur",
+      "R": 13,
+      "Y": 52,
+      "G": 14,
+      "total": 79
+    },
+    {
+      "project": "karlamunda",
+      "R": 19,
+      "Y": 52,
+      "G": 4,
+      "total": 75
+    },
+    {
+      "project": "bhawanipatna (urban)",
+      "R": 17,
+      "Y": 45,
+      "G": 11,
+      "total": 73
+    }
+  ],
+  "Kandhamal": [
+    {
+      "project": "daringbadi",
+      "R": 78,
+      "Y": 247,
+      "G": 30,
+      "total": 355
+    },
+    {
+      "project": "phiringia",
+      "R": 28,
+      "Y": 181,
+      "G": 28,
+      "total": 237
+    },
+    {
+      "project": "baliguda",
+      "R": 30,
+      "Y": 155,
+      "G": 17,
+      "total": 202
+    },
+    {
+      "project": "tumudibandha",
+      "R": 52,
+      "Y": 128,
+      "G": 12,
+      "total": 192
+    },
+    {
+      "project": "raikia",
+      "R": 16,
+      "Y": 128,
+      "G": 21,
+      "total": 165
+    },
+    {
+      "project": "chakapad",
+      "R": 13,
+      "Y": 133,
+      "G": 18,
+      "total": 164
+    },
+    {
+      "project": "k.nuagaon",
+      "R": 13,
+      "Y": 129,
+      "G": 20,
+      "total": 162
+    },
+    {
+      "project": "kotagarh",
+      "R": 34,
+      "Y": 117,
+      "G": 9,
+      "total": 160
+    },
+    {
+      "project": "phulbani",
+      "R": 11,
+      "Y": 120,
+      "G": 24,
+      "total": 155
+    },
+    {
+      "project": "khajuripada",
+      "R": 16,
+      "Y": 117,
+      "G": 16,
+      "total": 149
+    },
+    {
+      "project": "tikabali",
+      "R": 10,
+      "Y": 118,
+      "G": 13,
+      "total": 141
+    },
+    {
+      "project": "g.udaygiri",
+      "R": 15,
+      "Y": 83,
+      "G": 16,
+      "total": 114
+    }
+  ],
+  "Kendrapara": [
+    {
+      "project": "mahakalpada",
+      "R": 81,
+      "Y": 217,
+      "G": 13,
+      "total": 311
+    },
+    {
+      "project": "pattamundai",
+      "R": 60,
+      "Y": 198,
+      "G": 20,
+      "total": 278
+    },
+    {
+      "project": "rajnagar",
+      "R": 84,
+      "Y": 171,
+      "G": 18,
+      "total": 273
+    },
+    {
+      "project": "kendrapada",
+      "R": 38,
+      "Y": 191,
+      "G": 34,
+      "total": 263
+    },
+    {
+      "project": "aul",
+      "R": 44,
+      "Y": 158,
+      "G": 23,
+      "total": 225
+    },
+    {
+      "project": "derabish",
+      "R": 22,
+      "Y": 160,
+      "G": 42,
+      "total": 224
+    },
+    {
+      "project": "rajkanika",
+      "R": 35,
+      "Y": 153,
+      "G": 27,
+      "total": 215
+    },
+    {
+      "project": "marshaghai",
+      "R": 22,
+      "Y": 129,
+      "G": 32,
+      "total": 183
+    },
+    {
+      "project": "garadapur",
+      "R": 26,
+      "Y": 128,
+      "G": 18,
+      "total": 172
+    }
+  ],
+  "Keonjhar": [
+    {
+      "project": "keonjhar",
+      "R": 64,
+      "Y": 246,
+      "G": 33,
+      "total": 343
+    },
+    {
+      "project": "joda(t)",
+      "R": 64,
+      "Y": 218,
+      "G": 9,
+      "total": 291
+    },
+    {
+      "project": "harachandanpur",
+      "R": 29,
+      "Y": 241,
+      "G": 20,
+      "total": 290
+    },
+    {
+      "project": "patna",
+      "R": 84,
+      "Y": 175,
+      "G": 3,
+      "total": 262
+    },
+    {
+      "project": "ghatgaon",
+      "R": 48,
+      "Y": 204,
+      "G": 7,
+      "total": 259
+    },
+    {
+      "project": "ghasipura",
+      "R": 88,
+      "Y": 153,
+      "G": 14,
+      "total": 255
+    },
+    {
+      "project": "banspal",
+      "R": 66,
+      "Y": 185,
+      "G": 1,
+      "total": 252
+    },
+    {
+      "project": "telkoi",
+      "R": 59,
+      "Y": 166,
+      "G": 18,
+      "total": 243
+    },
+    {
+      "project": "jhumpura",
+      "R": 58,
+      "Y": 164,
+      "G": 15,
+      "total": 237
+    },
+    {
+      "project": "anandapur",
+      "R": 59,
+      "Y": 161,
+      "G": 8,
+      "total": 228
+    },
+    {
+      "project": "saharpada",
+      "R": 54,
+      "Y": 161,
+      "G": 7,
+      "total": 222
+    },
+    {
+      "project": "hatadihi",
+      "R": 41,
+      "Y": 156,
+      "G": 20,
+      "total": 217
+    },
+    {
+      "project": "champua",
+      "R": 64,
+      "Y": 138,
+      "G": 7,
+      "total": 209
+    },
+    {
+      "project": "joda(u)",
+      "R": 8,
+      "Y": 36,
+      "G": 2,
+      "total": 46
+    }
+  ],
+  "Khordha": [
+    {
+      "project": "banapur",
+      "R": 68,
+      "Y": 202,
+      "G": 19,
+      "total": 289
+    },
+    {
+      "project": "tangi",
+      "R": 36,
+      "Y": 182,
+      "G": 35,
+      "total": 253
+    },
+    {
+      "project": "khordha",
+      "R": 39,
+      "Y": 172,
+      "G": 34,
+      "total": 245
+    },
+    {
+      "project": "begunia",
+      "R": 57,
+      "Y": 161,
+      "G": 18,
+      "total": 236
+    },
+    {
+      "project": "bolagarh",
+      "R": 25,
+      "Y": 172,
+      "G": 31,
+      "total": 228
+    },
+    {
+      "project": "jatni",
+      "R": 23,
+      "Y": 162,
+      "G": 24,
+      "total": 209
+    },
+    {
+      "project": "bbsr (rural)",
+      "R": 33,
+      "Y": 136,
+      "G": 21,
+      "total": 190
+    },
+    {
+      "project": "chilika",
+      "R": 31,
+      "Y": 138,
+      "G": 21,
+      "total": 190
+    },
+    {
+      "project": "balianta",
+      "R": 30,
+      "Y": 114,
+      "G": 37,
+      "total": 181
+    },
+    {
+      "project": "icds bmc-iii",
+      "R": 40,
+      "Y": 99,
+      "G": 17,
+      "total": 156
+    },
+    {
+      "project": "balipatna",
+      "R": 36,
+      "Y": 100,
+      "G": 18,
+      "total": 154
+    },
+    {
+      "project": "bbsr(u)-i",
+      "R": 25,
+      "Y": 81,
+      "G": 14,
+      "total": 120
+    },
+    {
+      "project": "icds bmc-ii",
+      "R": 15,
+      "Y": 73,
+      "G": 14,
+      "total": 102
+    }
+  ],
+  "Koraput": [
+    {
+      "project": "jeypore",
+      "R": 68,
+      "Y": 249,
+      "G": 20,
+      "total": 337
+    },
+    {
+      "project": "borigumma",
+      "R": 88,
+      "Y": 235,
+      "G": 11,
+      "total": 334
+    },
+    {
+      "project": "boipariguda",
+      "R": 121,
+      "Y": 196,
+      "G": 11,
+      "total": 328
+    },
+    {
+      "project": "dasamantapur",
+      "R": 73,
+      "Y": 185,
+      "G": 6,
+      "total": 264
+    },
+    {
+      "project": "kotpad",
+      "R": 57,
+      "Y": 185,
+      "G": 5,
+      "total": 247
+    },
+    {
+      "project": "nandapur",
+      "R": 68,
+      "Y": 161,
+      "G": 11,
+      "total": 240
+    },
+    {
+      "project": "koraput",
+      "R": 60,
+      "Y": 159,
+      "G": 14,
+      "total": 233
+    },
+    {
+      "project": "bandhugaon",
+      "R": 78,
+      "Y": 135,
+      "G": 8,
+      "total": 221
+    },
+    {
+      "project": "semiliguda",
+      "R": 38,
+      "Y": 148,
+      "G": 8,
+      "total": 194
+    },
+    {
+      "project": "lamtaput",
+      "R": 63,
+      "Y": 121,
+      "G": 8,
+      "total": 192
+    },
+    {
+      "project": "kundura",
+      "R": 24,
+      "Y": 149,
+      "G": 16,
+      "total": 189
+    },
+    {
+      "project": "pottangi",
+      "R": 58,
+      "Y": 122,
+      "G": 8,
+      "total": 188
+    },
+    {
+      "project": "laxmipur",
+      "R": 47,
+      "Y": 132,
+      "G": 5,
+      "total": 184
+    },
+    {
+      "project": "narayan patana",
+      "R": 56,
+      "Y": 100,
+      "G": 4,
+      "total": 160
+    },
+    {
+      "project": "sunabeda",
+      "R": 12,
+      "Y": 61,
+      "G": 12,
+      "total": 85
+    }
+  ],
+  "Malkangiri": [
+    {
+      "project": "kalimela",
+      "R": 55,
+      "Y": 187,
+      "G": 22,
+      "total": 264
+    },
+    {
+      "project": "malkangiri",
+      "R": 48,
+      "Y": 190,
+      "G": 12,
+      "total": 250
+    },
+    {
+      "project": "mathili",
+      "R": 64,
+      "Y": 137,
+      "G": 14,
+      "total": 215
+    },
+    {
+      "project": "chitrakonda",
+      "R": 44,
+      "Y": 133,
+      "G": 3,
+      "total": 180
+    },
+    {
+      "project": "korukonda",
+      "R": 38,
+      "Y": 118,
+      "G": 21,
+      "total": 177
+    },
+    {
+      "project": "khairput",
+      "R": 44,
+      "Y": 82,
+      "G": 5,
+      "total": 131
+    },
+    {
+      "project": "podia",
+      "R": 17,
+      "Y": 82,
+      "G": 8,
+      "total": 107
+    }
+  ],
+  "Mayurbhanj": [
+    {
+      "project": "kaptipada",
+      "R": 66,
+      "Y": 257,
+      "G": 14,
+      "total": 337
+    },
+    {
+      "project": "badsahi",
+      "R": 85,
+      "Y": 220,
+      "G": 19,
+      "total": 324
+    },
+    {
+      "project": "betnoti",
+      "R": 47,
+      "Y": 221,
+      "G": 14,
+      "total": 282
+    },
+    {
+      "project": "baripada",
+      "R": 37,
+      "Y": 182,
+      "G": 21,
+      "total": 240
+    },
+    {
+      "project": "morada",
+      "R": 27,
+      "Y": 199,
+      "G": 9,
+      "total": 235
+    },
+    {
+      "project": "karanjia",
+      "R": 30,
+      "Y": 179,
+      "G": 18,
+      "total": 227
+    },
+    {
+      "project": "thakurmunda",
+      "R": 28,
+      "Y": 182,
+      "G": 14,
+      "total": 224
+    },
+    {
+      "project": "bangriposi",
+      "R": 57,
+      "Y": 165,
+      "G": 1,
+      "total": 223
+    },
+    {
+      "project": "jashipur",
+      "R": 38,
+      "Y": 173,
+      "G": 10,
+      "total": 221
+    },
+    {
+      "project": "kuliana",
+      "R": 33,
+      "Y": 169,
+      "G": 9,
+      "total": 211
+    },
+    {
+      "project": "rasgobindpur",
+      "R": 42,
+      "Y": 153,
+      "G": 10,
+      "total": 205
+    },
+    {
+      "project": "suliapada",
+      "R": 33,
+      "Y": 156,
+      "G": 11,
+      "total": 200
+    },
+    {
+      "project": "kusumi",
+      "R": 31,
+      "Y": 151,
+      "G": 17,
+      "total": 199
+    },
+    {
+      "project": "saraskana",
+      "R": 30,
+      "Y": 152,
+      "G": 16,
+      "total": 198
+    },
+    {
+      "project": "udala",
+      "R": 42,
+      "Y": 142,
+      "G": 10,
+      "total": 194
+    },
+    {
+      "project": "khunta",
+      "R": 37,
+      "Y": 139,
+      "G": 6,
+      "total": 182
+    },
+    {
+      "project": "rairangpur",
+      "R": 27,
+      "Y": 133,
+      "G": 19,
+      "total": 179
+    },
+    {
+      "project": "bisoi",
+      "R": 30,
+      "Y": 132,
+      "G": 7,
+      "total": 169
+    },
+    {
+      "project": "g.b.nagar",
+      "R": 17,
+      "Y": 136,
+      "G": 11,
+      "total": 164
+    },
+    {
+      "project": "shamakhunta",
+      "R": 19,
+      "Y": 132,
+      "G": 8,
+      "total": 159
+    },
+    {
+      "project": "bahalda",
+      "R": 25,
+      "Y": 124,
+      "G": 2,
+      "total": 151
+    },
+    {
+      "project": "bijatala",
+      "R": 24,
+      "Y": 115,
+      "G": 7,
+      "total": 146
+    },
+    {
+      "project": "raruan",
+      "R": 18,
+      "Y": 104,
+      "G": 9,
+      "total": 131
+    },
+    {
+      "project": "jamda",
+      "R": 9,
+      "Y": 112,
+      "G": 8,
+      "total": 129
+    },
+    {
+      "project": "tiring",
+      "R": 9,
+      "Y": 100,
+      "G": 5,
+      "total": 114
+    },
+    {
+      "project": "sukruli",
+      "R": 3,
+      "Y": 95,
+      "G": 7,
+      "total": 105
+    }
+  ],
+  "Nabarangpur": [
+    {
+      "project": "umerkote",
+      "R": 35,
+      "Y": 268,
+      "G": 20,
+      "total": 323
+    },
+    {
+      "project": "raighar",
+      "R": 55,
+      "Y": 235,
+      "G": 23,
+      "total": 313
+    },
+    {
+      "project": "kosagumunda",
+      "R": 74,
+      "Y": 230,
+      "G": 6,
+      "total": 310
+    },
+    {
+      "project": "jharigam",
+      "R": 75,
+      "Y": 215,
+      "G": 14,
+      "total": 304
+    },
+    {
+      "project": "papadahandi",
+      "R": 52,
+      "Y": 234,
+      "G": 8,
+      "total": 294
+    },
+    {
+      "project": "tentulikhunti",
+      "R": 32,
+      "Y": 152,
+      "G": 20,
+      "total": 204
+    },
+    {
+      "project": "nabarangpur",
+      "R": 33,
+      "Y": 123,
+      "G": 7,
+      "total": 163
+    },
+    {
+      "project": "chandahandi",
+      "R": 56,
+      "Y": 86,
+      "G": 0,
+      "total": 142
+    },
+    {
+      "project": "dabugam",
+      "R": 22,
+      "Y": 114,
+      "G": 6,
+      "total": 142
+    },
+    {
+      "project": "nandahandi",
+      "R": 15,
+      "Y": 108,
+      "G": 12,
+      "total": 135
+    }
+  ],
+  "Nayagarh": [
+    {
+      "project": "ranapur",
+      "R": 65,
+      "Y": 227,
+      "G": 31,
+      "total": 323
+    },
+    {
+      "project": "nayagarh",
+      "R": 27,
+      "Y": 170,
+      "G": 33,
+      "total": 230
+    },
+    {
+      "project": "odagaon",
+      "R": 44,
+      "Y": 159,
+      "G": 27,
+      "total": 230
+    },
+    {
+      "project": "daspalla",
+      "R": 44,
+      "Y": 169,
+      "G": 16,
+      "total": 229
+    },
+    {
+      "project": "khandapara",
+      "R": 21,
+      "Y": 113,
+      "G": 35,
+      "total": 169
+    },
+    {
+      "project": "nuagaon",
+      "R": 44,
+      "Y": 106,
+      "G": 18,
+      "total": 168
+    },
+    {
+      "project": "bhapur",
+      "R": 14,
+      "Y": 103,
+      "G": 35,
+      "total": 152
+    },
+    {
+      "project": "gania",
+      "R": 15,
+      "Y": 57,
+      "G": 10,
+      "total": 82
+    }
+  ],
+  "Nuapada": [
+    {
+      "project": "komna",
+      "R": 99,
+      "Y": 241,
+      "G": 9,
+      "total": 349
+    },
+    {
+      "project": "nuapada",
+      "R": 53,
+      "Y": 240,
+      "G": 39,
+      "total": 332
+    },
+    {
+      "project": "khariar",
+      "R": 40,
+      "Y": 191,
+      "G": 33,
+      "total": 264
+    },
+    {
+      "project": "sinapali",
+      "R": 85,
+      "Y": 160,
+      "G": 11,
+      "total": 256
+    },
+    {
+      "project": "boden",
+      "R": 42,
+      "Y": 147,
+      "G": 16,
+      "total": 205
+    }
+  ],
+  "Puri": [
+    {
+      "project": "nimapada",
+      "R": 52,
+      "Y": 271,
+      "G": 56,
+      "total": 379
+    },
+    {
+      "project": "gop",
+      "R": 36,
+      "Y": 215,
+      "G": 36,
+      "total": 287
+    },
+    {
+      "project": "kanas",
+      "R": 22,
+      "Y": 205,
+      "G": 58,
+      "total": 285
+    },
+    {
+      "project": "puri sadar",
+      "R": 33,
+      "Y": 201,
+      "G": 35,
+      "total": 269
+    },
+    {
+      "project": "pipili",
+      "R": 25,
+      "Y": 201,
+      "G": 34,
+      "total": 260
+    },
+    {
+      "project": "brahmgiri",
+      "R": 17,
+      "Y": 146,
+      "G": 37,
+      "total": 200
+    },
+    {
+      "project": "kakatpur",
+      "R": 36,
+      "Y": 131,
+      "G": 15,
+      "total": 182
+    },
+    {
+      "project": "delanga",
+      "R": 23,
+      "Y": 133,
+      "G": 23,
+      "total": 179
+    },
+    {
+      "project": "astaranga",
+      "R": 20,
+      "Y": 141,
+      "G": 17,
+      "total": 178
+    },
+    {
+      "project": "satyabadi",
+      "R": 21,
+      "Y": 121,
+      "G": 23,
+      "total": 165
+    },
+    {
+      "project": "krushnaprasad",
+      "R": 12,
+      "Y": 108,
+      "G": 14,
+      "total": 134
+    },
+    {
+      "project": "puri municipality",
+      "R": 6,
+      "Y": 51,
+      "G": 23,
+      "total": 80
+    }
+  ],
+  "Rayagada": [
+    {
+      "project": "kasipur",
+      "R": 94,
+      "Y": 221,
+      "G": 14,
+      "total": 329
+    },
+    {
+      "project": "rayagada",
+      "R": 67,
+      "Y": 218,
+      "G": 15,
+      "total": 300
+    },
+    {
+      "project": "gunupur",
+      "R": 57,
+      "Y": 150,
+      "G": 21,
+      "total": 228
+    },
+    {
+      "project": "bissamcttack",
+      "R": 53,
+      "Y": 133,
+      "G": 4,
+      "total": 190
+    },
+    {
+      "project": "muniguda",
+      "R": 75,
+      "Y": 108,
+      "G": 4,
+      "total": 187
+    },
+    {
+      "project": "kolnara",
+      "R": 35,
+      "Y": 129,
+      "G": 10,
+      "total": 174
+    },
+    {
+      "project": "k. singhpur",
+      "R": 26,
+      "Y": 111,
+      "G": 18,
+      "total": 155
+    },
+    {
+      "project": "ramnaguda",
+      "R": 49,
+      "Y": 101,
+      "G": 3,
+      "total": 153
+    },
+    {
+      "project": "gudari",
+      "R": 69,
+      "Y": 61,
+      "G": 3,
+      "total": 133
+    },
+    {
+      "project": "padmapur",
+      "R": 52,
+      "Y": 63,
+      "G": 4,
+      "total": 119
+    },
+    {
+      "project": "chandrapur",
+      "R": 48,
+      "Y": 68,
+      "G": 2,
+      "total": 118
+    }
+  ],
+  "Sambalpur": [
+    {
+      "project": "jamankira",
+      "R": 56,
+      "Y": 176,
+      "G": 10,
+      "total": 242
+    },
+    {
+      "project": "sambalpur urban",
+      "R": 24,
+      "Y": 156,
+      "G": 43,
+      "total": 223
+    },
+    {
+      "project": "bamra",
+      "R": 52,
+      "Y": 149,
+      "G": 10,
+      "total": 211
+    },
+    {
+      "project": "kuchinda",
+      "R": 47,
+      "Y": 147,
+      "G": 9,
+      "total": 203
+    },
+    {
+      "project": "jujomura",
+      "R": 28,
+      "Y": 157,
+      "G": 12,
+      "total": 197
+    },
+    {
+      "project": "dhankauda",
+      "R": 29,
+      "Y": 129,
+      "G": 27,
+      "total": 185
+    },
+    {
+      "project": "rairakhol",
+      "R": 32,
+      "Y": 133,
+      "G": 10,
+      "total": 175
+    },
+    {
+      "project": "naktideul",
+      "R": 43,
+      "Y": 100,
+      "G": 17,
+      "total": 160
+    },
+    {
+      "project": "maneswar",
+      "R": 29,
+      "Y": 113,
+      "G": 9,
+      "total": 151
+    },
+    {
+      "project": "rengali",
+      "R": 17,
+      "Y": 108,
+      "G": 13,
+      "total": 138
+    }
+  ],
+  "Subarnapur": [
+    {
+      "project": "birmaharajpur",
+      "R": 65,
+      "Y": 204,
+      "G": 11,
+      "total": 280
+    },
+    {
+      "project": "dunguripali",
+      "R": 51,
+      "Y": 200,
+      "G": 16,
+      "total": 267
+    },
+    {
+      "project": "tarbha",
+      "R": 88,
+      "Y": 155,
+      "G": 18,
+      "total": 261
+    },
+    {
+      "project": "binka",
+      "R": 74,
+      "Y": 168,
+      "G": 16,
+      "total": 258
+    },
+    {
+      "project": "ullunda",
+      "R": 64,
+      "Y": 178,
+      "G": 7,
+      "total": 249
+    },
+    {
+      "project": "sonepur",
+      "R": 32,
+      "Y": 184,
+      "G": 24,
+      "total": 240
+    }
+  ],
+  "Sundergarh": [
+    {
+      "project": "rajgangpur",
+      "R": 56,
+      "Y": 195,
+      "G": 16,
+      "total": 267
+    },
+    {
+      "project": "lahunipara",
+      "R": 39,
+      "Y": 207,
+      "G": 15,
+      "total": 261
+    },
+    {
+      "project": "kuarmunda",
+      "R": 39,
+      "Y": 186,
+      "G": 19,
+      "total": 244
+    },
+    {
+      "project": "lathikata",
+      "R": 45,
+      "Y": 173,
+      "G": 14,
+      "total": 232
+    },
+    {
+      "project": "nuagaon",
+      "R": 33,
+      "Y": 184,
+      "G": 11,
+      "total": 228
+    },
+    {
+      "project": "hemgiri",
+      "R": 33,
+      "Y": 181,
+      "G": 10,
+      "total": 224
+    },
+    {
+      "project": "lephripara",
+      "R": 37,
+      "Y": 171,
+      "G": 12,
+      "total": 220
+    },
+    {
+      "project": "balisankara",
+      "R": 28,
+      "Y": 184,
+      "G": 7,
+      "total": 219
+    },
+    {
+      "project": "kutra",
+      "R": 50,
+      "Y": 148,
+      "G": 9,
+      "total": 207
+    },
+    {
+      "project": "sundargarh sadar",
+      "R": 26,
+      "Y": 157,
+      "G": 9,
+      "total": 192
+    },
+    {
+      "project": "gurundia",
+      "R": 66,
+      "Y": 117,
+      "G": 3,
+      "total": 186
+    },
+    {
+      "project": "koira",
+      "R": 67,
+      "Y": 108,
+      "G": 2,
+      "total": 177
+    },
+    {
+      "project": "bisra",
+      "R": 19,
+      "Y": 128,
+      "G": 25,
+      "total": 172
+    },
+    {
+      "project": "tangarpali",
+      "R": 27,
+      "Y": 138,
+      "G": 5,
+      "total": 170
+    },
+    {
+      "project": "bonaigarh",
+      "R": 24,
+      "Y": 129,
+      "G": 15,
+      "total": 168
+    },
+    {
+      "project": "rourkela city",
+      "R": 41,
+      "Y": 108,
+      "G": 11,
+      "total": 160
+    },
+    {
+      "project": "bargaon",
+      "R": 23,
+      "Y": 118,
+      "G": 15,
+      "total": 156
+    },
+    {
+      "project": "subdega",
+      "R": 12,
+      "Y": 134,
+      "G": 10,
+      "total": 156
+    },
+    {
+      "project": "rourkela industrial estate",
+      "R": 29,
+      "Y": 72,
+      "G": 14,
+      "total": 115
+    },
+    {
+      "project": "rourkele civil township",
+      "R": 18,
+      "Y": 86,
+      "G": 11,
+      "total": 115
+    },
+    {
+      "project": "birmitrapur",
+      "R": 3,
+      "Y": 40,
+      "G": 7,
+      "total": 50
+    }
+  ]
+}
