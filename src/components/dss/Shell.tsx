@@ -4,7 +4,7 @@ import { useState, type ReactNode } from "react";
 import { DssProvider, useDss } from "@/lib/dss-context";
 import { MODULES, DISTRICTS, type ModuleKey } from "@/lib/dss-data";
 import { toast } from "sonner";
-import odishaLogo from "@/assets/images/odiLogo.png";
+import odishaLogo from "@/assets/images/OdishaLogo.svg";
 
 function Header() {
   return (
