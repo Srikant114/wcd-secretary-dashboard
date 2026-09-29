@@ -268,8 +268,8 @@ function ActionTracker({ selected }: { selected: string[] }) {
           <div className="w-2 h-2 rounded-full bg-blue-500" />
           Last review&apos;s actions
         </span>
-        <span className="text-gray-300">|</span>
-        <span className="text-[12px] font-bold text-gray-500 uppercase tracking-wide">Week of 4 Aug 2026</span>
+        {/* <span className="text-gray-300">|</span>
+        <span className="text-[12px] font-bold text-gray-500 uppercase tracking-wide">Week of 4 Aug 2026</span> */}
         {canExpand && (
           <>
             <span className="text-gray-300">|</span>
@@ -358,17 +358,17 @@ function SelectScreen({
   onStart: () => void;
 }) {
   const [sort, setSort] = useState<{ outcome: boolean; sd: boolean; dq: boolean; priority: boolean }>({
-    outcome: false,
+    outcome: true,
     sd: false,
     dq: false,
-    priority: true,
+    priority: false,
   });
 
   const districts = useMemo(() => {
     const list = [...DISTRICTS];
     if (sort.priority) list.sort((a, b) => priorityScore(b).score - priorityScore(a).score);
     else if (sort.sd) list.sort((a, b) => sdScore(a) - sdScore(b));
-    else if (sort.outcome) list.sort((a, b) => ptWasting(b) - ptWasting(a));
+    else if (sort.outcome) list.sort((a, b) => a.localeCompare(b));
     return list;
   }, [sort]);
 
@@ -384,27 +384,61 @@ function SelectScreen({
         <div className="flex-1 relative z-10">
           <div className="flex items-center gap-3">
             <h2 className="text-[22px] font-extrabold text-gray-900 tracking-tight">Weekly District Review</h2>
-            <span className="px-2.5 py-1.5 rounded-full bg-white border border-gray-200 text-[11px] font-bold text-gray-600 shadow-sm leading-none uppercase tracking-wide">Week of 4 Aug 2026</span>
+            {/* <span className="px-2.5 py-1.5 rounded-full bg-white border border-gray-200 text-[11px] font-bold text-gray-600 shadow-sm leading-none uppercase tracking-wide">Week of 4 Aug 2026</span> */}
           </div>
-          <p className="text-[13px] text-gray-500 mt-2 font-medium max-w-xl">
+          {/* <p className="text-[13px] text-gray-500 mt-2 font-medium max-w-xl">
             Select 7–8 districts to review this session. The system highlights districts that may need priority attention based on wasting trends and data quality.
+          </p> */}
+          <p className="text-[13px] text-gray-500 mt-2 font-medium max-w-xl">
+            Select districts to review this session. The system highlights districts that may need priority attention based on wasting trends and data quality.
           </p>
         </div>
-        <button
-          disabled={selected.length < 2}
+        {/* <button
+          disabled={true}
           onClick={onStart}
           className="ml-auto px-6 py-2.5 rounded-lg text-[13px] font-bold text-white shadow-md transition-all z-10
             disabled:opacity-40 disabled:cursor-not-allowed hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 bg-[#4f46e5]"
         >
           Start Review →
-        </button>
+        </button> */}
       </div>
 
       <ActionTracker selected={selected} />
 
+      {/* Sort Section moved from the right sidebar */}
+      <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 mt-4 mb-4">
+        <div className="flex items-center gap-3 flex-wrap">
+          <div className="text-[12px] font-bold text-gray-500 uppercase tracking-wide">Sort view by:</div>
+          <div className="flex gap-1.5 flex-wrap">
+            {[
+              // { k: "priority" as const, label: "Priority Score" },
+              { k: "outcome" as const, label: "Worst Outcomes" },
+              // { k: "sd" as const, label: "Worst SD" },
+              { k: "dq" as const, label: "DQ Flagged" },
+            ].map((p) => (
+              <button
+                key={p.k}
+                onClick={() =>
+                  setSort((s) => ({
+                    outcome: false, sd: false, dq: false, priority: false,
+                    [p.k]: !s[p.k],
+                  }))
+                }
+                className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all ${
+                  sort[p.k] ? "bg-[#4f46e5] text-white shadow-sm" : "bg-gray-50 text-gray-600 border border-gray-200 hover:border-[#4f46e5]/50 hover:bg-white"
+                }`}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+        </div>
+        {/* <div className="text-[10px] text-gray-400 font-medium max-w-xs">
+          * Priority score: wasting level + trend + DQ + zero-reporting AWC % + ME
+        </div> */}
+      </div>
 
-
-      <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-4 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[4fr_1fr] gap-4 items-start">
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2.5">
           {districts.map((d) => {
             const w = ptWasting(d);
@@ -428,7 +462,8 @@ function SelectScreen({
                     : blocked
                       ? "bg-gray-50 border-gray-100 opacity-40 cursor-not-allowed"
                       : "bg-white border-gray-200 hover:border-[#4f46e5]/50 hover:shadow-md hover:-translate-y-0.5"
-                } ${dqHighlight && !isSel ? "ring-2 ring-red-400" : ""}`}
+                // } ${dqHighlight && !isSel ? "ring-2 ring-red-400" : ""}`}
+                }`}
               >
                 <div className="flex items-start justify-between gap-1 mb-1">
                   <span className="text-[14px] font-bold leading-tight">{d}</span>
@@ -436,14 +471,10 @@ function SelectScreen({
                     <div className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center shrink-0">
                       <span className="text-[11px] font-bold text-white">✓</span>
                     </div>
-                  ) : (
-                    <div className={`px-1.5 py-0.5 rounded font-bold text-[10px] shrink-0 ${pBg}`} style={{ color: pColor }}>
-                      {pScore}
-                    </div>
-                  )}
+                  ) : null}
                 </div>
                 
-                {pReasons.length > 0 && !isSel && (
+                {/* {pReasons.length > 0 && !isSel && (
                   <div className="text-[10px] font-medium leading-tight truncate mb-2 opacity-80" style={{ color: pColor }}>
                     {pReasons[0]}
                   </div>
@@ -452,14 +483,14 @@ function SelectScreen({
                   <div className="text-[10px] font-medium leading-tight truncate mb-2 text-white/80">
                     {pReasons[0]}
                   </div>
-                )}
+                )} */}
                 
                 <div className="flex items-end justify-between mt-auto pt-2 border-t border-gray-100/20">
                   <div className={`text-[11px] font-medium ${isSel ? "text-white/90" : "text-gray-600"}`}>
                     <span className="opacity-70">Wasting:</span> <span className="font-bold">{w.toFixed(1)}%</span>
                   </div>
                   <div className={`text-[11px] font-medium ${isSel ? "text-white/90" : "text-gray-600"}`}>
-                    <span className="opacity-70">SD:</span> <span className="font-bold">{sd}%</span>
+                    <span className="opacity-70">DQ:</span> <span className="font-bold">{flagged.toFixed(0)}%</span>
                   </div>
                 </div>
               </button>
@@ -467,55 +498,58 @@ function SelectScreen({
           })}
         </div>
 
-        <div className="space-y-4">
-          <div className="bg-gray-50 rounded-xl p-4 border border-gray-100/50">
-            <div className="text-[13px] font-extrabold text-gray-900 mb-3 tracking-tight">Selection Guide</div>
-            <div className="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wide">Suggested for this week</div>
-            <div className="grid grid-cols-2 gap-y-1.5 text-[12px] text-gray-700 mb-4 font-medium">
-              {SUGGESTED.map((d) => (
-                <span key={d} className="flex items-center gap-1.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#4f46e5]/40" />
-                  {d}
-                </span>
-              ))}
-            </div>
-            <button
-              onClick={() => setSelected(SUGGESTED)}
-              className="w-full mb-5 px-4 py-2 rounded-lg text-[12px] font-bold text-white shadow-sm transition-all hover:shadow-md bg-[#4f46e5]"
-            >
-              Select All 8 Suggested
-            </button>
+        <div className="space-y-4 lg:sticky lg:top-4">
+          {/* <Selection Guide hidden by user request> */}
+          {false && (
+            <div className="bg-gray-50 rounded-xl p-4 border border-gray-100/50">
+              <div className="text-[13px] font-extrabold text-gray-900 mb-3 tracking-tight">Selection Guide</div>
+              <div className="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wide">Suggested for this week</div>
+              <div className="grid grid-cols-2 gap-y-1.5 text-[12px] text-gray-700 mb-4 font-medium">
+                {SUGGESTED.map((d) => (
+                  <span key={d} className="flex items-center gap-1.5">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#4f46e5]/40" />
+                    {d}
+                  </span>
+                ))}
+              </div>
+              <button
+                onClick={() => setSelected(SUGGESTED)}
+                className="w-full mb-5 px-4 py-2 rounded-lg text-[12px] font-bold text-white shadow-sm transition-all hover:shadow-md bg-[#4f46e5]"
+              >
+                Select All 8 Suggested
+              </button>
 
-            <div className="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wide">Sort view by</div>
-            <div className="flex gap-1.5 flex-wrap">
-              {[
-                { k: "priority" as const, label: "Priority Score" },
-                { k: "outcome" as const, label: "Worst Outcomes" },
-                { k: "sd" as const, label: "Worst SD" },
-                { k: "dq" as const, label: "DQ Flagged" },
-              ].map((p) => (
-                <button
-                  key={p.k}
-                  onClick={() =>
-                    setSort((s) => ({
-                      outcome: false, sd: false, dq: false, priority: false,
-                      [p.k]: !s[p.k],
-                    }))
-                  }
-                  className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all ${
-                    sort[p.k] ? "bg-[#4f46e5] text-white shadow-sm" : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
-                  }`}
-                >
-                  {p.label}
-                </button>
-              ))}
+              <div className="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wide">Sort view by</div>
+              <div className="flex gap-1.5 flex-wrap">
+                {[
+                  { k: "priority" as const, label: "Priority Score" },
+                  { k: "outcome" as const, label: "Worst Outcomes" },
+                  { k: "sd" as const, label: "Worst SD" },
+                  { k: "dq" as const, label: "DQ Flagged" },
+                ].map((p) => (
+                  <button
+                    key={p.k}
+                    onClick={() =>
+                      setSort((s) => ({
+                        outcome: false, sd: false, dq: false, priority: false,
+                        [p.k]: !s[p.k],
+                      }))
+                    }
+                    className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all ${
+                      sort[p.k] ? "bg-[#4f46e5] text-white shadow-sm" : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
+                    }`}
+                  >
+                    {p.label}
+                  </button>
+                ))}
+              </div>
+              <div className="text-[9.5px] text-gray-400 mt-2.5 font-medium leading-relaxed bg-white p-2 rounded-md border border-gray-100">
+                * Priority score: wasting level + trend + DQ + zero-reporting AWC % + ME
+              </div>
             </div>
-            <div className="text-[9.5px] text-gray-400 mt-2.5 font-medium leading-relaxed bg-white p-2 rounded-md border border-gray-100">
-              * Priority score: wasting level + trend + DQ + zero-reporting AWC % + ME
-            </div>
-          </div>
+          )}
 
-          <div className="bg-gray-50 rounded-xl p-4 border border-gray-100/50">
+          <div className="bg-white rounded-xl p-4 border border-gray-200 shadow-sm">
             <div className="text-[13px] font-extrabold text-gray-900 mb-2 tracking-tight">
               Selected ({selected.length}/8)
             </div>
@@ -533,12 +567,14 @@ function SelectScreen({
                 ))}
               </div>
             )}
-            <div className="mt-4 border border-gray-200/60 rounded-lg overflow-hidden bg-white shadow-sm">
+            {/* Map removed by user request */}
+            {/* <div className="mt-4 border border-gray-200/60 rounded-lg overflow-hidden bg-white shadow-sm">
               <SelectionMap highlighted={selected} height={200} />
-            </div>
+            </div> */}
           </div>
 
-          {selected.length === 2 && (
+          {/* Side-by-side comparison removed by user request */}
+          {false && selected.length === 2 && (
             <div className="bg-gray-50 rounded-xl p-4 border border-gray-100/50">
               <div className="text-[13px] font-extrabold text-gray-900 mb-3 tracking-tight">
                 Side-by-side Comparison
@@ -626,7 +662,7 @@ function SelectScreen({
           )}
 
           <button
-            disabled={selected.length < 2}
+            disabled={true}
             onClick={onStart}
             className="w-full py-3 rounded-lg text-sm font-bold text-white shadow disabled:opacity-40 disabled:cursor-not-allowed"
             style={{ background: TEAL }}

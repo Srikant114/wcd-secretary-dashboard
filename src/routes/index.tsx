@@ -86,9 +86,11 @@ function Overview() {
       {/* OUTCOME CARDS — PT (left, primary) + NFHS-6 (right, benchmark) */}
       <div className="grid grid-cols-2 gap-4">
         {/* PT Admin Data */}
-        <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-4">
+        {/* <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-4"> */}
+        <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-4 flex flex-col h-full">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · {selectedMonth} 2026</span>
+            {/* <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · {selectedMonth} 2026</span> */}
+            <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · Feb to July 2026</span>
             <div className="flex items-center gap-2">
               <span className="text-[10px] text-gray-500">Month:</span>
               <select value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value as PTMonth)}
@@ -128,23 +130,38 @@ function Overview() {
                 >
                   <div className={`text-2xl font-extrabold ${isSelected ? "text-white" : "text-primary"}`}>{val.toFixed(1)}%</div>
                   <div className={`text-xs font-semibold mt-0.5 ${isSelected ? "text-white/90" : "text-gray-700"}`}>{label}</div>
-                  {delta !== null && (
+                  {/* {delta !== null && (
                     <div className={`text-[10px] mt-1 font-semibold ${isSelected ? "text-white/80" : ""}`}
                       style={isSelected ? undefined : { color: dirColor }}>
                       {delta > 0.05 ? "↑" : delta < -0.05 ? "↓" : "→"} {delta > 0 ? "+" : ""}{delta}pp vs {prevMonth}
                     </div>
-                  )}
+                  )} */}
+                  <div className={`text-[10px] mt-1 font-semibold min-h-[15px] ${isSelected ? "text-white/80" : ""}`}
+                    style={isSelected ? undefined : { color: dirColor }}>
+                    {delta !== null ? (
+                      <>{delta > 0.05 ? "↑" : delta < -0.05 ? "↓" : "→"} {delta > 0 ? "+" : ""}{delta}pp vs {prevMonth}</>
+                    ) : (
+                      <>&nbsp;</>
+                    )}
+                  </div>
                 </button>
               );
             })}
           </div>
-          <p className="text-[10px] italic text-gray-500 mt-2">
+          {/* <p className="text-[10px] italic text-gray-500 mt-2">
             Reflects measured children only. N = {monthPT.n.toLocaleString()} · Source: POSHAN Tracker
+          </p> */}
+          {/* <p className="text-[10px] italic text-gray-500 mt-2">
+            Reflects measured children only. N = {monthPT.n.toLocaleString('en-IN')} · Source: POSHAN Tracker
+          </p> */}
+          <p className="text-[10px] italic text-gray-500 mt-auto pt-2">
+            Reflects measured children only. N = {monthPT.n.toLocaleString('en-IN')} · Source: POSHAN Tracker
           </p>
         </div>
 
         {/* NFHS-6 Survey Benchmark */}
-        <div className="rounded-lg bg-[#FFF8E1] border border-amber-100 shadow-sm p-4">
+        {/* <div className="rounded-lg bg-[#FFF8E1] border border-amber-100 shadow-sm p-4"> */}
+        <div className="rounded-lg bg-[#FFF8E1] border border-amber-100 shadow-sm p-4 flex flex-col h-full">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold text-amber-800 uppercase tracking-wide">NFHS-6 · 2023–24</span>
             <span className="text-[10px] text-gray-500 italic">Survey benchmark</span>
@@ -181,12 +198,20 @@ function Overview() {
               );
             })}
           </div>
-          <p className="text-[10px] italic text-gray-500 mt-2">
+          {/* <p className="text-[10px] italic text-gray-500 mt-2">
             Population survey — true prevalence estimate. Next survey ~2028–29.
+          </p> */}
+          {/* <p className="text-[10px] italic text-gray-500 mt-auto pt-2">
+            Population survey — true prevalence estimate. Next survey ~2028–29.
+          </p> */}
+          <p className="text-[10px] italic text-gray-500 mt-auto pt-2">
+            Population survey — true prevalence estimate.
           </p>
         </div>
       </div>
 
+      {false && (
+        <>
       {/* hidden — keep grid cols=3 for old code that references OUTCOMES map */}
       <div className="hidden">
         {OUTCOMES.map((o) => {
@@ -300,7 +325,7 @@ function Overview() {
           {rightView === "Map View" ? (
             selectedDistrict ? (
               /* District selected → 6-month trend */
-              <DistrictTrendChart district={selectedDistrict} outcome={selectedOutcome} selectedMonth={selectedMonth} />
+              <DistrictTrendChart district={selectedDistrict!} outcome={selectedOutcome} selectedMonth={selectedMonth} />
             ) : mapMode === "nfhs6" ? (
               <div className="h-[420px] relative">
                 <OdishaMap layer="outcome" layerKey={selectedOutcome}
@@ -383,12 +408,14 @@ function Overview() {
           )}
 
           {selectedDistrict ? (
-            <DistrictInlinePanel district={selectedDistrict} selectedMonth={selectedMonth} />
+            <DistrictInlinePanel district={selectedDistrict!} selectedMonth={selectedMonth} />
           ) : (
             <TopBottomLists outcome={selectedOutcome} selectedMonth={selectedMonth} />
           )}
         </Card>
       </div>
+        </>
+      )}
     </div>
   );
 }

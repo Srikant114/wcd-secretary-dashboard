@@ -31,15 +31,20 @@ function Header() {
           </div>
         </div>
 
-        {/* Center Title (Commented out per user request) */}
-        {/* <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center pointer-events-none">
-          <div className="px-3.5 py-1 rounded-full border border-[#f97316]/30 bg-[#f97316]/5 flex items-center gap-1.5 shadow-sm">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#f97316]" />
-            <h2 className="text-[12px] font-semibold text-gray-800 tracking-tight">
-              Executive Dashboard for Secretary
-            </h2>
+        {/* Center Marquee */}
+        <div className="hidden md:flex flex-1 overflow-hidden mx-4 items-center">
+          <div className="whitespace-nowrap animate-marquee flex items-baseline gap-3 text-[#d61256] drop-shadow-sm">
+            <span className="text-[16px] md:text-[18px] font-black uppercase tracking-wide">
+              War Room-Decision Support System
+            </span>
+            <span className="text-[12px] md:text-[13px] font-medium text-gray-800">
+              &bull; Every Beneficiary Verified &nbsp;|&nbsp; Every Child Measured Correctly &nbsp;|&nbsp; Every Data Point Reviewed &nbsp;|&nbsp; Every High-Risk Child Followed Up &nbsp;|&nbsp; Every AWC Accountable. &bull; Towards a Suposhit Odisha and a Suposhit Bharat
+            </span>
+            <span className="text-[14px] md:text-[15px] font-bold">
+
+            </span>
           </div>
-        </div> */}
+        </div>
 
         {/* Right Controls (SSO Style) */}
         <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 ml-auto">
@@ -172,9 +177,9 @@ export function FiltersBar() {
   const { district, setDistrict, dataMode, setDataMode } = useDss();
   return (
     <div className="bg-white px-5 py-3 flex items-center gap-4 border-b border-gray-100 flex-wrap z-10 relative">
-      <span className="text-xs font-semibold text-gray-700">Select date:</span>
+      {/* <span className="text-xs font-semibold text-gray-700">Select date:</span> */}
       <button className="px-3 py-1 rounded-full bg-[#f97316] text-white text-[11px] font-semibold hover:bg-[#f97316]/90 transition shadow-sm">
-        July 2026
+        Feb 2026 to July 2026
       </button>
       <select
         value={district}
@@ -192,7 +197,7 @@ export function FiltersBar() {
         ))}
       </select>
 
-      <div className="ml-auto flex items-center gap-2 text-xs">
+      {/* <div className="ml-auto flex items-center gap-2 text-xs">
         <span className={dataMode === "admin" ? "font-bold text-[#f97316]" : "text-gray-500"}>
           Admin Data (PT)
         </span>
@@ -209,7 +214,7 @@ export function FiltersBar() {
         <span className={dataMode === "survey" ? "font-bold text-[#f97316]" : "text-gray-500"}>
           Phone Survey
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

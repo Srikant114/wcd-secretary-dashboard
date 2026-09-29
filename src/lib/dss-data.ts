@@ -2,9 +2,9 @@ export type ModuleKey = "poshan" | "saksham" | "subhadra" | "mamta";
 
 export const MODULES: { key: ModuleKey; label: string; subtitle: string }[] = [
   { key: "poshan", label: "POSHAN 2.0", subtitle: "Nutrition determinant" },
-  { key: "saksham", label: "Saksham Anganwadi", subtitle: "AWC infrastructure" },
-  { key: "subhadra", label: "Subhadra", subtitle: "Women empowerment" },
-  { key: "mamta", label: "Mamta", subtitle: "Maternity benefits" },
+  // { key: "saksham", label: "Saksham Anganwadi", subtitle: "AWC infrastructure" },
+  // { key: "subhadra", label: "Subhadra", subtitle: "Women empowerment" },
+  // { key: "mamta", label: "Mamta", subtitle: "Maternity benefits" },
 ];
 
 export type OutcomeKey = "wasting" | "stunting" | "underweight";
@@ -1330,4 +1330,5 @@ export const districtRYG = _rygDistrict as Record<string, DistrictRYG>;
 export const projectRYG = _rygProject as Record<string, ProjectRYG[]>;
 export const awcRYG = _rygAwc as unknown as Record<string, AWCRYGRow[]>;
 
-export const STATE_RYG: DistrictRYG = { R: 15375, Y: 52219, G: 6555, total: 74149 };
+// export const STATE_RYG: DistrictRYG = { R: 15375, Y: 52219, G: 6555, total: 74149 };
+export const STATE_RYG: DistrictRYG = { R: 15375, Y: 52291, G: 6555, total: 74142 };

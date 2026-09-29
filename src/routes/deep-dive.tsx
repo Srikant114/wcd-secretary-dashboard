@@ -75,8 +75,10 @@ function InfoDot({ text }: { text: string }) {
 type SubTab = "Indicator-wise Performance" | "Service Delivery Score" | "Data Quality Score" | "Programme Convergence";
 
 function DeepDive() {
-  const [tab, setTab] = useState<SubTab>("Indicator-wise Performance");
-  const tabs: SubTab[] = ["Indicator-wise Performance", "Service Delivery Score", "Data Quality Score", "Programme Convergence"];
+  // const [tab, setTab] = useState<SubTab>("Indicator-wise Performance");
+  // const tabs: SubTab[] = ["Indicator-wise Performance", "Service Delivery Score", "Data Quality Score", "Programme Convergence"];
+  const [tab, setTab] = useState<SubTab>("Data Quality Score");
+  const tabs: SubTab[] = ["Data Quality Score", "Indicator-wise Performance", "Service Delivery Score", "Programme Convergence"];
   const { district: preselect } = Route.useSearch();
   const { setDistrict } = useDss();
   useEffect(() => {
@@ -101,10 +103,18 @@ function DeepDive() {
         ))}
       </div>
       <div className="mt-4">
-        {tab === "Indicator-wise Performance" && <IndicatorPerformance />}
+        {/* {tab === "Indicator-wise Performance" && <IndicatorPerformance />}
         {tab === "Service Delivery Score" && <ServiceDelivery />}
         {tab === "Data Quality Score" && <DataQuality />}
-        {tab === "Programme Convergence" && <ProgrammeConvergence />}
+        {tab === "Programme Convergence" && <ProgrammeConvergence />} */}
+        
+        {tab === "Data Quality Score" && <DataQuality />}
+        {tab !== "Data Quality Score" && (
+          <div className="flex flex-col items-center justify-center h-64 bg-white rounded-lg border border-gray-200 shadow-sm text-gray-500 font-medium">
+            <span className="text-xl mb-2">Coming Soon</span>
+            <span className="text-sm">This section is currently under development.</span>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -1080,7 +1090,8 @@ function DataQuality() {
           <span className="text-[#2E7D32] font-bold">Green</span>{" "}
           based on measurement patterns detected by the VALIDATA engine — copy-paste repetition, blanket increments, z-score bunching &amp; abnormal transitions.{" "}
           <span className="text-[#C62828]">Red = high concern</span> · <span className="text-[#D97706]">Yellow = moderate</span> · <span className="text-[#2E7D32]">Green = clean data</span>.
-          &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Jul 2026 · {STATE_RYG.total.toLocaleString()} AWCs across Odisha.</span>
+          {/* &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Jul 2026 · {STATE_RYG.total.toLocaleString()} AWCs across Odisha.</span> */}
+          &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Feb to July 2026 · 74,142 AWCs across Odisha.</span>
         </p>
       </Card>
 
@@ -1147,7 +1158,8 @@ function DataQuality() {
                     labelFormatter={(l) => `Project: ${l}`}
                   />
                   <Bar dataKey="R" stackId="a" name="R" fill="#C62828" />
-                  <Bar dataKey="Y" stackId="a" name="Y" fill="#F57F17" />
+                  {/* <Bar dataKey="Y" stackId="a" name="Y" fill="#F57F17" /> */}
+                  <Bar dataKey="Y" stackId="a" name="Y" fill="#EAB308" />
                   <Bar dataKey="G" stackId="a" name="G" fill="#2E7D32" radius={[0, 4, 4, 0]} />
                 </BarChart>
               </ResponsiveContainer>
@@ -1183,7 +1195,8 @@ function DataQuality() {
                     labelFormatter={(l) => `District: ${l}`}
                   />
                   <Bar dataKey="R" stackId="a" name="R" fill="#C62828" />
-                  <Bar dataKey="Y" stackId="a" name="Y" fill="#F57F17" />
+                  {/* <Bar dataKey="Y" stackId="a" name="Y" fill="#F57F17" /> */}
+                  <Bar dataKey="Y" stackId="a" name="Y" fill="#EAB308" />
                   <Bar dataKey="G" stackId="a" name="G" fill="#2E7D32" radius={[0, 3, 3, 0]} />
                 </BarChart>
               </ResponsiveContainer>
@@ -1250,7 +1263,8 @@ function DataQuality() {
           </Card>
 
           {/* District AWC breakdown summary */}
-          {districtSelected && (
+          {/* <Hidden by user request> */}
+          {false && districtSelected && (
             <Card>
               <div className="text-xs font-bold text-gray-600 mb-2">{district} — AWC Status</div>
               {(["R", "Y", "G"] as const).map((s) => {
