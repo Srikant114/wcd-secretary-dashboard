@@ -1062,7 +1062,14 @@ function DataQuality() {
   const currentRYG = districtSelected ? getRYGForDistrict(district) : STATE_RYG;
 
   function handleDownloadLineList() {
-    if (!districtSelected) { toast.info("Select a district first to download its line list."); return; }
+    if (!districtSelected) {
+      const a = document.createElement("a");
+      a.href = "/complete_data.csv";
+      a.download = "260923_OD Final WCD War Room (74223).csv";
+      a.click();
+      toast.success("Downloading complete state CSV...");
+      return;
+    }
     const awcs = getAWCsForDistrict(district);
     if (!awcs.length) { toast.error("No AWC data for this district."); return; }
     const lines = ["AWC Name,AWC Code,Project,Sector,Status"];
@@ -1149,7 +1156,7 @@ function DataQuality() {
               <ResponsiveContainer>
                 <BarChart data={projectStackedData} layout="vertical" margin={{ left: 120, right: 30 }}>
                   <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} unit="%" />
-                  <YAxis dataKey="name" type="category" tick={{ fontSize: 11 }} width={120} />
+                  <YAxis dataKey="name" type="category" tick={{ fontSize: 11 }} width={120} interval={0} />
                   <Tooltip
                     formatter={(val, name) => [`${val}%`, name === "R" ? "🔴 Red" : name === "Y" ? "🟡 Yellow" : "🟢 Green"]}
                     labelFormatter={(l) => `Project: ${l}`}
@@ -1186,7 +1193,7 @@ function DataQuality() {
               <ResponsiveContainer>
                 <BarChart data={districtStackedData} layout="vertical" margin={{ left: 90, right: 20 }}>
                   <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 10 }} unit="%" />
-                  <YAxis dataKey="name" type="category" tick={{ fontSize: 10 }} width={90} />
+                  <YAxis dataKey="name" type="category" tick={{ fontSize: 10 }} width={90} interval={0} />
                   <Tooltip
                     formatter={(val, name) => [`${val}%`, name === "R" ? "🔴 Red" : name === "Y" ? "🟡 Yellow" : "🟢 Green"]}
                     labelFormatter={(l) => `District: ${l}`}
@@ -1245,14 +1252,11 @@ function DataQuality() {
               </button>
               <button
                 onClick={handleDownloadLineList}
-                className={`w-full px-3 py-2.5 rounded-lg border text-sm font-semibold transition text-left ${districtSelected
-                    ? "bg-[#E8F4FD] text-gray-800 border-blue-200 hover:bg-blue-100"
-                    : "bg-gray-100 text-gray-400 border-gray-200 cursor-default"
-                  }`}
+                className="w-full px-3 py-2.5 rounded-lg border text-sm font-semibold transition text-left bg-[#E8F4FD] text-gray-800 border-blue-200 hover:bg-blue-100"
               >
-                ⬇ Download Line List
+                ⬇ Download {districtSelected ? "Line List" : "State CSV"}
                 <span className="block text-xs font-normal opacity-70">
-                  {districtSelected ? `${getAWCsForDistrict(district).length.toLocaleString()} AWCs — ${district}` : "Select a district first"}
+                  {districtSelected ? `${getAWCsForDistrict(district).length.toLocaleString()} AWCs — ${district}` : "Complete dataset for all districts"}
                 </span>
               </button>
             </div>

@@ -87,7 +87,7 @@ function Overview() {
       <div className="grid grid-cols-2 gap-4">
         {/* PT Admin Data */}
         {/* <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-4"> */}
-        <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-4 flex flex-col h-full">
+        <div className="rounded-xl bg-gradient-to-br from-primary/5 to-white border-x border-b border-gray-200 border-t-4 border-t-primary shadow-sm p-5 flex flex-col h-full">
           <div className="flex items-center justify-between mb-3">
             {/* <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · {selectedMonth} 2026</span> */}
             <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · Feb to July 2026</span>
@@ -120,12 +120,12 @@ function Overview() {
                 <button
                   key={k}
                   onClick={() => isSelectable && setSelectedOutcome(k as PTOutcomeKey)}
-                  className={`text-left rounded-md p-3 transition border-2 ${
+                  className={`text-left h-full flex flex-col rounded-xl p-3.5 transition border-2 ${
                     isSelected
-                      ? "bg-primary border-primary"
+                      ? "bg-primary border-primary shadow-md"
                       : isSelectable
-                      ? "bg-primary/5 border-transparent hover:border-primary/40 cursor-pointer"
-                      : "bg-primary/5 border-transparent cursor-default"
+                      ? "bg-primary/5 border-primary/20 hover:border-primary/40 cursor-pointer shadow-sm"
+                      : "bg-primary/5 border-primary/20 cursor-default shadow-sm"
                   }`}
                 >
                   <div className={`text-2xl font-extrabold ${isSelected ? "text-white" : "text-primary"}`}>{val.toFixed(1)}%</div>
@@ -136,7 +136,7 @@ function Overview() {
                       {delta > 0.05 ? "↑" : delta < -0.05 ? "↓" : "→"} {delta > 0 ? "+" : ""}{delta}pp vs {prevMonth}
                     </div>
                   )} */}
-                  <div className={`text-[10px] mt-1 font-semibold min-h-[15px] ${isSelected ? "text-white/80" : ""}`}
+                  <div className={`text-[10px] mt-auto pt-1 font-semibold min-h-[15px] ${isSelected ? "text-white/80" : ""}`}
                     style={isSelected ? undefined : { color: dirColor }}>
                     {delta !== null ? (
                       <>{delta > 0.05 ? "↑" : delta < -0.05 ? "↓" : "→"} {delta > 0 ? "+" : ""}{delta}pp vs {prevMonth}</>
@@ -161,7 +161,7 @@ function Overview() {
 
         {/* NFHS-6 Survey Benchmark */}
         {/* <div className="rounded-lg bg-[#FFF8E1] border border-amber-100 shadow-sm p-4"> */}
-        <div className="rounded-lg bg-[#FFF8E1] border border-amber-100 shadow-sm p-4 flex flex-col h-full">
+        <div className="rounded-xl bg-gradient-to-br from-amber-500/5 to-white border-x border-b border-gray-200 border-t-4 border-t-amber-500 shadow-sm p-5 flex flex-col h-full">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold text-amber-800 uppercase tracking-wide">NFHS-6 · 2023–24</span>
             <span className="text-[10px] text-gray-500 italic">Survey benchmark</span>
@@ -181,19 +181,21 @@ function Overview() {
                 <button
                   key={k}
                   onClick={() => setSelectedOutcome(k as PTOutcomeKey)}
-                  className={`text-left rounded-md p-3 bg-white/70 border-2 transition ${
-                    selectedOutcome === k ? "border-primary" : "border-transparent hover:border-amber-200"
+                  className={`text-left h-full flex flex-col rounded-xl p-3.5 shadow-sm border-2 transition ${
+                    selectedOutcome === k ? "bg-white border-primary shadow-md" : "bg-amber-50/50 border-amber-200 hover:border-amber-300 hover:shadow-md cursor-pointer"
                   }`}
                 >
                   <div className="text-2xl font-extrabold" style={{ color: sevColor }}>{o.val}%</div>
                   <div className="text-xs font-semibold text-gray-700 mt-0.5">{labels[k]}</div>
-                  <div className="text-[10px] mt-1 font-semibold" style={{ color: trendColor }}>
-                    {o.trend === "worse" ? "↑ worse" : "↓ improved"} vs NFHS-5
+                  <div className="mt-auto pt-1">
+                    <div className="text-[10px] font-semibold" style={{ color: trendColor }}>
+                      {o.trend === "worse" ? "↑ worse" : "↓ improved"} vs NFHS-5
+                    </div>
+                    {isSam
+                      ? <div className="text-[10px] text-amber-700 italic">Survey only; PT uses MUAC+oedema</div>
+                      : <div className="text-[10px] text-gray-500">baseline: {o.baseline}%</div>
+                    }
                   </div>
-                  {isSam
-                    ? <div className="text-[10px] text-amber-700 italic">Survey only; PT uses MUAC+oedema</div>
-                    : <div className="text-[10px] text-gray-500">baseline: {o.baseline}%</div>
-                  }
                 </button>
               );
             })}

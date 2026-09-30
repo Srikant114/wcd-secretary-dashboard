@@ -451,6 +451,9 @@ function SelectScreen({
             const pColor = pScore > 50 ? "#C62828" : pScore > 30 ? "#D97706" : "#2E7D32";
             const pBg = pScore > 50 ? "bg-red-50" : pScore > 30 ? "bg-yellow-50" : "bg-green-50";
             
+            const wTheme = w < 3 ? "bg-emerald-50" : w <= 5 ? "bg-amber-50" : "bg-red-50";
+            const wBorder = w < 3 ? "border-emerald-200" : w <= 5 ? "border-amber-200" : "border-red-200";
+
             return (
               <button
                 key={d}
@@ -461,8 +464,7 @@ function SelectScreen({
                     ? "bg-[#4f46e5] text-white border-transparent shadow-md ring-2 ring-offset-1 ring-[#4f46e5]"
                     : blocked
                       ? "bg-gray-50 border-gray-100 opacity-40 cursor-not-allowed"
-                      : "bg-white border-gray-200 hover:border-[#4f46e5]/50 hover:shadow-md hover:-translate-y-0.5"
-                // } ${dqHighlight && !isSel ? "ring-2 ring-red-400" : ""}`}
+                      : `${wTheme} ${wBorder} hover:border-[#4f46e5]/50 hover:shadow-md hover:-translate-y-0.5`
                 }`}
               >
                 <div className="flex items-start justify-between gap-1 mb-1">
