@@ -88,7 +88,7 @@ function Overview() {
         {/* PT Admin Data */}
         {/* <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-4"> */}
         <div className="rounded-xl bg-gradient-to-br from-primary/5 to-white border-x border-b border-gray-200 border-t-4 border-t-primary shadow-sm p-5 flex flex-col h-full">
-          <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center justify-between mb-3 min-h-[32px]">
             {/* <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · {selectedMonth} 2026</span> */}
             <span className="text-xs font-bold text-primary uppercase tracking-wide">Poshan Tracker · Feb to July 2026</span>
             <div className="flex items-center gap-2">
@@ -99,7 +99,7 @@ function Overview() {
               </select>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 grid-rows-2 gap-3 flex-1">
             {([
               { k: "wasting",     label: "Wasting (U5)",    val: monthPT.wasting  },
               { k: "stunting",    label: "Stunting (U6)",    val: monthPT.stunting },
@@ -154,7 +154,7 @@ function Overview() {
           {/* <p className="text-[10px] italic text-gray-500 mt-2">
             Reflects measured children only. N = {monthPT.n.toLocaleString('en-IN')} · Source: POSHAN Tracker
           </p> */}
-          <p className="text-[10px] italic text-gray-500 mt-auto pt-2">
+          <p className="text-[10px] italic text-gray-500 mt-auto pt-2 min-h-[22px]">
             Reflects measured children only. N = {monthPT.n.toLocaleString('en-IN')} · Source: POSHAN Tracker
           </p>
         </div>
@@ -162,11 +162,11 @@ function Overview() {
         {/* NFHS-6 Survey Benchmark */}
         {/* <div className="rounded-lg bg-[#FFF8E1] border border-amber-100 shadow-sm p-4"> */}
         <div className="rounded-xl bg-gradient-to-br from-amber-500/5 to-white border-x border-b border-gray-200 border-t-4 border-t-amber-500 shadow-sm p-5 flex flex-col h-full">
-          <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center justify-between mb-3 min-h-[32px]">
             <span className="text-xs font-bold text-amber-800 uppercase tracking-wide">NFHS-6 · 2023–24</span>
             <span className="text-[10px] text-gray-500 italic">Survey benchmark</span>
           </div>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 grid-rows-2 gap-3 flex-1">
             {(["wasting","stunting","sam","underweight"] as const).map((k) => {
               const o = NFHS6_OUTCOMES[k];
               const labels: Record<string,string> = { wasting:"Wasting", stunting:"Stunting", underweight:"Underweight", sam:"SAM (WHZ<−3)" };
@@ -206,7 +206,7 @@ function Overview() {
           {/* <p className="text-[10px] italic text-gray-500 mt-auto pt-2">
             Population survey — true prevalence estimate. Next survey ~2028–29.
           </p> */}
-          <p className="text-[10px] italic text-gray-500 mt-auto pt-2">
+          <p className="text-[10px] italic text-gray-500 mt-auto pt-2 min-h-[22px]">
             Population survey — true prevalence estimate.
           </p>
         </div>
