@@ -83,7 +83,7 @@ function DeepDive() {
   const { setDistrict } = useDss();
   useEffect(() => {
     if (preselect && DISTRICTS.includes(preselect)) setDistrict(preselect);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [preselect]);
   return (
     <div>
@@ -92,11 +92,10 @@ function DeepDive() {
           <button
             key={t}
             onClick={() => setTab(t)}
-            className={`px-5 py-3 text-sm font-semibold transition shrink-0 ${
-              tab === t
+            className={`px-5 py-3 text-sm font-semibold transition shrink-0 ${tab === t
                 ? "text-[#4f46e5] border-b-2 border-[#4f46e5] bg-[#4f46e5]/10"
                 : "text-gray-600 hover:text-gray-800"
-            }`}
+              }`}
           >
             {t}
           </button>
@@ -107,7 +106,7 @@ function DeepDive() {
         {tab === "Service Delivery Score" && <ServiceDelivery />}
         {tab === "Data Quality Score" && <DataQuality />}
         {tab === "Programme Convergence" && <ProgrammeConvergence />} */}
-        
+
         {tab === "Data Quality Score" && <DataQuality />}
         {tab !== "Data Quality Score" && (
           <div className="flex flex-col items-center justify-center h-64 bg-white rounded-lg border border-gray-200 shadow-sm text-gray-500 font-medium">
@@ -251,9 +250,8 @@ function IndicatorPerformance() {
               {PT_MONTHS.map((m) => <option key={m} value={m}>{m} 2026</option>)}
             </select>
             <button onClick={() => setShowTrend((v) => !v)}
-              className={`text-xs px-3 py-1.5 rounded-full border font-semibold transition ${
-                showTrend ? "bg-[#4f46e5] text-white border-[#4f46e5]" : "bg-white text-gray-600 border-gray-300 hover:border-[#4f46e5]"
-              }`}>
+              className={`text-xs px-3 py-1.5 rounded-full border font-semibold transition ${showTrend ? "bg-[#4f46e5] text-white border-[#4f46e5]" : "bg-white text-gray-600 border-gray-300 hover:border-[#4f46e5]"
+                }`}>
               {showTrend ? "Hide trend" : "6-month outcome trend"}
             </button>
           </div>
@@ -595,8 +593,8 @@ function ServiceDelivery() {
             const bg = sel
               ? "bg-[#f97316] text-white"
               : c === "green" ? "bg-[#E8F5E9] text-[#2E7D32]"
-              : c === "amber" ? "bg-[#FFF8E1] text-[#B07700]"
-              : "bg-[#FFEBEE] text-[#C62828]";
+                : c === "amber" ? "bg-[#FFF8E1] text-[#B07700]"
+                  : "bg-[#FFEBEE] text-[#C62828]";
             return (
               <button
                 key={t.name}
@@ -904,7 +902,7 @@ function colorForFlagged(pct: number): "green" | "amber" | "red" {
 function DQBinGraph({ district }: { district: string }) {
   const bins = districtDQScoreDist[district];
   if (!bins) return null;
-  const labels = ["0","1","2","3","4","5","6","7","8","9","10","11+"];
+  const labels = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11+"];
   const data = labels.map((label, i) => ({ label, count: bins[i] ?? 0 }));
   const totalAWCs = bins.reduce((s, v) => s + v, 0);
   const peak = Math.max(...data.map((d) => d.count));
@@ -992,9 +990,9 @@ function getAWCsForDistrict(d: string): AWCRYGRow[] {
 }
 
 const STATUS_CONFIG = {
-  R: { label: "Red AWCs",    color: "#C62828", bg: "#FFEBEE", fillLight: [255,205,210] as [number,number,number], fillDark: [183,28,28]  as [number,number,number] },
-  Y: { label: "Yellow AWCs", color: "#D97706", bg: "#FEF9C3", fillLight: [254,249,195] as [number,number,number], fillDark: [217,119,6]   as [number,number,number] },
-  G: { label: "Green AWCs",  color: "#2E7D32", bg: "#E8F5E9", fillLight: [200,230,201] as [number,number,number], fillDark: [27,94,32]   as [number,number,number] },
+  R: { label: "Red AWCs", color: "#C62828", bg: "#FFEBEE", fillLight: [255, 205, 210] as [number, number, number], fillDark: [183, 28, 28] as [number, number, number] },
+  Y: { label: "Yellow AWCs", color: "#D97706", bg: "#FEF9C3", fillLight: [254, 249, 195] as [number, number, number], fillDark: [217, 119, 6] as [number, number, number] },
+  G: { label: "Green AWCs", color: "#2E7D32", bg: "#E8F5E9", fillLight: [200, 230, 201] as [number, number, number], fillDark: [27, 94, 32] as [number, number, number] },
 } as const;
 
 function DataQuality() {
@@ -1037,7 +1035,7 @@ function DataQuality() {
       const ryg = getRYGForDistrict(d);
       return { name: d, count: ryg[selectedStatus], pct: ryg.total > 0 ? ryg[selectedStatus] / ryg.total * 100 : 0 };
     }).sort((a, b) => b.pct - a.pct).slice(0, 3),
-  [selectedStatus]);
+    [selectedStatus]);
 
   // All-district stacked bar (sorted by % of selectedStatus desc)
   const districtStackedData = useMemo(() =>
@@ -1046,7 +1044,7 @@ function DataQuality() {
       const t = ryg.total || 1;
       return { name: d, R: Math.round(ryg.R / t * 100), Y: Math.round(ryg.Y / t * 100), G: Math.round(ryg.G / t * 100) };
     }).sort((a, b) => b[selectedStatus] - a[selectedStatus]),
-  [selectedStatus]);
+    [selectedStatus]);
 
   // Project stacked bar when district selected
   const projectStackedData = useMemo(() => {
@@ -1059,7 +1057,7 @@ function DataQuality() {
 
   const top3Projects = useMemo(() =>
     projectStackedData.map(p => ({ name: p.name, pct: p[selectedStatus] })).slice(0, 3),
-  [projectStackedData, selectedStatus]);
+    [projectStackedData, selectedStatus]);
 
   const currentRYG = districtSelected ? getRYGForDistrict(district) : STATE_RYG;
 
@@ -1091,7 +1089,7 @@ function DataQuality() {
           based on measurement patterns detected by the VALIDATA engine — copy-paste repetition, blanket increments, z-score bunching &amp; abnormal transitions.{" "}
           <span className="text-[#C62828]">Red = high concern</span> · <span className="text-[#D97706]">Yellow = moderate</span> · <span className="text-[#2E7D32]">Green = clean data</span>.
           {/* &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Jul 2026 · {STATE_RYG.total.toLocaleString()} AWCs across Odisha.</span> */}
-          &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Feb to July 2026 · 74,142 AWCs across Odisha.</span>
+          &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Feb to July 2026 · 74,223 AWCs across Odisha.</span>
         </p>
       </Card>
 
@@ -1105,9 +1103,8 @@ function DataQuality() {
           const isSelected = selectedStatus === s;
           return (
             <button key={s} onClick={() => setSelectedStatus(s)}
-              className={`rounded-xl p-4 text-left transition-all border-2 ${
-                isSelected ? "shadow-lg scale-[1.02]" : "opacity-80 hover:opacity-100"
-              }`}
+              className={`rounded-xl p-4 text-left transition-all border-2 ${isSelected ? "shadow-lg scale-[1.02]" : "opacity-80 hover:opacity-100"
+                }`}
               style={{
                 background: cfg.bg,
                 color: cfg.color,
@@ -1248,11 +1245,10 @@ function DataQuality() {
               </button>
               <button
                 onClick={handleDownloadLineList}
-                className={`w-full px-3 py-2.5 rounded-lg border text-sm font-semibold transition text-left ${
-                  districtSelected
+                className={`w-full px-3 py-2.5 rounded-lg border text-sm font-semibold transition text-left ${districtSelected
                     ? "bg-[#E8F4FD] text-gray-800 border-blue-200 hover:bg-blue-100"
                     : "bg-gray-100 text-gray-400 border-gray-200 cursor-default"
-                }`}
+                  }`}
               >
                 ⬇ Download Line List
                 <span className="block text-xs font-normal opacity-70">
@@ -1323,8 +1319,10 @@ function DQCheckModal({ check, onClose }: { check: DQCheck; onClose: () => void 
             <span className="text-gray-600 ml-1">state average</span>
           </div>
           <span className="px-2 py-0.5 rounded font-bold text-[11px]"
-            style={{ background: statusColor === "red" ? "#FFEBEE" : statusColor === "amber" ? "#FFF8E1" : "#E8F5E9",
-                     color: statusColor === "red" ? "#C62828" : statusColor === "amber" ? "#B07700" : "#2E7D32" }}>
+            style={{
+              background: statusColor === "red" ? "#FFEBEE" : statusColor === "amber" ? "#FFF8E1" : "#E8F5E9",
+              color: statusColor === "red" ? "#C62828" : statusColor === "amber" ? "#B07700" : "#2E7D32"
+            }}>
             {statusColor === "red" ? "Alert" : statusColor === "amber" ? "Watch" : "Good"}
           </span>
         </div>
@@ -1370,10 +1368,10 @@ function DQCheckModal({ check, onClose }: { check: DQCheck; onClose: () => void 
 
 type ConvergenceXKey = "saksham_open" | "mamta_registered" | "subhadra_enrolled" | "poshan_weighed";
 const CONVERGENCE_X_OPTIONS: { key: ConvergenceXKey; label: string; prog: string }[] = [
-  { key: "saksham_open",      label: "AWCs open on visit (Saksham)",    prog: "Saksham" },
-  { key: "mamta_registered",  label: "PW registration rate (Mamta)",     prog: "Mamta" },
-  { key: "subhadra_enrolled", label: "Women enrolled (Subhadra)",        prog: "Subhadra" },
-  { key: "poshan_weighed",    label: "Measurement Efficiency (POSHAN)", prog: "POSHAN" },
+  { key: "saksham_open", label: "AWCs open on visit (Saksham)", prog: "Saksham" },
+  { key: "mamta_registered", label: "PW registration rate (Mamta)", prog: "Mamta" },
+  { key: "subhadra_enrolled", label: "Women enrolled (Subhadra)", prog: "Subhadra" },
+  { key: "poshan_weighed", label: "Measurement Efficiency (POSHAN)", prog: "POSHAN" },
 ];
 
 function dqScoreOf(d: string) {
@@ -1420,9 +1418,8 @@ function ProgrammeConvergence() {
             <span className="text-xs text-gray-600 font-semibold">X axis:</span>
             {CONVERGENCE_X_OPTIONS.map((o) => (
               <button key={o.key} onClick={() => setXKey(o.key)}
-                className={`px-3 py-1.5 rounded-full text-[11px] font-semibold border ${
-                  xKey === o.key ? "text-white border-transparent" : "bg-white text-gray-600 border-gray-300"
-                }`}
+                className={`px-3 py-1.5 rounded-full text-[11px] font-semibold border ${xKey === o.key ? "text-white border-transparent" : "bg-white text-gray-600 border-gray-300"
+                  }`}
                 style={xKey === o.key ? { background: "#f97316" } : undefined}>
                 {o.prog}
               </button>

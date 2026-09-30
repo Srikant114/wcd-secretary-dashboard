@@ -167,7 +167,7 @@ function Overview() {
             <span className="text-[10px] text-gray-500 italic">Survey benchmark</span>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            {(["wasting","stunting","underweight","sam"] as const).map((k) => {
+            {(["wasting","stunting","sam","underweight"] as const).map((k) => {
               const o = NFHS6_OUTCOMES[k];
               const labels: Record<string,string> = { wasting:"Wasting", stunting:"Stunting", underweight:"Underweight", sam:"SAM (WHZ<−3)" };
               const isSam = k === "sam";
