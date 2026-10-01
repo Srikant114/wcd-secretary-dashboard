@@ -1102,11 +1102,10 @@ function DataQuality() {
           based on measurement patterns detected by the VALIDATA engine — copy-paste repetition, blanket increments, z-score bunching &amp; abnormal transitions.{" "}
           <span className="text-[#C62828]">Red = high concern</span> · <span className="text-[#D97706]">Yellow = moderate</span> · <span className="text-[#2E7D32]">Green = clean data</span>.
           &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Feb to July 2026 · 74,223 AWCs across Odisha.</span>
-          {" "}
           <a 
             href="/What_is_DQ_How_is_it_calculated.pdf" 
             download="What is DQ_ How is it calculated.pdf"
-            className="text-xs font-bold text-amber-700 italic hover:underline cursor-pointer whitespace-nowrap ml-1"
+            className="text-xs font-bold text-amber-700 italic hover:underline cursor-pointer whitespace-nowrap ml-3 inline-block"
           >
             DQ Explained here
           </a>
