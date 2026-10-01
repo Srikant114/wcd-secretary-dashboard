@@ -1042,7 +1042,10 @@ function DataQuality() {
     DISTRICTS.map((d) => {
       const ryg = getRYGForDistrict(d);
       const t = ryg.total || 1;
-      return { name: d, R: Math.round(ryg.R / t * 100), Y: Math.round(ryg.Y / t * 100), G: Math.round(ryg.G / t * 100) };
+      const R = Math.round(ryg.R / t * 100);
+      const Y = Math.round(ryg.Y / t * 100);
+      const G = 100 - R - Y;
+      return { name: d, R, Y, G };
     }).sort((a, b) => b[selectedStatus] - a[selectedStatus]),
     [selectedStatus]);
 
@@ -1051,7 +1054,10 @@ function DataQuality() {
     if (!districtSelected) return [];
     return getProjectsForDistrict(district).map((p) => {
       const t = p.total || 1;
-      return { name: p.project, R: Math.round(p.R / t * 100), Y: Math.round(p.Y / t * 100), G: Math.round(p.G / t * 100), rAbs: p.R, yAbs: p.Y, gAbs: p.G };
+      const R = Math.round(p.R / t * 100);
+      const Y = Math.round(p.Y / t * 100);
+      const G = 100 - R - Y;
+      return { name: p.project, R, Y, G, rAbs: p.R, yAbs: p.Y, gAbs: p.G };
     }).sort((a, b) => b[selectedStatus] - a[selectedStatus]);
   }, [district, districtSelected, selectedStatus]);
 
@@ -1087,7 +1093,7 @@ function DataQuality() {
   return (
     <div className="space-y-4">
       {/* DQ Banner */}
-      <Card className="bg-blue-50 border border-blue-100 shadow-sm">
+      <Card className="bg-blue-50 border border-blue-100 shadow-sm p-4">
         <p className="text-[13px] font-medium text-gray-800 leading-relaxed">
           <span className="font-bold text-[#4f46e5]">📊 Data Quality (DQ)</span> — Each AWC is classified{" "}
           <span className="text-[#C62828] font-bold">Red</span>,{" "}
@@ -1095,8 +1101,15 @@ function DataQuality() {
           <span className="text-[#2E7D32] font-bold">Green</span>{" "}
           based on measurement patterns detected by the VALIDATA engine — copy-paste repetition, blanket increments, z-score bunching &amp; abnormal transitions.{" "}
           <span className="text-[#C62828]">Red = high concern</span> · <span className="text-[#D97706]">Yellow = moderate</span> · <span className="text-[#2E7D32]">Green = clean data</span>.
-          {/* &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Jul 2026 · {STATE_RYG.total.toLocaleString()} AWCs across Odisha.</span> */}
           &nbsp;<span className="text-gray-500 italic">Source: Poshan Tracker · Feb to July 2026 · 74,223 AWCs across Odisha.</span>
+          {" "}
+          <a 
+            href="/What_is_DQ_How_is_it_calculated.pdf" 
+            download="What is DQ_ How is it calculated.pdf"
+            className="text-xs font-bold text-amber-700 italic hover:underline cursor-pointer whitespace-nowrap ml-1"
+          >
+            DQ Explained here
+          </a>
         </p>
       </Card>
 
